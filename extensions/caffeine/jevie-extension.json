@@ -1,0 +1,22 @@
+{
+  "id": "caffeine",
+  "title": "Caffeine",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "How much caffeine is still in you at bedtime, as a card while you type - from the cups you had and when - at a 5-hour half-life.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "cup.and.saucer.fill",
+  "author": "vlad-terin",
+  "topics": [
+    "caffeine half life",
+    "caffeine at bedtime",
+    "coffee and sleep"
+  ],
+  "examples": [
+    "caffeine 200mg at 9am bedtime 11pm",
+    "caffeine 95mg 8am 95mg 2pm bedtime 10:30pm"
+  ]
+}

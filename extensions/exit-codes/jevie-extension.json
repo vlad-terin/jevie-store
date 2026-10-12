@@ -1,0 +1,22 @@
+{
+  "id": "exit-codes",
+  "title": "Exit Codes",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "What a process exit code or a Unix signal means, as a card while you type - 137 is SIGKILL, often the out-of-memory killer.",
+  "entry": "index.mjs",
+  "categories": [
+    "Developer Tools"
+  ],
+  "icon": "xmark.octagon",
+  "author": "vlad-terin",
+  "topics": [
+    "exit code",
+    "unix signal",
+    "sigkill"
+  ],
+  "examples": [
+    "exit code 137",
+    "signal 15"
+  ]
+}

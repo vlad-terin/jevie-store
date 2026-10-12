@@ -1,0 +1,22 @@
+{
+  "id": "debt-to-income",
+  "title": "Debt to Income",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "A debt-to-income ratio as a card while you type - monthly debts over gross monthly income - and where lenders draw their lines.",
+  "entry": "index.mjs",
+  "categories": [
+    "Finance"
+  ],
+  "icon": "percent",
+  "author": "vlad-terin",
+  "topics": [
+    "debt to income",
+    "dti ratio",
+    "mortgage qualification"
+  ],
+  "examples": [
+    "dti debts 2000 income 6500",
+    "debt to income 1800 a month income 90k a year"
+  ]
+}

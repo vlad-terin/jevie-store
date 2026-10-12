@@ -1,0 +1,23 @@
+{
+  "id": "type-scale",
+  "title": "Type Scale",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "A modular type scale from a base size and a ratio, as a card while you type - major third, perfect fourth, golden - and the golden-ratio split of a width.",
+  "entry": "index.mjs",
+  "categories": [
+    "Design Tools"
+  ],
+  "icon": "textformat.size",
+  "author": "vlad-terin",
+  "topics": [
+    "type scale",
+    "modular scale",
+    "golden ratio"
+  ],
+  "examples": [
+    "type scale 16 1.25",
+    "type scale 16 perfect fourth",
+    "golden ratio 960"
+  ]
+}
