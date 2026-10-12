@@ -1,5 +1,5 @@
 {
-  "built": "2026-10-12T04:33:32.374Z",
+  "built": "2026-10-12T04:52:32.889Z",
   "jevie": "0.0.0",
   "extensions": [
     {
@@ -43,7 +43,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/calls",
+      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/calls",
       "trust": "official"
     },
     {
@@ -84,7 +84,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/can-i-use",
+      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/can-i-use",
       "trust": "official"
     },
     {
@@ -126,7 +126,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/cheatsheets",
+      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/cheatsheets",
       "trust": "official"
     },
     {
@@ -167,7 +167,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/docker-containers",
+      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/docker-containers",
       "trust": "official"
     },
     {
@@ -214,7 +214,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/feeds",
+      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/feeds",
       "trust": "official"
     },
     {
@@ -255,7 +255,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/github",
+      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/github",
       "trust": "official"
     },
     {
@@ -296,7 +296,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/hacker-news",
+      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/hacker-news",
       "trust": "official"
     },
     {
@@ -340,7 +340,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/homebrew",
+      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/homebrew",
       "trust": "official"
     },
     {
@@ -380,53 +380,14 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/iconify",
-      "trust": "official"
-    },
-    {
-      "id": "jevgrep",
-      "title": "jevgrep",
-      "description": "Experimental behavior-based source search within an explicit local repository. Sends eligible source to the configured jevgrep provider.",
-      "version": "0.1.0",
-      "categories": [
-        "Developer Tools"
-      ],
-      "icon": "magnifyingglass",
-      "author": "vlad-terin",
-      "requires": null,
-      "topics": [
-        "code search",
-        "repository implementation",
-        "source evidence"
-      ],
-      "examples": [
-        "@ext-jevgrep search query=\"Where is microphone cancellation handled?\" directory=/absolute/path/to/repo"
-      ],
-      "settings": 0,
-      "changes": null,
-      "reaches": {
-        "hosts": [],
-        "programs": [
-          "(a program named at run time)"
-        ],
-        "writes": 0
-      },
-      "readme": "# jevgrep\n\nExperimental behavior-based source search within an explicit local repository. Sends eligible source to the configured jevgrep provider.\n\n## Say\n\n- “@ext-jevgrep search query=\"Where is microphone cancellation handled?\" directory=/absolute/path/to/repo”\n",
-      "change": {
-        "version": "0.1.0",
-        "date": "2026-10-11",
-        "lines": [
-          "In the store, with its README, categories and icon."
-        ]
-      },
-      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/jevgrep",
+      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/iconify",
       "trust": "official"
     },
     {
       "id": "linear",
       "title": "Linear",
       "description": "Your Linear issues - assigned, or searched by words - read-only, with a personal API key kept in the Keychain. A lean port of Raycast's Linear extension.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "categories": [
         "Productivity",
         "Developer Tools"
@@ -453,13 +414,13 @@
       },
       "readme": "# Linear\n\nYour Linear issues - assigned, or searched by words - read-only, with a personal API key kept in the Keychain. A lean port of Raycast's Linear extension.\n\n## Say\n\n- “linear issues”\n- “linear issue onboarding”\n\n## Settings\n\n- **Linear API key** (required): linear.app → Settings → Security & access → Personal API keys.\n\n“settings for linear” changes them; secrets are kept in the Keychain.\n",
       "change": {
-        "version": "1.0.0",
-        "date": "2026-10-11",
+        "version": "1.0.1",
+        "date": "2026-10-12",
         "lines": [
-          "In the store, with its README, categories and icon."
+          "With no API key yet it asks for one (↵ opens its settings), rather than saying Linear refused it."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/linear",
+      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/linear",
       "trust": "official"
     },
     {
@@ -502,7 +463,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/mdn",
+      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/mdn",
       "trust": "official"
     },
     {
@@ -542,7 +503,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/npm-search",
+      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/npm-search",
       "trust": "official"
     },
     {
@@ -580,14 +541,14 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/obsidian",
+      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/obsidian",
       "trust": "official"
     },
     {
       "id": "reddit",
       "title": "Reddit",
       "description": "A subreddit's hot posts, through Reddit's public feed - a port of Raycast's Reddit extension.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "categories": [
         "News",
         "Web"
@@ -614,13 +575,13 @@
       },
       "readme": "# Reddit\n\nA subreddit's hot posts, through Reddit's public feed - a port of Raycast's Reddit extension.\n\n## Say\n\n- “subreddit programming”\n- “subreddit macapps top”\n",
       "change": {
-        "version": "1.0.0",
-        "date": "2026-10-11",
+        "version": "1.1.0",
+        "date": "2026-10-12",
         "lines": [
-          "In the store, with its README, categories and icon."
+          "A list asked for again within ten minutes comes from what was kept, and when Reddit limits requests the kept list is shown with its age instead of an error."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/reddit",
+      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/reddit",
       "trust": "official"
     },
     {
@@ -659,7 +620,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/svgl",
+      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/svgl",
       "trust": "official"
     },
     {
@@ -699,7 +660,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/tldr",
+      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/tldr",
       "trust": "official"
     },
     {
@@ -740,42 +701,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/wikipedia",
-      "trust": "official"
-    },
-    {
-      "id": "workspace-info",
-      "title": "Workspace Info",
-      "description": "Read the package details of a local project.",
-      "version": "1.0.0",
-      "categories": [
-        "Developer Tools"
-      ],
-      "icon": "folder",
-      "author": "vlad-terin",
-      "requires": null,
-      "topics": [
-        "package details"
-      ],
-      "examples": [
-        "@ext-workspace-info package directory=/path/to/project"
-      ],
-      "settings": 0,
-      "changes": null,
-      "reaches": {
-        "hosts": [],
-        "programs": [],
-        "writes": 0
-      },
-      "readme": "# Workspace Info\n\nRead the package details of a local project.\n\n## Say\n\n- “@ext-workspace-info package directory=/path/to/project”\n",
-      "change": {
-        "version": "1.0.0",
-        "date": "2026-10-11",
-        "lines": [
-          "In the store, with its README, categories and icon."
-        ]
-      },
-      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/workspace-info",
+      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/wikipedia",
       "trust": "official"
     },
     {
@@ -812,7 +738,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/world-clock",
+      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/world-clock",
       "trust": "official"
     }
   ],
