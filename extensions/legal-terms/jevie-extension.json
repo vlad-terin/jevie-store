@@ -1,0 +1,23 @@
+{
+  "id": "legal-terms",
+  "title": "Legal Terms",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "What a legal term or a piece of Latin in a contract or judgment means, in plain English, as a card while you type.",
+  "entry": "index.mjs",
+  "categories": [
+    "Documentation"
+  ],
+  "icon": "building.columns.circle",
+  "author": "vlad-terin",
+  "topics": [
+    "legal term",
+    "legal latin",
+    "law glossary"
+  ],
+  "examples": [
+    "legal term res judicata",
+    "legal term force majeure",
+    "legal mens rea"
+  ]
+}

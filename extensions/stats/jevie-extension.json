@@ -1,0 +1,23 @@
+{
+  "id": "stats",
+  "title": "Stats",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "The numbers of a list at a glance, as a card while you type: count, mean, median, standard deviation, quartiles, min and max - typed, or from the clipboard.",
+  "entry": "index.mjs",
+  "categories": [
+    "Data",
+    "Productivity"
+  ],
+  "icon": "sum",
+  "author": "vlad-terin",
+  "topics": [
+    "statistics",
+    "mean median",
+    "standard deviation"
+  ],
+  "examples": [
+    "stats 3 5 7 9 11 40",
+    "stats clipboard"
+  ]
+}

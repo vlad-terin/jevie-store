@@ -1,0 +1,22 @@
+{
+  "id": "tailwind-colors",
+  "title": "Tailwind Colors",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "A Tailwind CSS color as a card while you type: its hex, RGB and HSL, the shades beside it, and the class names - from Tailwind's own palette.",
+  "entry": "index.mjs",
+  "categories": [
+    "Design Tools",
+    "Developer Tools"
+  ],
+  "icon": "paintpalette",
+  "author": "vlad-terin",
+  "topics": [
+    "tailwind color",
+    "tailwind palette"
+  ],
+  "examples": [
+    "tailwind blue-500",
+    "tw emerald 300"
+  ]
+}

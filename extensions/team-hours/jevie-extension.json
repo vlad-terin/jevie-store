@@ -1,0 +1,23 @@
+{
+  "id": "team-hours",
+  "title": "Team Hours",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "When a team across cities can meet, as a card while you type: the hours everyone is in their working day, in your time and theirs.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity",
+    "Communication"
+  ],
+  "icon": "person.3",
+  "author": "vlad-terin",
+  "topics": [
+    "meeting overlap",
+    "time zone overlap",
+    "working hours"
+  ],
+  "examples": [
+    "overlap new york london",
+    "team hours san francisco berlin tokyo"
+  ]
+}

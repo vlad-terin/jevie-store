@@ -1,9 +1,12 @@
-// Three bedside sums, as cards while they are typed, worked out on this Mac.
+// Bedside sums, as cards while they are typed, worked out on this Mac.
 // A calculator, not advice: each card says which formula it used.
 //
 //   "bmi 180 cm 75 kg", "bmi 5'11 170 lb"            BMI (WHO band) and BSA (Mosteller)
 //   "due date lmp 2026-03-01", "edd lmp mar 1"       Naegele's rule, the weeks along, the trimester
 //   "crcl 65 years 70 kg creatinine 1.2 male"        Cockcroft-Gault, mL/min
+//   "dose 15 mg/kg 20 kg in 3 doses max 500 mg"      a weight-based dose, split and capped
+//   "drip 1000 ml over 8 hours 20 gtt"               mL/h, and drops a minute for a set
+//   "glucose 100 mg/dl", "a1c 7"                     mg/dL ↔ mmol/L, and A1c to average glucose (ADAG)
 
 const DAY = 864e5;
 export const BMI = '^bmi\\s+.+$';
@@ -54,6 +57,36 @@ export function crcl(text) {
   const value = ((140 - age) * kgText) / (72 * cr) * (female ? 0.85 : 1);
   return { value, age, kg: kgText, cr, umol, sex: female ? 'female' : 'male' };
 }
+
+export const DOSE = '^dose\\s+[\\d.]+\\s*(?:mg|mcg|µg|g|units?|ml)\\s*/\\s*kg(?:\\s*/\\s*(?:day|d))?\\s+[\\d.]+\\s*(?:kg|lb|lbs)(?:\\s+(?:in|divided|split)\\s+\\d\\s+doses?)?(?:\\s+max\\s+[\\d.]+\\s*(?:mg|mcg|g|units?))?$';
+export const DRIP = '^(?:drip|infusion|iv\\s+rate)\\s+[\\d.]+\\s*ml\\s+over\\s+[\\d.]+\\s*(?:hours?|hrs?|h|min(?:utes?)?)(?:\\s+[\\d]+\\s*(?:gtt|drops?)(?:\\s*/\\s*ml)?)?$';
+export const GLUCOSE = '^(?:glucose|blood\\s+sugar|bg)\\s+[\\d.]+\\s*(?:mg/dl|mmol/l|mmol)$';
+export const A1C = '^(?:a1c|hba1c)\\s+[\\d.]+\\s*%?$';
+/// "15 mg/kg 20 kg in 3 doses max 500 mg": { perKg, unit, kg, daily, doses, each, capped }.
+export function dose(said) {
+  const t = String(said).toLowerCase();
+  const m = t.match(/dose\s+([\d.]+)\s*(mg|mcg|µg|g|units?|ml)\s*\/\s*kg(\s*\/\s*(?:day|d))?\s+([\d.]+)\s*(kg|lb|lbs)/);
+  if (!m) return null;
+  const perKg = Number(m[1]), unit = m[2].replace(/^unit$/, 'units'), kg = m[5] === 'kg' ? Number(m[4]) : Number(m[4]) * 0.45359237;
+  const doses = Number(t.match(/(?:in|divided|split)\s+(\d)\s+doses?/)?.[1] ?? 1);
+  const max = t.match(/max\s+([\d.]+)\s*(mg|mcg|g|units?)/);
+  let total = perKg * kg, capped = false;
+  if (max && Number(max[1]) < total) { total = Number(max[1]); capped = true; }
+  return { perKg, unit, kg, perDay: Boolean(m[3]), total, doses, each: total / doses, capped };
+}
+/// "1000 ml over 8 hours 20 gtt": mL/h, and drops a minute with a drop factor.
+export function drip(said) {
+  const t = String(said).toLowerCase();
+  const m = t.match(/([\d.]+)\s*ml\s+over\s+([\d.]+)\s*(hours?|hrs?|h|min(?:utes?)?)/);
+  if (!m) return null;
+  const ml = Number(m[1]), minutes = /^min/.test(m[3]) ? Number(m[2]) : Number(m[2]) * 60;
+  const factor = Number(t.match(/(\d+)\s*(?:gtt|drops?)/)?.[1] ?? 0) || null;
+  return { ml, minutes, perHour: ml / minutes * 60, gtt: factor ? ml * factor / minutes : null, factor };
+}
+export const glucose = said => { const m = String(said).toLowerCase().match(/([\d.]+)\s*(mg\/dl|mmol\/l|mmol)/); if (!m) return null; const v = Number(m[1]); return m[2] === 'mg/dl' ? { mgdl: v, mmol: v / 18.016 } : { mmol: v, mgdl: v * 18.016 }; };
+/// A1c to estimated average glucose (ADAG): eAG mg/dL = 28.7 × A1c − 46.7.
+export const a1c = said => { const v = Number(String(said).toLowerCase().match(/(?:hb)?a1c\s+([\d.]+)/)?.[1]); return v > 3 && v < 20 ? { a1c: v, mgdl: 28.7 * v - 46.7, mmol: (28.7 * v - 46.7) / 18.016 } : null; };
+
 const show = d => d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
 const NOTE = 'a calculator, not medical advice';
 
@@ -95,6 +128,47 @@ export default function clinicalCalculators(jevie) {
       return { summary, copy: summary, complete: 1, body: [
         spread(stack('leading', line(hero(`${Math.round(c.value)}`)), line(chip('mL/min', 'drop'))), stack('trailing', line(meta('Cockcroft-Gault')), line(meta(`${c.age} y · ${c.kg.toFixed(1)} kg · ${c.sex}`)))),
         line(meta(`creatinine ${c.cr.toFixed(2)} mg/dL${c.umol ? ' (from µmol/L)' : ''} · actual body weight · ${NOTE}`))] };
+    }
+  });
+  jevie.registerCard({
+    name: 'dose', label: 'Dose by weight', symbol: 'pills', match: { pattern: DOSE }, examples: ['dose 15 mg/kg 20 kg'],
+    async render(said) {
+      const d = dose(said);
+      if (!d) return ask('Type a dose per kg and a weight, like “dose 15 mg/kg 20 kg in 3 doses max 500 mg”');
+      const each = `${Number(d.each.toFixed(2))} ${d.unit}`;
+      const summary = `${Number(d.total.toFixed(2))} ${d.unit}${d.perDay ? ' a day' : ''}${d.doses > 1 ? `, ${each} × ${d.doses}` : ''} for ${d.kg.toFixed(1)} kg${d.capped ? ' (capped at the max)' : ''}`;
+      return { summary, copy: summary, complete: 1, body: [
+        pair(stack('leading', line(hero(`${Number(d.total.toFixed(2))} ${d.unit}`)), line(chip(d.perDay ? 'a day' : 'dose', 'pills'))), icon(d.doses > 1 ? 'divide' : 'equal'), stack('trailing', line(hero(each, d.doses === 1)), line(chip(d.doses > 1 ? `each of ${d.doses}` : 'single dose')))),
+        line(meta(`${d.perKg} ${d.unit}/kg × ${d.kg.toFixed(1)} kg${d.capped ? ' · capped at the maximum named' : ''} · check against the formulary · ${NOTE}`))] };
+    }
+  });
+  jevie.registerCard({
+    name: 'drip', label: 'Infusion rate', symbol: 'drop.degreesign', match: { pattern: DRIP }, examples: ['drip 1000 ml over 8 hours 20 gtt'],
+    async render(said) {
+      const d = drip(said);
+      if (!d) return ask('Type a volume and a time, like “drip 1000 ml over 8 hours 20 gtt”');
+      const summary = `${Number(d.perHour.toFixed(1))} mL/h${d.gtt ? `, ${Math.round(d.gtt)} gtt/min at ${d.factor} gtt/mL` : ''}`;
+      return { summary, copy: summary, complete: 1, body: [
+        pair(stack('leading', line(hero(`${Number(d.perHour.toFixed(1))} mL/h`)), line(chip('pump rate', 'drop.degreesign'))), icon('equal'), stack('trailing', line(hero(d.gtt ? `${Math.round(d.gtt)} gtt/min` : '—', !d.gtt)), line(chip(d.factor ? `${d.factor} gtt/mL set` : 'add a drop factor, “20 gtt”')))),
+        line(meta(`${d.ml} mL over ${d.minutes >= 60 ? `${Number((d.minutes / 60).toFixed(2))} h` : `${d.minutes} min`} · ${NOTE}`))] };
+    }
+  });
+  jevie.registerCard({
+    name: 'glucose', label: 'Glucose', symbol: 'drop', match: { pattern: GLUCOSE }, examples: ['glucose 100 mg/dl', 'glucose 7.2 mmol/l'],
+    async render(said) {
+      const g = glucose(said);
+      if (!g) return ask('Type a value and a unit, like “glucose 100 mg/dl”');
+      const summary = `${Math.round(g.mgdl)} mg/dL = ${g.mmol.toFixed(1)} mmol/L`;
+      return { summary, copy: summary, complete: 1, body: [pair(stack('leading', line(hero(`${Math.round(g.mgdl)}`)), line(chip('mg/dL'))), icon('equal'), stack('trailing', line(hero(g.mmol.toFixed(1))), line(chip('mmol/L')))), line(meta(`× 18.016 · ${NOTE}`))] };
+    }
+  });
+  jevie.registerCard({
+    name: 'a1c', label: 'A1c', symbol: 'drop.triangle', match: { pattern: A1C }, examples: ['a1c 7'],
+    async render(said) {
+      const a = a1c(said);
+      if (!a) return ask('Type an A1c percentage, like “a1c 7”');
+      const summary = `A1c ${a.a1c}% ≈ average glucose ${Math.round(a.mgdl)} mg/dL (${a.mmol.toFixed(1)} mmol/L)`;
+      return { summary, copy: summary, complete: 1, body: [pair(stack('leading', line(hero(`${a.a1c}%`)), line(chip('A1c'))), icon('arrow.right'), stack('trailing', line(hero(`${Math.round(a.mgdl)} mg/dL`)), line(chip(`${a.mmol.toFixed(1)} mmol/L`)))), line(meta(`estimated average glucose, ADAG: 28.7 × A1c − 46.7 · ${NOTE}`))] };
     }
   });
 }

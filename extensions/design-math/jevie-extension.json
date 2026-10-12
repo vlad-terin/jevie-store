@@ -1,0 +1,23 @@
+{
+  "id": "design-math",
+  "title": "Design Math",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "The sums designers do all day, as cards while you type: an aspect ratio, a size scaled to a new width or height, and px to rem.",
+  "entry": "index.mjs",
+  "categories": [
+    "Design Tools"
+  ],
+  "icon": "aspectratio",
+  "author": "vlad-terin",
+  "topics": [
+    "aspect ratio",
+    "px to rem",
+    "resize"
+  ],
+  "examples": [
+    "aspect ratio 1920x1080",
+    "1920x1080 to width 1280",
+    "24px to rem"
+  ]
+}
