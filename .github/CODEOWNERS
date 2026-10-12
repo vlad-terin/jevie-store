@@ -24,8 +24,10 @@
 /extensions/end-of-life/ @vlad-terin
 /extensions/f1-standings/ @vlad-terin
 /extensions/feeds/ @vlad-terin
+/extensions/freelance-rate/ @vlad-terin
 /extensions/github/ @vlad-terin
 /extensions/github-repo/ @vlad-terin
+/extensions/grade-calculator/ @vlad-terin
 /extensions/hacker-news/ @vlad-terin
 /extensions/home-affordability/ @vlad-terin
 /extensions/homebrew/ @vlad-terin
@@ -45,6 +47,7 @@
 /extensions/npv-irr/ @vlad-terin
 /extensions/obsidian/ @vlad-terin
 /extensions/options-pricing/ @vlad-terin
+/extensions/payment-fees/ @vlad-terin
 /extensions/portfolio-math/ @vlad-terin
 /extensions/position-size/ @vlad-terin
 /extensions/post-length/ @vlad-terin

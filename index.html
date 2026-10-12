@@ -6,7 +6,7 @@ h1{margin:0 0 4px}header p{color:var(--faint);margin:0 0 24px}input{width:100%;b
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
 h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4px 0}.open{display:inline-block;margin-top:6px;padding:6px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
 #shared,#card{display:none;margin-bottom:20px}#shared.on,#card.on{display:block}#card ul{margin:8px 0;padding-left:18px}</style></head><body><main>
-<header><h1>Jevie extensions</h1><p>72 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
+<header><h1>Jevie extensions</h1><p>75 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
 <article id="shared"><h2>An extension shared with you</h2><p class="meta" id="shared-source"></p><a class="open" id="shared-open" href="#">Open in Jevie</a></article>
 <article id="card"><p class="meta" id="card-label"></p><h2 id="card-summary"></h2><ul id="card-shown"></ul><p class="say" id="card-text"></p><a class="open" id="card-need" href="#" style="display:none;margin-right:6px"></a><a class="open" id="card-open" href="#">Open in Jevie</a></article>
 <input id="q" placeholder="Search extensions" autocomplete="off"><div class="grid"><article id="budget-503020"><h2>50/30/20 Budget</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
@@ -81,12 +81,18 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="feeds"><h2>Feeds</h2><p class="meta">News · Web · by vlad-terin · v1.0.0 · official</p>
 <p>Your RSS and Atom feeds - blogs, changelogs, arXiv, YouTube - newest first, each post&#39;s text beside the list. Add one by pasting its page.</p><p class="say">“feeds” · “feeds simon” · “add feed https://simonwillison.net”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Feeds%20extension">Open in Jevie</a></article>
+<article id="freelance-rate"><h2>Freelance Rate</h2><p class="meta">Finance · Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>The hourly and day rate a freelancer needs to reach a yearly income, as a card while you type - with billable hours, overhead and tax counted.</p><p class="say">“freelance rate 120k” · “freelance rate 150k 1200 billable hours 25% overhead 30% tax”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Freelance%20Rate%20extension">Open in Jevie</a></article>
 <article id="github"><h2>GitHub</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
 <p>Your pull requests, review requests, issues and repo search, through the gh CLI you are signed into - a lean port of Raycast&#39;s GitHub extension. Notifications and trending stay their own extensions.</p><p class="say">“my prs” · “prs to review” · “github issues”</p>
 <a class="open" href="jevie://ask?q=install%20the%20GitHub%20extension">Open in Jevie</a></article>
 <article id="github-repo"><h2>GitHub Repo</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
 <p>A GitHub repository at a glance as a card while you type: stars, forks, its latest release, last push and licence.</p><p class="say">“repo vercel/next.js” · “repo sqlite/sqlite”</p>
 <a class="open" href="jevie://ask?q=install%20the%20GitHub%20Repo%20extension">Open in Jevie</a></article>
+<article id="grade-calculator"><h2>Grade Calculator</h2><p class="meta">Productivity · Documentation · by vlad-terin · v1.0.0 · official</p>
+<p>What score a final exam needs for the grade you want, and a GPA from letter or number grades - as cards while you type.</p><p class="say">“grade needed current 78 target 82 final 30%” · “gpa A B+ A- B”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Grade%20Calculator%20extension">Open in Jevie</a></article>
 <article id="hacker-news"><h2>Hacker News</h2><p class="meta">News · by vlad-terin · v1.1.0 · official</p>
 <p>Hacker News front page, new, best, Ask and Show - a port of Raycast&#39;s Hacker News extension.</p><p class="say">“hacker news” · “hn best” · “hn show”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Hacker%20News%20extension">Open in Jevie</a></article>
@@ -144,6 +150,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="options-pricing"><h2>Options Pricing</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
 <p>An option&#39;s fair price and Greeks by Black-Scholes, as a card while you type - calls and puts, with delta, gamma, theta, vega and the breakeven.</p><p class="say">“call 100 strike 105 30 days 25% vol” · “put 50 strike 45 60 days 40% vol”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Options%20Pricing%20extension">Open in Jevie</a></article>
+<article id="payment-fees"><h2>Payment Fees</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
+<p>What you keep after a payment processor&#39;s fee, as a card while you type - and what to charge to keep a round amount. Stripe&#39;s standard rate, or your own.</p><p class="say">“stripe fee 100” · “fee 250 at 3.49% + 0.49”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Payment%20Fees%20extension">Open in Jevie</a></article>
 <article id="portfolio-math"><h2>Portfolio Math</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
 <p>A portfolio&#39;s numbers as cards while you type: the Sharpe ratio, a weighted expected return, and real (after-inflation) return.</p><p class="say">“sharpe 12% return 15% vol 4%” · “expected return 60% at 8% 40% at 3%”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Portfolio%20Math%20extension">Open in Jevie</a></article>
