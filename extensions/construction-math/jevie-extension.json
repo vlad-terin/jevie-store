@@ -1,0 +1,22 @@
+{
+  "id": "construction-math",
+  "title": "Construction Math",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Roof pitch and rafter length, and a staircase's risers and treads by the US residential code, as cards while you type.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "house.lodge",
+  "author": "vlad-terin",
+  "topics": [
+    "roof pitch",
+    "rafter length",
+    "stair calculator"
+  ],
+  "examples": [
+    "roof pitch 6/12 run 12 ft",
+    "stairs 108 inches rise"
+  ]
+}

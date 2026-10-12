@@ -1,0 +1,23 @@
+{
+  "id": "discount-stack",
+  "title": "Stacked Discounts",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "What stacked discounts really take off, as a card while you type: 20% off then 10% off is 28%, not 30% - with the final price.",
+  "entry": "index.mjs",
+  "categories": [
+    "Finance",
+    "Productivity"
+  ],
+  "icon": "tag",
+  "author": "vlad-terin",
+  "topics": [
+    "stacked discount",
+    "percent off",
+    "sale price"
+  ],
+  "examples": [
+    "20% off then 10% off 80",
+    "80 with 25% off and 15% off"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "tire-size",
+  "title": "Tire Size",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "What a tire size code means, as a card while you type - its diameter, sidewall and revolutions per mile - and how two sizes compare on the speedometer.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "car",
+  "author": "vlad-terin",
+  "topics": [
+    "tire size",
+    "wheel size",
+    "speedometer error"
+  ],
+  "examples": [
+    "tire 225/45r17",
+    "225/45r17 vs 245/40r18"
+  ]
+}
