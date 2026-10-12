@@ -1,0 +1,22 @@
+{
+  "id": "medical-bill",
+  "title": "Medical Bill",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "What you pay of a medical bill after insurance, as a card while you type - deductible, coinsurance, copay and out-of-pocket maximum.",
+  "entry": "index.mjs",
+  "categories": [
+    "Finance"
+  ],
+  "icon": "cross.case",
+  "author": "vlad-terin",
+  "topics": [
+    "deductible coinsurance",
+    "out of pocket cost",
+    "what will i pay"
+  ],
+  "examples": [
+    "medical bill 5000 deductible 1500 coinsurance 20%",
+    "medical bill 12000 deductible 2000 coinsurance 30% oop max 6000"
+  ]
+}

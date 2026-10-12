@@ -1,0 +1,22 @@
+{
+  "id": "ideal-body-weight",
+  "title": "Ideal Body Weight",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Ideal and adjusted body weight for dosing as a card while you type - by Devine, from height and sex, and the adjusted weight when actual weight is well over it.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "figure.stand",
+  "author": "vlad-terin",
+  "topics": [
+    "ideal body weight",
+    "adjusted body weight",
+    "ibw"
+  ],
+  "examples": [
+    "ibw 180 cm male",
+    "ideal body weight 5 ft 4 female 90 kg"
+  ]
+}
