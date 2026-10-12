@@ -1,0 +1,22 @@
+{
+  "id": "ac-size",
+  "title": "AC Size",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "How big an air conditioner a room needs, in BTU, as a card while you type - by ENERGY STAR's room chart, adjusted for sun, people and a kitchen.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "snowflake",
+  "author": "vlad-terin",
+  "topics": [
+    "btu calculator",
+    "air conditioner size",
+    "ac size"
+  ],
+  "examples": [
+    "btu 400 sq ft",
+    "ac size 300 sq ft sunny kitchen 4 people"
+  ]
+}

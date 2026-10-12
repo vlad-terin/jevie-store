@@ -1,0 +1,22 @@
+{
+  "id": "age-calc",
+  "title": "Age",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "An age from a birth date as a card while you type - in years, months and days, a baby's weeks, and the next birthday.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "birthday.cake.fill",
+  "author": "vlad-terin",
+  "topics": [
+    "age calculator",
+    "how old",
+    "baby age"
+  ],
+  "examples": [
+    "age born 1990-05-04",
+    "baby age born mar 3 2026"
+  ]
+}

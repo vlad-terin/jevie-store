@@ -1,0 +1,23 @@
+{
+  "id": "inventory-math",
+  "title": "Inventory Math",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "When to reorder and how much, as cards while you type: the reorder point from daily use, lead time and safety stock, and the economic order quantity.",
+  "entry": "index.mjs",
+  "categories": [
+    "Finance",
+    "Productivity"
+  ],
+  "icon": "shippingbox",
+  "author": "vlad-terin",
+  "topics": [
+    "reorder point",
+    "economic order quantity",
+    "eoq"
+  ],
+  "examples": [
+    "reorder point 20 a day lead 7 days safety 50",
+    "eoq demand 1200 order cost 50 holding 2"
+  ]
+}
