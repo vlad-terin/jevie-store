@@ -23,6 +23,7 @@
 /extensions/cheatsheets/ @vlad-terin
 /extensions/chord-transpose/ @vlad-terin
 /extensions/clinical-calculators/ @vlad-terin
+/extensions/clinical-scores/ @vlad-terin
 /extensions/coffee-ratio/ @vlad-terin
 /extensions/company-financials/ @vlad-terin
 /extensions/compound-interest/ @vlad-terin
@@ -95,7 +96,9 @@
 /extensions/percent-change/ @vlad-terin
 /extensions/pert-estimate/ @vlad-terin
 /extensions/pet-age/ @vlad-terin
+/extensions/pet-calories/ @vlad-terin
 /extensions/photo-math/ @vlad-terin
+/extensions/pool-volume/ @vlad-terin
 /extensions/portfolio-math/ @vlad-terin
 /extensions/position-size/ @vlad-terin
 /extensions/post-length/ @vlad-terin
@@ -111,6 +114,7 @@
 /extensions/rhymes/ @vlad-terin
 /extensions/running-pace/ @vlad-terin
 /extensions/sales-math/ @vlad-terin
+/extensions/savings-goal/ @vlad-terin
 /extensions/semver/ @vlad-terin
 /extensions/seo-check/ @vlad-terin
 /extensions/service-status/ @vlad-terin
