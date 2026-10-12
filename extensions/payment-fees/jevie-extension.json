@@ -1,0 +1,22 @@
+{
+  "id": "payment-fees",
+  "title": "Payment Fees",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "What you keep after a payment processor's fee, as a card while you type - and what to charge to keep a round amount. Stripe's standard rate, or your own.",
+  "entry": "index.mjs",
+  "categories": [
+    "Finance"
+  ],
+  "icon": "creditcard",
+  "author": "vlad-terin",
+  "topics": [
+    "stripe fee",
+    "payment fee",
+    "processing fee"
+  ],
+  "examples": [
+    "stripe fee 100",
+    "fee 250 at 3.49% + 0.49"
+  ]
+}

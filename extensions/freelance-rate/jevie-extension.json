@@ -1,0 +1,23 @@
+{
+  "id": "freelance-rate",
+  "title": "Freelance Rate",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "The hourly and day rate a freelancer needs to reach a yearly income, as a card while you type - with billable hours, overhead and tax counted.",
+  "entry": "index.mjs",
+  "categories": [
+    "Finance",
+    "Productivity"
+  ],
+  "icon": "person.badge.clock",
+  "author": "vlad-terin",
+  "topics": [
+    "freelance rate",
+    "hourly rate",
+    "day rate"
+  ],
+  "examples": [
+    "freelance rate 120k",
+    "freelance rate 150k 1200 billable hours 25% overhead 30% tax"
+  ]
+}
