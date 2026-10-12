@@ -1,0 +1,22 @@
+{
+  "id": "retirement",
+  "title": "Retirement",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Your financial-independence number and what savings can pay out, as cards while you type - the 4% rule, and how long a portfolio lasts.",
+  "entry": "index.mjs",
+  "categories": [
+    "Finance"
+  ],
+  "icon": "figure.walk.motion",
+  "author": "vlad-terin",
+  "topics": [
+    "fire number",
+    "retirement",
+    "4% rule"
+  ],
+  "examples": [
+    "fire 60k expenses",
+    "retire with 1.5m at 4%"
+  ]
+}

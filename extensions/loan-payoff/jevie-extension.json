@@ -1,0 +1,22 @@
+{
+  "id": "loan-payoff",
+  "title": "Loan Payoff",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "What paying extra on a mortgage or loan saves, as a card while you type: the interest saved and how much sooner it is paid off.",
+  "entry": "index.mjs",
+  "categories": [
+    "Finance"
+  ],
+  "icon": "house.and.flag",
+  "author": "vlad-terin",
+  "topics": [
+    "extra payment",
+    "loan payoff",
+    "mortgage payoff"
+  ],
+  "examples": [
+    "mortgage 400k 6.5% 30 years extra 500",
+    "loan 25k 7% 5 years extra 100"
+  ]
+}

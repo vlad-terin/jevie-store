@@ -1,0 +1,33 @@
+{
+  "id": "company-financials",
+  "title": "Company Financials",
+  "apiVersion": 2,
+  "version": "1.0.0",
+  "description": "A US-listed company's latest annual numbers, as a card while you type: revenue and its growth, net income and margin, EPS and cash - from its SEC filings (EDGAR).",
+  "entry": "index.mjs",
+  "categories": [
+    "Finance"
+  ],
+  "icon": "building.columns",
+  "author": "vlad-terin",
+  "topics": [
+    "financials",
+    "revenue",
+    "earnings",
+    "10-k",
+    "sec"
+  ],
+  "examples": [
+    "financials aapl",
+    "revenue msft"
+  ],
+  "preferences": [
+    {
+      "name": "contact",
+      "title": "Contact email for SEC",
+      "type": "text",
+      "required": true,
+      "description": "SEC asks every program that reads EDGAR to name a contact. Sent only to sec.gov, in the request's User-Agent."
+    }
+  ]
+}

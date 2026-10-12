@@ -1,0 +1,22 @@
+{
+  "id": "bond-yield",
+  "title": "Bond Yield",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "A bond's current yield and yield to maturity from its price, as a card while you type - and the price from a yield.",
+  "entry": "index.mjs",
+  "categories": [
+    "Finance"
+  ],
+  "icon": "doc.text.below.ecg",
+  "author": "vlad-terin",
+  "topics": [
+    "bond yield",
+    "ytm",
+    "yield to maturity"
+  ],
+  "examples": [
+    "bond price 950 face 1000 coupon 5% 10 years",
+    "bond yield 6% face 1000 coupon 5% 10 years"
+  ]
+}
