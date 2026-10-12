@@ -17,11 +17,13 @@
 /extensions/company-financials/ @vlad-terin
 /extensions/compound-interest/ @vlad-terin
 /extensions/country/ @vlad-terin
+/extensions/court-deadline/ @vlad-terin
 /extensions/css-clamp/ @vlad-terin
 /extensions/curl-to-fetch/ @vlad-terin
 /extensions/design-math/ @vlad-terin
 /extensions/dns-lookup/ @vlad-terin
 /extensions/docker-containers/ @vlad-terin
+/extensions/doi-citation/ @vlad-terin
 /extensions/drug-label/ @vlad-terin
 /extensions/email-setup/ @vlad-terin
 /extensions/email-subject/ @vlad-terin
@@ -46,6 +48,7 @@
 /extensions/iconify/ @vlad-terin
 /extensions/inflation/ @vlad-terin
 /extensions/ip-info/ @vlad-terin
+/extensions/isbn-lookup/ @vlad-terin
 /extensions/lab-math/ @vlad-terin
 /extensions/legal-terms/ @vlad-terin
 /extensions/license-text/ @vlad-terin
@@ -63,6 +66,7 @@
 /extensions/obsidian/ @vlad-terin
 /extensions/options-pricing/ @vlad-terin
 /extensions/payment-fees/ @vlad-terin
+/extensions/percent-change/ @vlad-terin
 /extensions/pet-age/ @vlad-terin
 /extensions/portfolio-math/ @vlad-terin
 /extensions/position-size/ @vlad-terin
@@ -99,3 +103,4 @@
 /extensions/whois/ @vlad-terin
 /extensions/wikipedia/ @vlad-terin
 /extensions/world-clock/ @vlad-terin
+/extensions/writing-math/ @vlad-terin

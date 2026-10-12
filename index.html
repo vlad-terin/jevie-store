@@ -6,7 +6,7 @@ h1{margin:0 0 4px}header p{color:var(--faint);margin:0 0 24px}input{width:100%;b
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
 h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4px 0}.open{display:inline-block;margin-top:6px;padding:6px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
 #shared,#card{display:none;margin-bottom:20px}#shared.on,#card.on{display:block}#card ul{margin:8px 0;padding-left:18px}</style></head><body><main>
-<header><h1>Jevie extensions</h1><p>99 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
+<header><h1>Jevie extensions</h1><p>104 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
 <article id="shared"><h2>An extension shared with you</h2><p class="meta" id="shared-source"></p><a class="open" id="shared-open" href="#">Open in Jevie</a></article>
 <article id="card"><p class="meta" id="card-label"></p><h2 id="card-summary"></h2><ul id="card-shown"></ul><p class="say" id="card-text"></p><a class="open" id="card-need" href="#" style="display:none;margin-right:6px"></a><a class="open" id="card-open" href="#">Open in Jevie</a></article>
 <input id="q" placeholder="Search extensions" autocomplete="off"><div class="grid"><article id="budget-503020"><h2>50/30/20 Budget</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
@@ -63,6 +63,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="country"><h2>Country</h2><p class="meta">Documentation · by vlad-terin · v1.0.0 · official</p>
 <p>A country at a glance as a card while you type: its flag, capital, region, languages, currencies, calling code and time zones.</p><p class="say">“country japan” · “country brazil”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Country%20extension">Open in Jevie</a></article>
+<article id="court-deadline"><h2>Court Deadline</h2><p class="meta">Productivity · Documentation · by vlad-terin · v1.0.0 · official</p>
+<p>A deadline counted as courts count it, as a card while you type: N days from a trigger date, moved to the next business day when it lands on a weekend or US federal holiday.</p><p class="say">“deadline 21 days from oct 1” · “court deadline 30 days from dec 1”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Court%20Deadline%20extension">Open in Jevie</a></article>
 <article id="css-clamp"><h2>CSS Clamp</h2><p class="meta">Developer Tools · Design Tools · by vlad-terin · v1.0.0 · official</p>
 <p>A fluid CSS size as a card while you type: the clamp() that grows from a minimum at one screen width to a maximum at another - and px to vw.</p><p class="say">“clamp 16px 24px 320 1280” · “24px to vw at 1440”</p>
 <a class="open" href="jevie://ask?q=install%20the%20CSS%20Clamp%20extension">Open in Jevie</a></article>
@@ -78,6 +81,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="docker-containers"><h2>Docker</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
 <p>Docker containers - what is running, their logs - with stop, restart and start on each row. A port of Raycast&#39;s Docker extension.</p><p class="say">“docker containers” · “containers running” · “docker containers postgres”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Docker%20extension">Open in Jevie</a></article>
+<article id="doi-citation"><h2>DOI Citation</h2><p class="meta">Documentation · Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>A paper&#39;s citation from its DOI, as a card while you type - APA, MLA, Chicago, Harvard, IEEE, Vancouver or BibTeX - formatted by doi.org.</p><p class="say">“cite 10.1038/nature12373” · “cite 10.1038/nature12373 bibtex”</p>
+<a class="open" href="jevie://ask?q=install%20the%20DOI%20Citation%20extension">Open in Jevie</a></article>
 <article id="drug-label"><h2>Drug Label</h2><p class="meta">Documentation · by vlad-terin · v1.0.0 · official</p>
 <p>A medicine&#39;s FDA label at a glance as a card while you type: its brand and generic names, what it is for, how it is taken, and whether it carries a boxed warning.</p><p class="say">“drug ibuprofen” · “drug metformin”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Drug%20Label%20extension">Open in Jevie</a></article>
@@ -144,6 +150,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="ip-info"><h2>IP Info</h2><p class="meta">Developer Tools · Web · by vlad-terin · v1.0.0 · official</p>
 <p>Where an IP address is and whose network it belongs to, as a card while you type - from ipwho.is.</p><p class="say">“ip 8.8.8.8” · “ip 1.1.1.1”</p>
 <a class="open" href="jevie://ask?q=install%20the%20IP%20Info%20extension">Open in Jevie</a></article>
+<article id="isbn-lookup"><h2>ISBN Lookup</h2><p class="meta">Documentation · by vlad-terin · v1.0.0 · official</p>
+<p>A book from its ISBN as a card while you type: title, authors, publisher, year and pages - from Open Library - and its citation.</p><p class="say">“isbn 9780262033848” · “isbn 0-262-03384-4”</p>
+<a class="open" href="jevie://ask?q=install%20the%20ISBN%20Lookup%20extension">Open in Jevie</a></article>
 <article id="lab-math"><h2>Lab Math</h2><p class="meta">Productivity · Documentation · by vlad-terin · v1.0.0 · official</p>
 <p>Bench sums as cards while you type: a dilution by C1V1 = C2V2, the mass for a molar solution, and a stock&#39;s molarity from a percentage.</p><p class="say">“dilution 10 m to 1 m 50 ml” · “molarity 0.5 m 250 ml mw 58.44”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Lab%20Math%20extension">Open in Jevie</a></article>
@@ -198,6 +207,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="payment-fees"><h2>Payment Fees</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
 <p>What you keep after a payment processor&#39;s fee, as a card while you type - and what to charge to keep a round amount. Stripe&#39;s standard rate, or your own.</p><p class="say">“stripe fee 100” · “fee 250 at 3.49% + 0.49”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Payment%20Fees%20extension">Open in Jevie</a></article>
+<article id="percent-change"><h2>Percent Change</h2><p class="meta">Productivity · Finance · by vlad-terin · v1.0.0 · official</p>
+<p>The percentage change between two numbers as a card while you type - increase or decrease, and the difference - plus percentage points between two rates.</p><p class="say">“percent change 120 to 150” · “change 4.5% to 5.25%”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Percent%20Change%20extension">Open in Jevie</a></article>
 <article id="pet-age"><h2>Pet Age</h2><p class="meta">Fun · by vlad-terin · v1.0.0 · official</p>
 <p>A dog&#39;s or a cat&#39;s age in human years, as a card while you type - by the vets&#39; rule of thumb, and for dogs the 2019 epigenetic-clock formula too.</p><p class="say">“dog age 5” · “cat age 8”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Pet%20Age%20extension">Open in Jevie</a></article>
@@ -305,7 +317,10 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <a class="open" href="jevie://ask?q=install%20the%20Wikipedia%20extension">Open in Jevie</a></article>
 <article id="world-clock"><h2>World Clock</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>The time anywhere - &quot;time in tokyo&quot;, a city, a country, a timezone - and a world clock of the usual places. A port of Raycast&#39;s World Clock.</p><p class="say">“time in tokyo” · “world clock”</p>
-<a class="open" href="jevie://ask?q=install%20the%20World%20Clock%20extension">Open in Jevie</a></article></div></main>
+<a class="open" href="jevie://ask?q=install%20the%20World%20Clock%20extension">Open in Jevie</a></article>
+<article id="writing-math"><h2>Writing Math</h2><p class="meta">Productivity · Documentation · by vlad-terin · v1.0.0 · official</p>
+<p>A writer&#39;s sums as cards while you type: how many pages a word count makes, and what a translation or a piece costs at a rate per word.</p><p class="say">“pages 2500 words” · “translation 2500 words at 0.12”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Writing%20Math%20extension">Open in Jevie</a></article></div></main>
 <script>const h=new URLSearchParams(location.hash.slice(1)).get('install');if(h&&/^(?:git|npm):[\w.@:/#-]+$/.test(h)){const s=document.getElementById('shared');s.classList.add('on');document.getElementById('shared-source').textContent=h;document.getElementById('shared-open').href='jevie://ask?q='+encodeURIComponent('install extension '+h)}
 const c=new URLSearchParams(location.hash.slice(1)).get('card');if(c&&/^[\w.-]+\/[\w.-]+\/[0-9a-f]{7,40}\/cards\/[\w.-]+\.json$/.test(c)){fetch('https://raw.githubusercontent.com/'+c).then(r=>r.json()).then(k=>{const el=id=>document.getElementById(id);el('card').classList.add('on');el('card-label').textContent=(k.label||'Card')+' · shared '+(k.shared||'');el('card-summary').textContent=k.summary||k.label||'';for(const t of (k.shown||[]).slice(0,12)){const li=document.createElement('li');li.textContent=t;el('card-shown').appendChild(li)}el('card-text').textContent='Its words: “'+(k.text||'')+'”';el('card-open').href='jevie://ask?q='+encodeURIComponent(k.text||'');if(k.extension){const n=el('card-need');n.style.display='inline-block';n.textContent='Install '+k.extension+' first';n.href='jevie://ask?q='+encodeURIComponent('install the '+k.extension+' extension')}}).catch(()=>{})}
 document.getElementById('q').addEventListener('input',e=>{const w=e.target.value.toLowerCase();for(const a of document.querySelectorAll('.grid article'))a.style.display=a.textContent.toLowerCase().includes(w)?'':'none'})</script></body></html>
