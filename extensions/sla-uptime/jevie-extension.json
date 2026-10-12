@@ -1,0 +1,23 @@
+{
+  "id": "sla-uptime",
+  "title": "SLA Uptime",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "What an uptime promise allows in downtime, as a card while you type - per year, month, week and day - and what an outage did to this month's uptime.",
+  "entry": "index.mjs",
+  "categories": [
+    "Developer Tools"
+  ],
+  "icon": "server.rack",
+  "author": "vlad-terin",
+  "topics": [
+    "sla",
+    "uptime",
+    "nines",
+    "downtime"
+  ],
+  "examples": [
+    "99.9% uptime",
+    "downtime 43 minutes this month"
+  ]
+}

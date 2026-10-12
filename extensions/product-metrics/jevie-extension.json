@@ -1,0 +1,23 @@
+{
+  "id": "product-metrics",
+  "title": "Product Metrics",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "A product manager's numbers as cards while you type: RICE scores, NPS, churn and retention, and a sprint's capacity.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "chart.bar.xaxis.ascending",
+  "author": "vlad-terin",
+  "topics": [
+    "rice score",
+    "nps",
+    "churn",
+    "sprint capacity"
+  ],
+  "examples": [
+    "rice reach 2000 impact 2 confidence 80% effort 3",
+    "nps 120 promoters 40 passives 30 detractors"
+  ]
+}

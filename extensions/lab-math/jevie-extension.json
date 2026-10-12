@@ -1,0 +1,23 @@
+{
+  "id": "lab-math",
+  "title": "Lab Math",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Bench sums as cards while you type: a dilution by C1V1 = C2V2, the mass for a molar solution, and a stock's molarity from a percentage.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity",
+    "Documentation"
+  ],
+  "icon": "testtube.2",
+  "author": "vlad-terin",
+  "topics": [
+    "dilution",
+    "molarity",
+    "c1v1"
+  ],
+  "examples": [
+    "dilution 10 m to 1 m 50 ml",
+    "molarity 0.5 m 250 ml mw 58.44"
+  ]
+}

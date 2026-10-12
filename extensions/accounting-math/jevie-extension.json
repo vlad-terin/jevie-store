@@ -1,0 +1,23 @@
+{
+  "id": "accounting-math",
+  "title": "Accounting Math",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "VAT and sales tax in and out of a price, and depreciation schedules - straight-line and double-declining - as cards while you type.",
+  "entry": "index.mjs",
+  "categories": [
+    "Finance"
+  ],
+  "icon": "doc.plaintext",
+  "author": "vlad-terin",
+  "topics": [
+    "vat",
+    "sales tax",
+    "depreciation"
+  ],
+  "examples": [
+    "vat 20% on 100",
+    "remove vat 20% from 120",
+    "depreciation 50000 over 5 years"
+  ]
+}
