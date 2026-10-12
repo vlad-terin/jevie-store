@@ -6,7 +6,7 @@ h1{margin:0 0 4px}header p{color:var(--faint);margin:0 0 24px}input{width:100%;b
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
 h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4px 0}.open{display:inline-block;margin-top:6px;padding:6px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
 #shared,#card{display:none;margin-bottom:20px}#shared.on,#card.on{display:block}#card ul{margin:8px 0;padding-left:18px}</style></head><body><main>
-<header><h1>Jevie extensions</h1><p>51 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
+<header><h1>Jevie extensions</h1><p>54 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
 <article id="shared"><h2>An extension shared with you</h2><p class="meta" id="shared-source"></p><a class="open" id="shared-open" href="#">Open in Jevie</a></article>
 <article id="card"><p class="meta" id="card-label"></p><h2 id="card-summary"></h2><ul id="card-shown"></ul><p class="say" id="card-text"></p><a class="open" id="card-need" href="#" style="display:none;margin-right:6px"></a><a class="open" id="card-open" href="#">Open in Jevie</a></article>
 <input id="q" placeholder="Search extensions" autocomplete="off"><div class="grid"><article id="ab-test"><h2>A/B Test</h2><p class="meta">Productivity · Data · by vlad-terin · v1.0.0 · official</p>
@@ -39,6 +39,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="clinical-calculators"><h2>Clinical Calculators</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>BMI with body surface area, a due date from the last period, and creatinine clearance (Cockcroft-Gault), as cards while you type - worked out on your Mac.</p><p class="say">“bmi 180 cm 75 kg” · “due date lmp 2026-03-01” · “crcl 65 years 70 kg creatinine 1.2 male”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Clinical%20Calculators%20extension">Open in Jevie</a></article>
+<article id="compound-interest"><h2>Compound Interest</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
+<p>What savings or an investment grows to, as a card while you type: a lump sum, monthly saving, or both - with how much is interest.</p><p class="say">“save 500 a month at 7% for 10 years” · “compound 10000 at 5% for 20 years”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Compound%20Interest%20extension">Open in Jevie</a></article>
 <article id="country"><h2>Country</h2><p class="meta">Documentation · by vlad-terin · v1.0.0 · official</p>
 <p>A country at a glance as a card while you type: its flag, capital, region, languages, currencies, calling code and time zones.</p><p class="say">“country japan” · “country brazil”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Country%20extension">Open in Jevie</a></article>
@@ -51,6 +54,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="drug-label"><h2>Drug Label</h2><p class="meta">Documentation · by vlad-terin · v1.0.0 · official</p>
 <p>A medicine&#39;s FDA label at a glance as a card while you type: its brand and generic names, what it is for, how it is taken, and whether it carries a boxed warning.</p><p class="say">“drug ibuprofen” · “drug metformin”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Drug%20Label%20extension">Open in Jevie</a></article>
+<article id="email-setup"><h2>Email Setup</h2><p class="meta">Communication · Security · by vlad-terin · v1.0.0 · official</p>
+<p>Who runs a domain&#39;s email and whether it is set up to be trusted, as a card while you type: the provider, SPF, DMARC and DKIM.</p><p class="say">“email setup github.com” · “dmarc stripe.com”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Email%20Setup%20extension">Open in Jevie</a></article>
 <article id="email-subject"><h2>Email Subject</h2><p class="meta">Communication · Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>How an email subject line will land, as a card while you type: its length on a phone, spam-trigger words, shouting, emoji and the preview.</p><p class="say">“subject line Last chance: 50% off ends tonight” · “email subject Your October update”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Email%20Subject%20extension">Open in Jevie</a></article>
@@ -84,6 +90,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="iconify"><h2>Iconify</h2><p class="meta">Design Tools · by vlad-terin · v1.0.0 · official</p>
 <p>Search 200,000 open icons and copy their SVG - a port of Raycast&#39;s Iconify extension.</p><p class="say">“iconify home” · “iconify arrow right”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Iconify%20extension">Open in Jevie</a></article>
+<article id="inflation"><h2>Inflation</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
+<p>What money from one year is worth in another, as a card while you type - from the US consumer price index (CPI-U, FRED).</p><p class="say">“inflation $100 in 1990” · “$50 in 1975 dollars”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Inflation%20extension">Open in Jevie</a></article>
 <article id="ip-info"><h2>IP Info</h2><p class="meta">Developer Tools · Web · by vlad-terin · v1.0.0 · official</p>
 <p>Where an IP address is and whose network it belongs to, as a card while you type - from ipwho.is.</p><p class="say">“ip 8.8.8.8” · “ip 1.1.1.1”</p>
 <a class="open" href="jevie://ask?q=install%20the%20IP%20Info%20extension">Open in Jevie</a></article>
