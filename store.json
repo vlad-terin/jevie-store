@@ -1,5 +1,5 @@
 {
-  "built": "2026-10-12T05:56:17.000Z",
+  "built": "2026-10-12T06:01:43.471Z",
   "jevie": "0.0.0",
   "extensions": [
     {
@@ -39,7 +39,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/ab-test",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/ab-test",
       "trust": "official"
     },
     {
@@ -82,7 +82,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/ad-metrics",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/ad-metrics",
       "trust": "official"
     },
     {
@@ -124,7 +124,46 @@
           "First version: a card, from Open-Meteo."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/air-quality",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/air-quality",
+      "trust": "official"
+    },
+    {
+      "id": "bond-yield",
+      "title": "Bond Yield",
+      "description": "A bond's current yield and yield to maturity from its price, as a card while you type - and the price from a yield.",
+      "version": "1.0.0",
+      "categories": [
+        "Finance"
+      ],
+      "icon": "doc.text.below.ecg",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "bond yield",
+        "ytm",
+        "yield to maturity"
+      ],
+      "examples": [
+        "bond price 950 face 1000 coupon 5% 10 years",
+        "bond yield 6% face 1000 coupon 5% 10 years"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Bond Yield\n\nA bond's current yield and yield to maturity from its price, as a card while you type - and the price from a yield.\n\n## Type\n\n- “bond price 950 face 1000 coupon 5% 10 years”\n- “bond yield 6% face 1000 coupon 5% 10 years”\n\nCoupons are paid twice a year, as US bonds pay. A price gives the yield to maturity and the current yield; a yield gives the price. Face is 1000 unless you name it. ↵ copies the line.\n\n## Reaches\n\nNothing: it is worked out on your Mac. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/bond-yield",
       "trust": "official"
     },
     {
@@ -165,7 +204,7 @@
           "First version: a card, sized by bundlephobia."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/bundle-size",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/bundle-size",
       "trust": "official"
     },
     {
@@ -205,7 +244,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/business-days",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/business-days",
       "trust": "official"
     },
     {
@@ -246,7 +285,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/business-math",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/business-math",
       "trust": "official"
     },
     {
@@ -290,7 +329,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/calls",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/calls",
       "trust": "official"
     },
     {
@@ -331,7 +370,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/can-i-use",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/can-i-use",
       "trust": "official"
     },
     {
@@ -373,7 +412,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/cheatsheets",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/cheatsheets",
       "trust": "official"
     },
     {
@@ -414,7 +453,51 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/clinical-calculators",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/clinical-calculators",
+      "trust": "official"
+    },
+    {
+      "id": "company-financials",
+      "title": "Company Financials",
+      "description": "A US-listed company's latest annual numbers, as a card while you type: revenue and its growth, net income and margin, EPS and cash - from its SEC filings (EDGAR).",
+      "version": "1.0.0",
+      "categories": [
+        "Finance"
+      ],
+      "icon": "building.columns",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "financials",
+        "revenue",
+        "earnings",
+        "10-k",
+        "sec"
+      ],
+      "examples": [
+        "financials aapl",
+        "revenue msft"
+      ],
+      "settings": 1,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "data.sec.gov",
+          "www.sec.gov"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Company Financials\n\nA US-listed company's latest annual numbers, as a card while you type: revenue and its growth, net income and margin, EPS and cash - from its SEC filings (EDGAR).\n\n## Type\n\n- “financials aapl”\n- “revenue msft”\n- “earnings nvda”\n- “financials apple”\n\nIt reads the company's XBRL facts from its 10-K filings: revenue and its growth over the year before, net income and margin, diluted EPS, operating income and cash. A ticker or a company's name finds it in SEC's list. SEC asks every program to identify itself, so the email you set in “settings for company-financials” goes in the request to sec.gov, and nowhere else. ↵ copies the line.\n\n## Reaches\n\nwww.sec.gov and data.sec.gov (your contact email in the User-Agent, as SEC requires). It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/company-financials",
       "trust": "official"
     },
     {
@@ -453,7 +536,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/compound-interest",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/compound-interest",
       "trust": "official"
     },
     {
@@ -494,7 +577,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/country",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/country",
       "trust": "official"
     },
     {
@@ -534,7 +617,7 @@
           "First version: a card, from the Mac's resolver."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/dns-lookup",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/dns-lookup",
       "trust": "official"
     },
     {
@@ -575,7 +658,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/docker-containers",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/docker-containers",
       "trust": "official"
     },
     {
@@ -617,7 +700,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/drug-label",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/drug-label",
       "trust": "official"
     },
     {
@@ -658,7 +741,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/email-setup",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/email-setup",
       "trust": "official"
     },
     {
@@ -698,7 +781,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/email-subject",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/email-subject",
       "trust": "official"
     },
     {
@@ -741,7 +824,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/end-of-life",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/end-of-life",
       "trust": "official"
     },
     {
@@ -783,7 +866,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/f1-standings",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/f1-standings",
       "trust": "official"
     },
     {
@@ -830,7 +913,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/feeds",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/feeds",
       "trust": "official"
     },
     {
@@ -871,7 +954,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/github",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/github",
       "trust": "official"
     },
     {
@@ -913,7 +996,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/github-repo",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/github-repo",
       "trust": "official"
     },
     {
@@ -954,7 +1037,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/hacker-news",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/hacker-news",
       "trust": "official"
     },
     {
@@ -998,7 +1081,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/homebrew",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/homebrew",
       "trust": "official"
     },
     {
@@ -1040,7 +1123,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/http-headers",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/http-headers",
       "trust": "official"
     },
     {
@@ -1081,7 +1164,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/icd-10",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/icd-10",
       "trust": "official"
     },
     {
@@ -1121,7 +1204,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/iconify",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/iconify",
       "trust": "official"
     },
     {
@@ -1162,7 +1245,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/inflation",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/inflation",
       "trust": "official"
     },
     {
@@ -1204,7 +1287,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/ip-info",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/ip-info",
       "trust": "official"
     },
     {
@@ -1244,7 +1327,7 @@
           "With no API key yet it asks for one (↵ opens its settings), rather than saying Linear refused it."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/linear",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/linear",
       "trust": "official"
     },
     {
@@ -1287,7 +1370,90 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/link-preview",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/link-preview",
+      "trust": "official"
+    },
+    {
+      "id": "loan-payoff",
+      "title": "Loan Payoff",
+      "description": "What paying extra on a mortgage or loan saves, as a card while you type: the interest saved and how much sooner it is paid off.",
+      "version": "1.0.0",
+      "categories": [
+        "Finance"
+      ],
+      "icon": "house.and.flag",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "extra payment",
+        "loan payoff",
+        "mortgage payoff"
+      ],
+      "examples": [
+        "mortgage 400k 6.5% 30 years extra 500",
+        "loan 25k 7% 5 years extra 100"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Loan Payoff\n\nWhat paying extra on a mortgage or loan saves, as a card while you type: the interest saved and how much sooner it is paid off.\n\n## Type\n\n- “mortgage 400k 6.5% 30 years extra 500”\n- “loan 25k 7% 5 years extra 100 a month”\n\nIt works out the monthly payment, then pays it plus the extra every month until the loan is gone, and compares that with paying the minimum. Jevie's own loan card answers the payment alone (“mortgage 400k 6.5% 30 years”). ↵ copies the line.\n\n## Reaches\n\nNothing: it is worked out on your Mac. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/loan-payoff",
+      "trust": "official"
+    },
+    {
+      "id": "market-rates",
+      "title": "Market Rates",
+      "description": "The rates and numbers markets watch, as a card while you type: Treasury yields and the curve, the Fed funds rate, SOFR, 30-year mortgages, inflation and unemployment - from FRED.",
+      "version": "1.0.0",
+      "categories": [
+        "Finance",
+        "News"
+      ],
+      "icon": "percent",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "treasury yield",
+        "fed funds rate",
+        "mortgage rates",
+        "yield curve",
+        "unemployment"
+      ],
+      "examples": [
+        "10 year treasury",
+        "yield curve"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "fred.stlouisfed.org"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Market Rates\n\nThe rates and numbers markets watch, as a card while you type: Treasury yields and the curve, the Fed funds rate, SOFR, 30-year mortgages, inflation and unemployment - from FRED.\n\n## Type\n\n- “10 year treasury”\n- “2 year treasury”\n- “yield curve”\n- “fed funds rate”\n- “sofr”\n- “mortgage rates”\n- “us inflation rate”\n- “unemployment rate”\n- “rates”\n\nEach card shows the latest value, its change over a week and a year, and the date. The yield curve card flags an inversion (10-year below 2-year). Inflation is CPI over twelve months. All from FRED, no key. ↵ copies the line.\n\n## Reaches\n\nfred.stlouisfed.org. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/market-rates",
       "trust": "official"
     },
     {
@@ -1330,7 +1496,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/mdn",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/mdn",
       "trust": "official"
     },
     {
@@ -1369,7 +1535,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/moon-phase",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/moon-phase",
       "trust": "official"
     },
     {
@@ -1409,7 +1575,47 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/npm-search",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/npm-search",
+      "trust": "official"
+    },
+    {
+      "id": "npv-irr",
+      "title": "NPV & IRR",
+      "description": "Net present value and internal rate of return of cash flows, as cards while you type - plus payback period - for an investment, a project or a deal.",
+      "version": "1.0.0",
+      "categories": [
+        "Finance"
+      ],
+      "icon": "function",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "npv",
+        "irr",
+        "payback period",
+        "discounted cash flow"
+      ],
+      "examples": [
+        "npv 8% -10000 3000 4000 5000",
+        "irr -10000 3000 4000 5000"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# NPV & IRR\n\nNet present value and internal rate of return of cash flows, as cards while you type - plus payback period - for an investment, a project or a deal.\n\n## Type\n\n- “npv 8% -10000 3000 4000 5000”\n- “irr -10000 3000 4000 5000”\n\nThe first cash flow is today, usually the outlay as a negative; each one after it is a period later. The NPV card gives the IRR and payback period too. ↵ copies the line.\n\n## Reaches\n\nNothing: it is worked out on your Mac. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/npv-irr",
       "trust": "official"
     },
     {
@@ -1447,7 +1653,85 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/obsidian",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/obsidian",
+      "trust": "official"
+    },
+    {
+      "id": "options-pricing",
+      "title": "Options Pricing",
+      "description": "An option's fair price and Greeks by Black-Scholes, as a card while you type - calls and puts, with delta, gamma, theta, vega and the breakeven.",
+      "version": "1.0.0",
+      "categories": [
+        "Finance"
+      ],
+      "icon": "chart.xyaxis.line",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "black scholes",
+        "option price",
+        "greeks"
+      ],
+      "examples": [
+        "call 100 strike 105 30 days 25% vol",
+        "put 50 strike 45 60 days 40% vol"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Options Pricing\n\nAn option's fair price and Greeks by Black-Scholes, as a card while you type - calls and puts, with delta, gamma, theta, vega and the breakeven.\n\n## Type\n\n- “call 100 strike 105 30 days 25% vol”\n- “put 50 strike 45 60 days 40% vol 4% rate”\n\nBlack-Scholes for a European option with no dividends. The rate is 4% unless you name one. Theta is a day's decay, vega the change per point of volatility. A model price, not a market quote. ↵ copies the line.\n\n## Reaches\n\nNothing: it is worked out on your Mac. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/options-pricing",
+      "trust": "official"
+    },
+    {
+      "id": "position-size",
+      "title": "Position Size",
+      "description": "How many shares to buy so a stop-loss risks only what you chose, as a card while you type - with the position's size and the reward-to-risk.",
+      "version": "1.0.0",
+      "categories": [
+        "Finance"
+      ],
+      "icon": "scope",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "position size",
+        "risk per trade",
+        "stop loss"
+      ],
+      "examples": [
+        "position size account 10000 risk 1% entry 50 stop 48",
+        "position size 25k risk 2% entry 120 stop 114 target 135"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Position Size\n\nHow many shares to buy so a stop-loss risks only what you chose, as a card while you type - with the position's size and the reward-to-risk.\n\n## Type\n\n- “position size account 10000 risk 1% entry 50 stop 48”\n- “position size 25k risk 2% entry 120 stop 114 target 135”\n\nShares = account × risk ÷ the distance from entry to stop, never more than the account can buy. A stop above the entry is a short. A target adds the reward-to-risk. ↵ copies the share count.\n\n## Reaches\n\nNothing: it is worked out on your Mac. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/position-size",
       "trust": "official"
     },
     {
@@ -1489,7 +1773,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/post-length",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/post-length",
       "trust": "official"
     },
     {
@@ -1530,7 +1814,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/pypi",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/pypi",
       "trust": "official"
     },
     {
@@ -1572,7 +1856,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/readability",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/readability",
       "trust": "official"
     },
     {
@@ -1612,7 +1896,46 @@
           "A list asked for again within ten minutes comes from what was kept, and when Reddit limits requests the kept list is shown with its age instead of an error."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/reddit",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/reddit",
+      "trust": "official"
+    },
+    {
+      "id": "retirement",
+      "title": "Retirement",
+      "description": "Your financial-independence number and what savings can pay out, as cards while you type - the 4% rule, and how long a portfolio lasts.",
+      "version": "1.0.0",
+      "categories": [
+        "Finance"
+      ],
+      "icon": "figure.walk.motion",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "fire number",
+        "retirement",
+        "4% rule"
+      ],
+      "examples": [
+        "fire 60k expenses",
+        "retire with 1.5m at 4%"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Retirement\n\nYour financial-independence number and what savings can pay out, as cards while you type - the 4% rule, and how long a portfolio lasts.\n\n## Type\n\n- “fire 60k expenses”\n- “fire 60k expenses 200k saved saving 3k a month at 7%”\n- “retire with 1.5m at 4%”\n\nThe FIRE number is 25 times yearly spending (the 4% rule). With savings and a monthly amount, it also says how many years until you reach it (7% a year unless you name a rate). The withdrawal card says what a pot pays at a rate. Before tax and inflation. ↵ copies the line.\n\n## Reaches\n\nNothing: it is worked out on your Mac. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/retirement",
       "trust": "official"
     },
     {
@@ -1654,7 +1977,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/rhymes",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/rhymes",
       "trust": "official"
     },
     {
@@ -1693,7 +2016,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/semver",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/semver",
       "trust": "official"
     },
     {
@@ -1733,7 +2056,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/seo-check",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/seo-check",
       "trust": "official"
     },
     {
@@ -1773,7 +2096,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/service-status",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/service-status",
       "trust": "official"
     },
     {
@@ -1813,7 +2136,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/ssl-certificate",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/ssl-certificate",
       "trust": "official"
     },
     {
@@ -1853,7 +2176,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/subnet",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/subnet",
       "trust": "official"
     },
     {
@@ -1895,7 +2218,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/sun-times",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/sun-times",
       "trust": "official"
     },
     {
@@ -1934,7 +2257,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/svgl",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/svgl",
       "trust": "official"
     },
     {
@@ -1977,7 +2300,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/tech-stack",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/tech-stack",
       "trust": "official"
     },
     {
@@ -2017,7 +2340,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/tldr",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/tldr",
       "trust": "official"
     },
     {
@@ -2057,7 +2380,7 @@
           "“urban yeet”: the word after “urban” alone, as Raycast has it."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/urban-dictionary",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/urban-dictionary",
       "trust": "official"
     },
     {
@@ -2099,7 +2422,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/utm-builder",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/utm-builder",
       "trust": "official"
     },
     {
@@ -2143,7 +2466,7 @@
           "Is a name free: “is jevie.ai available”, “domain jevie” for six endings at once."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/whois",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/whois",
       "trust": "official"
     },
     {
@@ -2184,7 +2507,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/wikipedia",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/wikipedia",
       "trust": "official"
     },
     {
@@ -2221,7 +2544,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b28690846f2e0eb2b10ff434512c9c495f445e03#extensions/world-clock",
+      "source": "git:github.com/vlad-terin/jevie-store@380234ab75d18b5b8b42d69bffface50c56bb0d0#extensions/world-clock",
       "trust": "official"
     }
   ],

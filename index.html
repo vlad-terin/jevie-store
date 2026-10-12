@@ -6,7 +6,7 @@ h1{margin:0 0 4px}header p{color:var(--faint);margin:0 0 24px}input{width:100%;b
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
 h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4px 0}.open{display:inline-block;margin-top:6px;padding:6px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
 #shared,#card{display:none;margin-bottom:20px}#shared.on,#card.on{display:block}#card ul{margin:8px 0;padding-left:18px}</style></head><body><main>
-<header><h1>Jevie extensions</h1><p>54 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
+<header><h1>Jevie extensions</h1><p>62 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
 <article id="shared"><h2>An extension shared with you</h2><p class="meta" id="shared-source"></p><a class="open" id="shared-open" href="#">Open in Jevie</a></article>
 <article id="card"><p class="meta" id="card-label"></p><h2 id="card-summary"></h2><ul id="card-shown"></ul><p class="say" id="card-text"></p><a class="open" id="card-need" href="#" style="display:none;margin-right:6px"></a><a class="open" id="card-open" href="#">Open in Jevie</a></article>
 <input id="q" placeholder="Search extensions" autocomplete="off"><div class="grid"><article id="ab-test"><h2>A/B Test</h2><p class="meta">Productivity · Data · by vlad-terin · v1.0.0 · official</p>
@@ -18,6 +18,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="air-quality"><h2>Air Quality</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>The air anywhere as a card while you type: the US AQI with its band and the pollutants behind it, from Open-Meteo.</p><p class="say">“air quality berlin” · “aqi delhi”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Air%20Quality%20extension">Open in Jevie</a></article>
+<article id="bond-yield"><h2>Bond Yield</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
+<p>A bond&#39;s current yield and yield to maturity from its price, as a card while you type - and the price from a yield.</p><p class="say">“bond price 950 face 1000 coupon 5% 10 years” · “bond yield 6% face 1000 coupon 5% 10 years”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Bond%20Yield%20extension">Open in Jevie</a></article>
 <article id="bundle-size"><h2>Bundle Size</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
 <p>What an npm package adds to a web page, minified and gzipped, as a card while you type - from bundlephobia.</p><p class="say">“bundle size zod” · “bundle size react-dom”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Bundle%20Size%20extension">Open in Jevie</a></article>
@@ -39,6 +42,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="clinical-calculators"><h2>Clinical Calculators</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>BMI with body surface area, a due date from the last period, and creatinine clearance (Cockcroft-Gault), as cards while you type - worked out on your Mac.</p><p class="say">“bmi 180 cm 75 kg” · “due date lmp 2026-03-01” · “crcl 65 years 70 kg creatinine 1.2 male”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Clinical%20Calculators%20extension">Open in Jevie</a></article>
+<article id="company-financials"><h2>Company Financials</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
+<p>A US-listed company&#39;s latest annual numbers, as a card while you type: revenue and its growth, net income and margin, EPS and cash - from its SEC filings (EDGAR).</p><p class="say">“financials aapl” · “revenue msft”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Company%20Financials%20extension">Open in Jevie</a></article>
 <article id="compound-interest"><h2>Compound Interest</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
 <p>What savings or an investment grows to, as a card while you type: a lump sum, monthly saving, or both - with how much is interest.</p><p class="say">“save 500 a month at 7% for 10 years” · “compound 10000 at 5% for 20 years”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Compound%20Interest%20extension">Open in Jevie</a></article>
@@ -102,6 +108,12 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="link-preview"><h2>Link Preview</h2><p class="meta">Web · Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>How a link will look when shared: its Open Graph title, description, image and card type, as a card while you type - and the tags it is missing.</p><p class="say">“og github.com” · “preview https://vercel.com”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Link%20Preview%20extension">Open in Jevie</a></article>
+<article id="loan-payoff"><h2>Loan Payoff</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
+<p>What paying extra on a mortgage or loan saves, as a card while you type: the interest saved and how much sooner it is paid off.</p><p class="say">“mortgage 400k 6.5% 30 years extra 500” · “loan 25k 7% 5 years extra 100”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Loan%20Payoff%20extension">Open in Jevie</a></article>
+<article id="market-rates"><h2>Market Rates</h2><p class="meta">Finance · News · by vlad-terin · v1.0.0 · official</p>
+<p>The rates and numbers markets watch, as a card while you type: Treasury yields and the curve, the Fed funds rate, SOFR, 30-year mortgages, inflation and unemployment - from FRED.</p><p class="say">“10 year treasury” · “yield curve”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Market%20Rates%20extension">Open in Jevie</a></article>
 <article id="mdn"><h2>MDN</h2><p class="meta">Developer Tools · Documentation · by vlad-terin · v1.0.0 · official</p>
 <p>MDN Web Docs search - a port of Raycast&#39;s MDN extension.</p><p class="say">“mdn flexbox” · “mdn array map”</p>
 <a class="open" href="jevie://ask?q=install%20the%20MDN%20extension">Open in Jevie</a></article>
@@ -111,9 +123,18 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="npm-search"><h2>npm</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
 <p>npm package search - a port of Raycast&#39;s npm extension.</p><p class="say">“npm package zod” · “npm search date”</p>
 <a class="open" href="jevie://ask?q=install%20the%20npm%20extension">Open in Jevie</a></article>
+<article id="npv-irr"><h2>NPV &amp; IRR</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
+<p>Net present value and internal rate of return of cash flows, as cards while you type - plus payback period - for an investment, a project or a deal.</p><p class="say">“npv 8% -10000 3000 4000 5000” · “irr -10000 3000 4000 5000”</p>
+<a class="open" href="jevie://ask?q=install%20the%20NPV%20%26%20IRR%20extension">Open in Jevie</a></article>
 <article id="obsidian"><h2>Obsidian</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>Search your Obsidian vault and read notes beside the list; return opens the note in Obsidian. Read-only - a lean port of Raycast&#39;s Obsidian extension.</p><p class="say">“obsidian notes” · “obsidian note networking”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Obsidian%20extension">Open in Jevie</a></article>
+<article id="options-pricing"><h2>Options Pricing</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
+<p>An option&#39;s fair price and Greeks by Black-Scholes, as a card while you type - calls and puts, with delta, gamma, theta, vega and the breakeven.</p><p class="say">“call 100 strike 105 30 days 25% vol” · “put 50 strike 45 60 days 40% vol”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Options%20Pricing%20extension">Open in Jevie</a></article>
+<article id="position-size"><h2>Position Size</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
+<p>How many shares to buy so a stop-loss risks only what you chose, as a card while you type - with the position&#39;s size and the reward-to-risk.</p><p class="say">“position size account 10000 risk 1% entry 50 stop 48” · “position size 25k risk 2% entry 120 stop 114 target 135”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Position%20Size%20extension">Open in Jevie</a></article>
 <article id="post-length"><h2>Post Length</h2><p class="meta">Productivity · Communication · by vlad-terin · v1.0.0 · official</p>
 <p>Whether a post fits each platform, as a card while you type: X, LinkedIn, Instagram, Threads, Bluesky, a meta description, an SMS - and how much shows before “see more”.</p><p class="say">“post length Launching our new AI launcher today” · “char limit Launching our new AI launcher today”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Post%20Length%20extension">Open in Jevie</a></article>
@@ -126,6 +147,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="reddit"><h2>Reddit</h2><p class="meta">News · Web · by vlad-terin · v1.1.0 · official</p>
 <p>A subreddit&#39;s hot posts, through Reddit&#39;s public feed - a port of Raycast&#39;s Reddit extension.</p><p class="say">“subreddit programming” · “subreddit macapps top”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Reddit%20extension">Open in Jevie</a></article>
+<article id="retirement"><h2>Retirement</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
+<p>Your financial-independence number and what savings can pay out, as cards while you type - the 4% rule, and how long a portfolio lasts.</p><p class="say">“fire 60k expenses” · “retire with 1.5m at 4%”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Retirement%20extension">Open in Jevie</a></article>
 <article id="rhymes"><h2>Rhymes &amp; Synonyms</h2><p class="meta">Fun · Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>Words that rhyme with a word, mean the same, or sound like it, as a card while you type - from Datamuse.</p><p class="say">“rhymes with light” · “synonyms for happy”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Rhymes%20%26%20Synonyms%20extension">Open in Jevie</a></article>

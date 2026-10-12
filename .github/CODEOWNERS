@@ -3,6 +3,7 @@
 /extensions/ab-test/ @vlad-terin
 /extensions/ad-metrics/ @vlad-terin
 /extensions/air-quality/ @vlad-terin
+/extensions/bond-yield/ @vlad-terin
 /extensions/bundle-size/ @vlad-terin
 /extensions/business-days/ @vlad-terin
 /extensions/business-math/ @vlad-terin
@@ -10,6 +11,7 @@
 /extensions/can-i-use/ @vlad-terin
 /extensions/cheatsheets/ @vlad-terin
 /extensions/clinical-calculators/ @vlad-terin
+/extensions/company-financials/ @vlad-terin
 /extensions/compound-interest/ @vlad-terin
 /extensions/country/ @vlad-terin
 /extensions/dns-lookup/ @vlad-terin
@@ -31,14 +33,20 @@
 /extensions/ip-info/ @vlad-terin
 /extensions/linear/ @vlad-terin
 /extensions/link-preview/ @vlad-terin
+/extensions/loan-payoff/ @vlad-terin
+/extensions/market-rates/ @vlad-terin
 /extensions/mdn/ @vlad-terin
 /extensions/moon-phase/ @vlad-terin
 /extensions/npm-search/ @vlad-terin
+/extensions/npv-irr/ @vlad-terin
 /extensions/obsidian/ @vlad-terin
+/extensions/options-pricing/ @vlad-terin
+/extensions/position-size/ @vlad-terin
 /extensions/post-length/ @vlad-terin
 /extensions/pypi/ @vlad-terin
 /extensions/readability/ @vlad-terin
 /extensions/reddit/ @vlad-terin
+/extensions/retirement/ @vlad-terin
 /extensions/rhymes/ @vlad-terin
 /extensions/semver/ @vlad-terin
 /extensions/seo-check/ @vlad-terin
