@@ -1,0 +1,23 @@
+{
+  "id": "energy-cost",
+  "title": "Energy Cost",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "What running an appliance costs and how long an EV takes to charge, as cards while you type - kWh, cost a day, a month and a year.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity",
+    "Finance"
+  ],
+  "icon": "bolt",
+  "author": "vlad-terin",
+  "topics": [
+    "electricity cost",
+    "kwh",
+    "ev charging"
+  ],
+  "examples": [
+    "energy 1500w 4 hours at 0.15",
+    "ev charge 75 kwh at 11 kw"
+  ]
+}

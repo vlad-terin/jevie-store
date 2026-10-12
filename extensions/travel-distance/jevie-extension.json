@@ -1,0 +1,22 @@
+{
+  "id": "travel-distance",
+  "title": "Travel Distance",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "How far apart two places are and roughly how long the flight takes, as a card while you type - the great-circle distance in kilometres and miles.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "airplane.departure",
+  "author": "vlad-terin",
+  "topics": [
+    "distance between cities",
+    "flight time",
+    "great circle"
+  ],
+  "examples": [
+    "distance london to tokyo",
+    "flight time new york to paris"
+  ]
+}
