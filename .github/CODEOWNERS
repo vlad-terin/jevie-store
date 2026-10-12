@@ -17,6 +17,8 @@
 /extensions/company-financials/ @vlad-terin
 /extensions/compound-interest/ @vlad-terin
 /extensions/country/ @vlad-terin
+/extensions/css-clamp/ @vlad-terin
+/extensions/curl-to-fetch/ @vlad-terin
 /extensions/design-math/ @vlad-terin
 /extensions/dns-lookup/ @vlad-terin
 /extensions/docker-containers/ @vlad-terin
@@ -32,6 +34,7 @@
 /extensions/freelance-rate/ @vlad-terin
 /extensions/github/ @vlad-terin
 /extensions/github-repo/ @vlad-terin
+/extensions/gitignore/ @vlad-terin
 /extensions/grade-calculator/ @vlad-terin
 /extensions/hacker-news/ @vlad-terin
 /extensions/home-affordability/ @vlad-terin
@@ -45,6 +48,7 @@
 /extensions/ip-info/ @vlad-terin
 /extensions/lab-math/ @vlad-terin
 /extensions/legal-terms/ @vlad-terin
+/extensions/license-text/ @vlad-terin
 /extensions/linear/ @vlad-terin
 /extensions/link-preview/ @vlad-terin
 /extensions/loan-payoff/ @vlad-terin
@@ -53,6 +57,7 @@
 /extensions/media-math/ @vlad-terin
 /extensions/mime-types/ @vlad-terin
 /extensions/moon-phase/ @vlad-terin
+/extensions/npm-downloads/ @vlad-terin
 /extensions/npm-search/ @vlad-terin
 /extensions/npv-irr/ @vlad-terin
 /extensions/obsidian/ @vlad-terin
