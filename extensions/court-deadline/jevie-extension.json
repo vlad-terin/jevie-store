@@ -1,0 +1,23 @@
+{
+  "id": "court-deadline",
+  "title": "Court Deadline",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "A deadline counted as courts count it, as a card while you type: N days from a trigger date, moved to the next business day when it lands on a weekend or US federal holiday.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity",
+    "Documentation"
+  ],
+  "icon": "building.columns",
+  "author": "vlad-terin",
+  "topics": [
+    "court deadline",
+    "filing deadline",
+    "response deadline"
+  ],
+  "examples": [
+    "deadline 21 days from oct 1",
+    "court deadline 30 days from dec 1"
+  ]
+}

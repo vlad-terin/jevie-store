@@ -1,0 +1,23 @@
+{
+  "id": "writing-math",
+  "title": "Writing Math",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "A writer's sums as cards while you type: how many pages a word count makes, and what a translation or a piece costs at a rate per word.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity",
+    "Documentation"
+  ],
+  "icon": "doc.richtext",
+  "author": "vlad-terin",
+  "topics": [
+    "words to pages",
+    "rate per word",
+    "manuscript length"
+  ],
+  "examples": [
+    "pages 2500 words",
+    "translation 2500 words at 0.12"
+  ]
+}

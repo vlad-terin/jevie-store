@@ -1,0 +1,23 @@
+{
+  "id": "percent-change",
+  "title": "Percent Change",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "The percentage change between two numbers as a card while you type - increase or decrease, and the difference - plus percentage points between two rates.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity",
+    "Finance"
+  ],
+  "icon": "percent",
+  "author": "vlad-terin",
+  "topics": [
+    "percent change",
+    "percentage increase",
+    "percentage points"
+  ],
+  "examples": [
+    "percent change 120 to 150",
+    "change 4.5% to 5.25%"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "doi-citation",
+  "title": "DOI Citation",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "A paper's citation from its DOI, as a card while you type - APA, MLA, Chicago, Harvard, IEEE, Vancouver or BibTeX - formatted by doi.org.",
+  "entry": "index.mjs",
+  "categories": [
+    "Documentation",
+    "Productivity"
+  ],
+  "icon": "quote.bubble",
+  "author": "vlad-terin",
+  "topics": [
+    "cite doi",
+    "citation",
+    "bibtex"
+  ],
+  "examples": [
+    "cite 10.1038/nature12373",
+    "cite 10.1038/nature12373 bibtex"
+  ]
+}
