@@ -1,7 +1,90 @@
 {
-  "built": "2026-10-12T05:38:43.502Z",
+  "built": "2026-10-12T05:53:57.538Z",
   "jevie": "0.0.0",
   "extensions": [
+    {
+      "id": "ab-test",
+      "title": "A/B Test",
+      "description": "Whether an A/B test's difference is real, as a card while you type - the lift, the confidence and the p-value - and how many visitors a test needs.",
+      "version": "1.0.0",
+      "categories": [
+        "Productivity",
+        "Data"
+      ],
+      "icon": "arrow.left.arrow.right.square",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "ab test",
+        "significance",
+        "sample size"
+      ],
+      "examples": [
+        "ab 120/2400 vs 150/2380",
+        "sample size 4% baseline 10% lift"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# A/B Test\n\nWhether an A/B test's difference is real, as a card while you type - the lift, the confidence and the p-value - and how many visitors a test needs.\n\n## Type\n\n- “ab 120/2400 vs 150/2380”\n- “sample size 4% baseline 10% lift”\n- “sample size 4% baseline 1% lift absolute”\n\nThe test is a two-sided z-test on the two conversion rates; 95% confidence (p < 0.05) is called significant. The sample size is per variant, for 95% confidence and 80% power; a lift is relative unless “absolute” follows it. ↵ copies the verdict.\n\n## Reaches\n\nNothing: it is worked out on your Mac. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/ab-test",
+      "trust": "official"
+    },
+    {
+      "id": "ad-metrics",
+      "title": "Ad Metrics",
+      "description": "The marketing numbers, as cards while you type: ROAS, CAC, CTR, CPC, CPM, conversion rate, and customer lifetime value.",
+      "version": "1.0.0",
+      "categories": [
+        "Finance",
+        "Productivity"
+      ],
+      "icon": "chart.bar.xaxis",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "roas",
+        "cac",
+        "ctr",
+        "cpm",
+        "ltv",
+        "conversion rate"
+      ],
+      "examples": [
+        "roas revenue 5000 spend 1200",
+        "ctr 120 clicks 8000 impressions"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Ad Metrics\n\nThe marketing numbers, as cards while you type: ROAS, CAC, CTR, CPC, CPM, conversion rate, and customer lifetime value.\n\n## Type\n\n- “roas revenue 5000 spend 1200”\n- “cac spend 12000 customers 300”\n- “ctr 120 clicks 8000 impressions”\n- “cpm spend 1200 impressions 400k”\n- “conversion 45 of 1200”\n- “ltv 50 a month 24 months 70% margin cac 300”\n\nWords may name each number (spend, revenue, clicks, impressions, customers, margin, months), or they are read in the order shown. Amounts take k, m and b. LTV with a CAC also gives the LTV:CAC ratio (3:1 or better is the usual bar). ↵ copies the answer.\n\n## Reaches\n\nNothing: it is worked out on your Mac. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/ad-metrics",
+      "trust": "official"
+    },
     {
       "id": "air-quality",
       "title": "Air Quality",
@@ -41,7 +124,7 @@
           "First version: a card, from Open-Meteo."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/air-quality",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/air-quality",
       "trust": "official"
     },
     {
@@ -82,7 +165,7 @@
           "First version: a card, sized by bundlephobia."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/bundle-size",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/bundle-size",
       "trust": "official"
     },
     {
@@ -122,7 +205,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/business-days",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/business-days",
       "trust": "official"
     },
     {
@@ -163,7 +246,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/business-math",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/business-math",
       "trust": "official"
     },
     {
@@ -207,7 +290,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/calls",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/calls",
       "trust": "official"
     },
     {
@@ -248,7 +331,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/can-i-use",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/can-i-use",
       "trust": "official"
     },
     {
@@ -290,7 +373,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/cheatsheets",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/cheatsheets",
       "trust": "official"
     },
     {
@@ -331,7 +414,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/clinical-calculators",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/clinical-calculators",
       "trust": "official"
     },
     {
@@ -372,7 +455,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/country",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/country",
       "trust": "official"
     },
     {
@@ -412,7 +495,7 @@
           "First version: a card, from the Mac's resolver."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/dns-lookup",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/dns-lookup",
       "trust": "official"
     },
     {
@@ -453,7 +536,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/docker-containers",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/docker-containers",
       "trust": "official"
     },
     {
@@ -495,7 +578,47 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/drug-label",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/drug-label",
+      "trust": "official"
+    },
+    {
+      "id": "email-subject",
+      "title": "Email Subject",
+      "description": "How an email subject line will land, as a card while you type: its length on a phone, spam-trigger words, shouting, emoji and the preview.",
+      "version": "1.0.0",
+      "categories": [
+        "Communication",
+        "Productivity"
+      ],
+      "icon": "envelope.badge",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "subject line",
+        "email subject",
+        "spam words"
+      ],
+      "examples": [
+        "subject line Last chance: 50% off ends tonight",
+        "email subject Your October update"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Email Subject\n\nHow an email subject line will land, as a card while you type: its length on a phone, spam-trigger words, shouting, emoji and the preview.\n\n## Type\n\n- “subject line Last chance: 50% off ends tonight”\n- “email subject Your October update”\n\nThe score starts at 100 and loses points for running past a phone's ~40 characters or an inbox's 60, for each spam-trigger word (free, act now, limited time, guaranteed, last chance…), for words in capitals, and for several exclamation marks or emoji. It also shows what a phone would display. ↵ copies the verdict.\n\n## Reaches\n\nNothing: it is worked out on your Mac. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/email-subject",
       "trust": "official"
     },
     {
@@ -538,7 +661,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/end-of-life",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/end-of-life",
       "trust": "official"
     },
     {
@@ -580,7 +703,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/f1-standings",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/f1-standings",
       "trust": "official"
     },
     {
@@ -627,7 +750,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/feeds",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/feeds",
       "trust": "official"
     },
     {
@@ -668,7 +791,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/github",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/github",
       "trust": "official"
     },
     {
@@ -710,7 +833,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/github-repo",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/github-repo",
       "trust": "official"
     },
     {
@@ -751,7 +874,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/hacker-news",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/hacker-news",
       "trust": "official"
     },
     {
@@ -795,7 +918,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/homebrew",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/homebrew",
       "trust": "official"
     },
     {
@@ -837,7 +960,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/http-headers",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/http-headers",
       "trust": "official"
     },
     {
@@ -878,7 +1001,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/icd-10",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/icd-10",
       "trust": "official"
     },
     {
@@ -918,7 +1041,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/iconify",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/iconify",
       "trust": "official"
     },
     {
@@ -960,7 +1083,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/ip-info",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/ip-info",
       "trust": "official"
     },
     {
@@ -1000,7 +1123,7 @@
           "With no API key yet it asks for one (↵ opens its settings), rather than saying Linear refused it."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/linear",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/linear",
       "trust": "official"
     },
     {
@@ -1043,7 +1166,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/link-preview",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/link-preview",
       "trust": "official"
     },
     {
@@ -1086,7 +1209,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/mdn",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/mdn",
       "trust": "official"
     },
     {
@@ -1125,7 +1248,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/moon-phase",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/moon-phase",
       "trust": "official"
     },
     {
@@ -1165,7 +1288,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/npm-search",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/npm-search",
       "trust": "official"
     },
     {
@@ -1203,7 +1326,49 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/obsidian",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/obsidian",
+      "trust": "official"
+    },
+    {
+      "id": "post-length",
+      "title": "Post Length",
+      "description": "Whether a post fits each platform, as a card while you type: X, LinkedIn, Instagram, Threads, Bluesky, a meta description, an SMS - and how much shows before “see more”.",
+      "version": "1.0.0",
+      "categories": [
+        "Productivity",
+        "Communication"
+      ],
+      "icon": "character.cursor.ibeam",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "post length",
+        "character limit",
+        "tweet length"
+      ],
+      "examples": [
+        "post length Launching our new AI launcher today",
+        "char limit Launching our new AI launcher today"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [
+          "pbpaste"
+        ],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Post Length\n\nWhether a post fits each platform, as a card while you type: X, LinkedIn, Instagram, Threads, Bluesky, a meta description, an SMS - and how much shows before “see more”.\n\n## Type\n\n- “post length Launching our new AI launcher today”\n- “char limit <a draft>”\n- “post length clipboard”\n\nPlatforms: X (280; a link counts 23, an emoji 2), Threads 500, Bluesky 300, LinkedIn 3,000 (about 210 shown before “see more”), Instagram 2,200 (125 shown), Facebook, a meta description 160, a title tag 60, a Google Ads headline 30, an SMS 160. ↵ copies the counts.\n\n## Reaches\n\nNothing: it is counted on your Mac (the clipboard only when you say “clipboard”). It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/post-length",
       "trust": "official"
     },
     {
@@ -1244,7 +1409,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/pypi",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/pypi",
       "trust": "official"
     },
     {
@@ -1286,7 +1451,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/readability",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/readability",
       "trust": "official"
     },
     {
@@ -1326,7 +1491,7 @@
           "A list asked for again within ten minutes comes from what was kept, and when Reddit limits requests the kept list is shown with its age instead of an error."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/reddit",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/reddit",
       "trust": "official"
     },
     {
@@ -1368,7 +1533,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/rhymes",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/rhymes",
       "trust": "official"
     },
     {
@@ -1407,7 +1572,47 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/semver",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/semver",
+      "trust": "official"
+    },
+    {
+      "id": "seo-check",
+      "title": "SEO Check",
+      "description": "A page's search basics as a card while you type: its title and description lengths, H1, canonical, indexing, language and a Google-style preview.",
+      "version": "1.0.0",
+      "categories": [
+        "Web",
+        "Productivity"
+      ],
+      "icon": "magnifyingglass.circle",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "seo",
+        "meta tags",
+        "serp preview"
+      ],
+      "examples": [
+        "seo github.com",
+        "seo vercel.com/pricing"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# SEO Check\n\nA page's search basics as a card while you type: its title and description lengths, H1, canonical, indexing, language and a Google-style preview.\n\n## Type\n\n- “seo github.com”\n- “seo vercel.com/pricing”\n\nIt reads the title (Google shows about 60 characters), the meta description (about 160), the H1s, the canonical link, the robots rules and the page language, and draws the page as a search result would look. The six checks give a score out of 6. ↵ copies the title, the description and what to fix.\n\n## Reaches\n\nThe page itself. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/seo-check",
       "trust": "official"
     },
     {
@@ -1447,7 +1652,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/service-status",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/service-status",
       "trust": "official"
     },
     {
@@ -1487,7 +1692,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/ssl-certificate",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/ssl-certificate",
       "trust": "official"
     },
     {
@@ -1527,7 +1732,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/subnet",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/subnet",
       "trust": "official"
     },
     {
@@ -1569,7 +1774,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/sun-times",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/sun-times",
       "trust": "official"
     },
     {
@@ -1608,7 +1813,50 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/svgl",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/svgl",
+      "trust": "official"
+    },
+    {
+      "id": "tech-stack",
+      "title": "Tech Stack",
+      "description": "What a site is built with, as a card while you type - its framework, CMS, hosting, CDN, analytics and marketing tools - like BuiltWith, from the open webappanalyzer fingerprints.",
+      "version": "1.0.0",
+      "categories": [
+        "Web",
+        "Developer Tools"
+      ],
+      "icon": "square.stack.3d.up",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "built with",
+        "tech stack",
+        "wappalyzer",
+        "builtwith"
+      ],
+      "examples": [
+        "built with vercel.com",
+        "tech stack github.com"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "raw.githubusercontent.com"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Tech Stack\n\nWhat a site is built with, as a card while you type - its framework, CMS, hosting, CDN, analytics and marketing tools - like BuiltWith, from the open webappanalyzer fingerprints.\n\n## Type\n\n- “built with vercel.com”\n- “tech stack github.com”\n- “what is stripe.com built with”\n\nIt finds what can be seen without running the page: headers, cookies, HTML, script addresses, meta tags and the address itself, plus what those imply (Next.js implies React). Things a page only sets up in JavaScript as it runs are not seen, which BuiltWith's crawler would catch. The fingerprints (webappanalyzer, GPL-3.0) are fetched once a week. ↵ copies every technology found, by group.\n\n## Reaches\n\nraw.githubusercontent.com (the fingerprints, weekly) and the site itself. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/tech-stack",
       "trust": "official"
     },
     {
@@ -1648,7 +1896,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/tldr",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/tldr",
       "trust": "official"
     },
     {
@@ -1688,7 +1936,7 @@
           "“urban yeet”: the word after “urban” alone, as Raycast has it."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/urban-dictionary",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/urban-dictionary",
       "trust": "official"
     },
     {
@@ -1730,14 +1978,14 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/utm-builder",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/utm-builder",
       "trust": "official"
     },
     {
       "id": "whois",
       "title": "Whois",
-      "description": "Who registered a domain, when, and when it runs out - as a card while you type, from RDAP (whois's successor).",
-      "version": "1.0.0",
+      "description": "Who holds a domain and until when, and whether a name is free - as cards while you type, from RDAP (whois's successor).",
+      "version": "1.1.0",
       "categories": [
         "Developer Tools",
         "Web"
@@ -1748,11 +1996,13 @@
       "topics": [
         "whois",
         "rdap",
-        "domain registration"
+        "domain registration",
+        "domain available"
       ],
       "examples": [
         "whois github.com",
-        "whois example.org"
+        "is jevie.ai available",
+        "domain jevie"
       ],
       "settings": 0,
       "changes": null,
@@ -1764,15 +2014,15 @@
         "writes": 0
       },
       "cards": true,
-      "readme": "# Whois\n\nWho registered a domain, when, and when it runs out - as a card while you type, from RDAP (whois's successor).\n\n## Type\n\n- “whois github.com”\n- “rdap example.org”\n\n↵ copies the line: `github.com · MarkMonitor Inc. · expires 2026-10-09 (in 362 days)`. The days left turn into a warning under 30. Each domain is kept a day.\n\n## Reaches\n\nrdap.org, which sends the lookup to the registry of the domain (Verisign for .com, and so on). It changes nothing.\n",
+      "readme": "# Whois\n\nWho registered a domain, when, and when it runs out - as a card while you type, from RDAP (whois's successor).\n\n## Type\n\n- “whois github.com”\n- “rdap example.org”\n- “is jevie.ai available”\n- “domain jevie”: .com, .ai, .app, .io, .dev and .co at once\n\n↵ copies the line: `github.com · MarkMonitor Inc. · expires 2026-10-09 (in 362 days)`. The days left turn into a warning under 30. Each domain is kept a day.\n\nAvailability comes from the registry itself: a name nobody holds is a 404 there. An ending with no RDAP service is said to be unknown, never free.\n\n## Reaches\n\nrdap.org, which sends the lookup to the registry of the domain (Verisign for .com, and so on). It changes nothing.\n",
       "change": {
-        "version": "1.0.0",
+        "version": "1.1.0",
         "date": "2026-10-12",
         "lines": [
-          "First version: a card."
+          "Is a name free: “is jevie.ai available”, “domain jevie” for six endings at once."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/whois",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/whois",
       "trust": "official"
     },
     {
@@ -1813,7 +2063,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/wikipedia",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/wikipedia",
       "trust": "official"
     },
     {
@@ -1850,7 +2100,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/world-clock",
+      "source": "git:github.com/vlad-terin/jevie-store@a75b760e5ee4c3f568a6372c47d89df98af49eca#extensions/world-clock",
       "trust": "official"
     }
   ],

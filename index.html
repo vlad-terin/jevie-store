@@ -6,10 +6,16 @@ h1{margin:0 0 4px}header p{color:var(--faint);margin:0 0 24px}input{width:100%;b
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
 h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4px 0}.open{display:inline-block;margin-top:6px;padding:6px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
 #shared,#card{display:none;margin-bottom:20px}#shared.on,#card.on{display:block}#card ul{margin:8px 0;padding-left:18px}</style></head><body><main>
-<header><h1>Jevie extensions</h1><p>45 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
+<header><h1>Jevie extensions</h1><p>51 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
 <article id="shared"><h2>An extension shared with you</h2><p class="meta" id="shared-source"></p><a class="open" id="shared-open" href="#">Open in Jevie</a></article>
 <article id="card"><p class="meta" id="card-label"></p><h2 id="card-summary"></h2><ul id="card-shown"></ul><p class="say" id="card-text"></p><a class="open" id="card-need" href="#" style="display:none;margin-right:6px"></a><a class="open" id="card-open" href="#">Open in Jevie</a></article>
-<input id="q" placeholder="Search extensions" autocomplete="off"><div class="grid"><article id="air-quality"><h2>Air Quality</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
+<input id="q" placeholder="Search extensions" autocomplete="off"><div class="grid"><article id="ab-test"><h2>A/B Test</h2><p class="meta">Productivity · Data · by vlad-terin · v1.0.0 · official</p>
+<p>Whether an A/B test&#39;s difference is real, as a card while you type - the lift, the confidence and the p-value - and how many visitors a test needs.</p><p class="say">“ab 120/2400 vs 150/2380” · “sample size 4% baseline 10% lift”</p>
+<a class="open" href="jevie://ask?q=install%20the%20A%2FB%20Test%20extension">Open in Jevie</a></article>
+<article id="ad-metrics"><h2>Ad Metrics</h2><p class="meta">Finance · Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>The marketing numbers, as cards while you type: ROAS, CAC, CTR, CPC, CPM, conversion rate, and customer lifetime value.</p><p class="say">“roas revenue 5000 spend 1200” · “ctr 120 clicks 8000 impressions”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Ad%20Metrics%20extension">Open in Jevie</a></article>
+<article id="air-quality"><h2>Air Quality</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>The air anywhere as a card while you type: the US AQI with its band and the pollutants behind it, from Open-Meteo.</p><p class="say">“air quality berlin” · “aqi delhi”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Air%20Quality%20extension">Open in Jevie</a></article>
 <article id="bundle-size"><h2>Bundle Size</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
@@ -45,6 +51,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="drug-label"><h2>Drug Label</h2><p class="meta">Documentation · by vlad-terin · v1.0.0 · official</p>
 <p>A medicine&#39;s FDA label at a glance as a card while you type: its brand and generic names, what it is for, how it is taken, and whether it carries a boxed warning.</p><p class="say">“drug ibuprofen” · “drug metformin”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Drug%20Label%20extension">Open in Jevie</a></article>
+<article id="email-subject"><h2>Email Subject</h2><p class="meta">Communication · Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>How an email subject line will land, as a card while you type: its length on a phone, spam-trigger words, shouting, emoji and the preview.</p><p class="say">“subject line Last chance: 50% off ends tonight” · “email subject Your October update”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Email%20Subject%20extension">Open in Jevie</a></article>
 <article id="end-of-life"><h2>End of Life</h2><p class="meta">Developer Tools · System · by vlad-terin · v1.0.0 · official</p>
 <p>When a language, framework, database or OS stops getting fixes, as a card while you type - the current and supported releases, from endoflife.date.</p><p class="say">“eol python” · “eol node 18”</p>
 <a class="open" href="jevie://ask?q=install%20the%20End%20of%20Life%20extension">Open in Jevie</a></article>
@@ -96,6 +105,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="obsidian"><h2>Obsidian</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>Search your Obsidian vault and read notes beside the list; return opens the note in Obsidian. Read-only - a lean port of Raycast&#39;s Obsidian extension.</p><p class="say">“obsidian notes” · “obsidian note networking”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Obsidian%20extension">Open in Jevie</a></article>
+<article id="post-length"><h2>Post Length</h2><p class="meta">Productivity · Communication · by vlad-terin · v1.0.0 · official</p>
+<p>Whether a post fits each platform, as a card while you type: X, LinkedIn, Instagram, Threads, Bluesky, a meta description, an SMS - and how much shows before “see more”.</p><p class="say">“post length Launching our new AI launcher today” · “char limit Launching our new AI launcher today”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Post%20Length%20extension">Open in Jevie</a></article>
 <article id="pypi"><h2>PyPI</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
 <p>A Python package&#39;s latest version, what it is, which Python it needs and when it was released - as a card while you type.</p><p class="say">“pypi requests” · “pypi fastapi”</p>
 <a class="open" href="jevie://ask?q=install%20the%20PyPI%20extension">Open in Jevie</a></article>
@@ -111,6 +123,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="semver"><h2>Semver</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
 <p>Whether a version satisfies a range, and what a range like ^1.2.0 or ~2.1 allows, as a card while you type - npm&#39;s rules, on your Mac.</p><p class="say">“semver ^1.2.0 1.4.5” · “semver ~2.1”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Semver%20extension">Open in Jevie</a></article>
+<article id="seo-check"><h2>SEO Check</h2><p class="meta">Web · Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>A page&#39;s search basics as a card while you type: its title and description lengths, H1, canonical, indexing, language and a Google-style preview.</p><p class="say">“seo github.com” · “seo vercel.com/pricing”</p>
+<a class="open" href="jevie://ask?q=install%20the%20SEO%20Check%20extension">Open in Jevie</a></article>
 <article id="service-status"><h2>Service Status</h2><p class="meta">Developer Tools · Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>Is GitHub, OpenAI, Slack or Vercel down? A service&#39;s own status page as a card while you type, with what is broken right now.</p><p class="say">“is github down” · “status openai”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Service%20Status%20extension">Open in Jevie</a></article>
@@ -126,6 +141,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="svgl"><h2>SVGL</h2><p class="meta">Design Tools · by vlad-terin · v1.0.0 · official</p>
 <p>Brand logos as SVG from svgl.app - a port of Raycast&#39;s Svgl extension.</p><p class="say">“svgl github” · “svg logo vercel”</p>
 <a class="open" href="jevie://ask?q=install%20the%20SVGL%20extension">Open in Jevie</a></article>
+<article id="tech-stack"><h2>Tech Stack</h2><p class="meta">Web · Developer Tools · by vlad-terin · v1.0.0 · official</p>
+<p>What a site is built with, as a card while you type - its framework, CMS, hosting, CDN, analytics and marketing tools - like BuiltWith, from the open webappanalyzer fingerprints.</p><p class="say">“built with vercel.com” · “tech stack github.com”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Tech%20Stack%20extension">Open in Jevie</a></article>
 <article id="tldr"><h2>tldr</h2><p class="meta">Developer Tools · Documentation · by vlad-terin · v1.0.0 · official</p>
 <p>Command-line examples from tldr pages - a port of Raycast&#39;s TLDR extension.</p><p class="say">“tldr tar” · “tldr git log”</p>
 <a class="open" href="jevie://ask?q=install%20the%20tldr%20extension">Open in Jevie</a></article>
@@ -135,8 +153,8 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="utm-builder"><h2>UTM Builder</h2><p class="meta">Productivity · Web · by vlad-terin · v1.0.0 · official</p>
 <p>A link with UTM tags, built as a card while you type - source, medium and campaign - and copied with ↵.</p><p class="say">“utm https://jevie.app twitter social launch” · “utm jevie.app source=newsletter campaign=october”</p>
 <a class="open" href="jevie://ask?q=install%20the%20UTM%20Builder%20extension">Open in Jevie</a></article>
-<article id="whois"><h2>Whois</h2><p class="meta">Developer Tools · Web · by vlad-terin · v1.0.0 · official</p>
-<p>Who registered a domain, when, and when it runs out - as a card while you type, from RDAP (whois&#39;s successor).</p><p class="say">“whois github.com” · “whois example.org”</p>
+<article id="whois"><h2>Whois</h2><p class="meta">Developer Tools · Web · by vlad-terin · v1.1.0 · official</p>
+<p>Who holds a domain and until when, and whether a name is free - as cards while you type, from RDAP (whois&#39;s successor).</p><p class="say">“whois github.com” · “is jevie.ai available” · “domain jevie”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Whois%20extension">Open in Jevie</a></article>
 <article id="wikipedia"><h2>Wikipedia</h2><p class="meta">Documentation · Web · by vlad-terin · v1.0.0 · official</p>
 <p>Wikipedia search, today&#39;s featured article and a random one - a port of Raycast&#39;s wikipedia extension.</p><p class="say">“wiki article einstein” · “wiki article random”</p>
