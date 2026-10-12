@@ -4,6 +4,7 @@
 /extensions/ad-metrics/ @vlad-terin
 /extensions/air-quality/ @vlad-terin
 /extensions/bond-yield/ @vlad-terin
+/extensions/budget-503020/ @vlad-terin
 /extensions/bundle-size/ @vlad-terin
 /extensions/business-days/ @vlad-terin
 /extensions/business-math/ @vlad-terin
@@ -25,6 +26,7 @@
 /extensions/github/ @vlad-terin
 /extensions/github-repo/ @vlad-terin
 /extensions/hacker-news/ @vlad-terin
+/extensions/home-affordability/ @vlad-terin
 /extensions/homebrew/ @vlad-terin
 /extensions/http-headers/ @vlad-terin
 /extensions/icd-10/ @vlad-terin
@@ -41,16 +43,19 @@
 /extensions/npv-irr/ @vlad-terin
 /extensions/obsidian/ @vlad-terin
 /extensions/options-pricing/ @vlad-terin
+/extensions/portfolio-math/ @vlad-terin
 /extensions/position-size/ @vlad-terin
 /extensions/post-length/ @vlad-terin
 /extensions/pypi/ @vlad-terin
 /extensions/readability/ @vlad-terin
+/extensions/real-estate/ @vlad-terin
 /extensions/reddit/ @vlad-terin
 /extensions/retirement/ @vlad-terin
 /extensions/rhymes/ @vlad-terin
 /extensions/semver/ @vlad-terin
 /extensions/seo-check/ @vlad-terin
 /extensions/service-status/ @vlad-terin
+/extensions/simple-interest/ @vlad-terin
 /extensions/ssl-certificate/ @vlad-terin
 /extensions/subnet/ @vlad-terin
 /extensions/sun-times/ @vlad-terin
