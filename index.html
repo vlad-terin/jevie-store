@@ -6,7 +6,7 @@ h1{margin:0 0 4px}header p{color:var(--faint);margin:0 0 24px}input{width:100%;b
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
 h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4px 0}.open{display:inline-block;margin-top:6px;padding:6px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
 #shared,#card{display:none;margin-bottom:20px}#shared.on,#card.on{display:block}#card ul{margin:8px 0;padding-left:18px}</style></head><body><main>
-<header><h1>Jevie extensions</h1><p>118 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
+<header><h1>Jevie extensions</h1><p>122 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
 <article id="shared"><h2>An extension shared with you</h2><p class="meta" id="shared-source"></p><a class="open" id="shared-open" href="#">Open in Jevie</a></article>
 <article id="card"><p class="meta" id="card-label"></p><h2 id="card-summary"></h2><ul id="card-shown"></ul><p class="say" id="card-text"></p><a class="open" id="card-need" href="#" style="display:none;margin-right:6px"></a><a class="open" id="card-open" href="#">Open in Jevie</a></article>
 <input id="q" placeholder="Search extensions" autocomplete="off"><div class="grid"><article id="budget-503020"><h2>50/30/20 Budget</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
@@ -123,6 +123,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="freelance-rate"><h2>Freelance Rate</h2><p class="meta">Finance · Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>The hourly and day rate a freelancer needs to reach a yearly income, as a card while you type - with billable hours, overhead and tax counted.</p><p class="say">“freelance rate 120k” · “freelance rate 150k 1200 billable hours 25% overhead 30% tax”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Freelance%20Rate%20extension">Open in Jevie</a></article>
+<article id="garden-math"><h2>Garden Math</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>How much mulch, soil or compost a bed takes, and how many plants fit at a spacing, as cards while you type - in cubic yards, cubic feet and bags.</p><p class="say">“mulch 10x12 ft 3 inches” · “plants 4x8 ft 12 inch spacing”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Garden%20Math%20extension">Open in Jevie</a></article>
 <article id="github"><h2>GitHub</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
 <p>Your pull requests, review requests, issues and repo search, through the gh CLI you are signed into - a lean port of Raycast&#39;s GitHub extension. Notifications and trending stay their own extensions.</p><p class="say">“my prs” · “prs to review” · “github issues”</p>
 <a class="open" href="jevie://ask?q=install%20the%20GitHub%20extension">Open in Jevie</a></article>
@@ -294,6 +297,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="sla-uptime"><h2>SLA Uptime</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
 <p>What an uptime promise allows in downtime, as a card while you type - per year, month, week and day - and what an outage did to this month&#39;s uptime.</p><p class="say">“99.9% uptime” · “downtime 43 minutes this month”</p>
 <a class="open" href="jevie://ask?q=install%20the%20SLA%20Uptime%20extension">Open in Jevie</a></article>
+<article id="sleep-cycles"><h2>Sleep Cycles</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>When to go to bed for a wake-up time, or when to wake for a bedtime, in whole 90-minute sleep cycles - as a card while you type.</p><p class="say">“bedtime for 7am” · “sleep cycles 11pm”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Sleep%20Cycles%20extension">Open in Jevie</a></article>
 <article id="ssl-certificate"><h2>SSL Certificate</h2><p class="meta">Developer Tools · Security · by vlad-terin · v1.0.0 · official</p>
 <p>A site&#39;s TLS certificate as a card while you type: who issued it, when it runs out, and the names it covers - read from the server itself.</p><p class="say">“ssl github.com” · “cert example.org”</p>
 <a class="open" href="jevie://ask?q=install%20the%20SSL%20Certificate%20extension">Open in Jevie</a></article>
@@ -330,6 +336,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="tempo"><h2>Tempo</h2><p class="meta">Media · by vlad-terin · v1.0.0 · official</p>
 <p>A tempo as delay and reverb times, as a card while you type: the milliseconds of each note value, dotted and triplet - for producers and musicians.</p><p class="say">“bpm 120” · “tempo 92 bpm”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Tempo%20extension">Open in Jevie</a></article>
+<article id="text-hash"><h2>Text Hash</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
+<p>The SHA-256, SHA-1, SHA-512 or MD5 of a text as a card while you type, computed on this Mac.</p><p class="say">“sha256 hello” · “md5 hello world”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Text%20Hash%20extension">Open in Jevie</a></article>
 <article id="tire-size"><h2>Tire Size</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>What a tire size code means, as a card while you type - its diameter, sidewall and revolutions per mile - and how two sizes compare on the speedometer.</p><p class="say">“tire 225/45r17” · “225/45r17 vs 245/40r18”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Tire%20Size%20extension">Open in Jevie</a></article>
@@ -342,6 +351,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="travel-distance"><h2>Travel Distance</h2><p class="meta">Productivity · by vlad-terin · v1.0.1 · official</p>
 <p>How far apart two places are and roughly how long the flight takes, as a card while you type - the great-circle distance in kilometres and miles.</p><p class="say">“distance london to tokyo” · “flight time new york to paris”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Travel%20Distance%20extension">Open in Jevie</a></article>
+<article id="trip-fuel"><h2>Trip Fuel</h2><p class="meta">Finance · Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>What a drive costs in fuel, as a card while you type - miles and mpg or km and L/100 km, at a price - and split between the people in the car.</p><p class="say">“fuel cost 300 miles at 30 mpg 3.50” · “trip cost 450 km 7 l/100km 1.80 split 3”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Trip%20Fuel%20extension">Open in Jevie</a></article>
 <article id="unit-price"><h2>Unit Price</h2><p class="meta">Finance · Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>Which pack is the better buy, as a card while you type: the price per ounce, gram, litre or item, side by side.</p><p class="say">“unit price 4.99 for 12 oz vs 7.49 for 20 oz” · “unit price 3.20 for 500 g vs 5.50 for 1 kg”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Unit%20Price%20extension">Open in Jevie</a></article>

@@ -39,6 +39,7 @@
 /extensions/feeds/ @vlad-terin
 /extensions/fitness-calories/ @vlad-terin
 /extensions/freelance-rate/ @vlad-terin
+/extensions/garden-math/ @vlad-terin
 /extensions/github/ @vlad-terin
 /extensions/github-repo/ @vlad-terin
 /extensions/gitignore/ @vlad-terin
@@ -96,6 +97,7 @@
 /extensions/shipping-weight/ @vlad-terin
 /extensions/simple-interest/ @vlad-terin
 /extensions/sla-uptime/ @vlad-terin
+/extensions/sleep-cycles/ @vlad-terin
 /extensions/ssl-certificate/ @vlad-terin
 /extensions/startup-math/ @vlad-terin
 /extensions/stats/ @vlad-terin
@@ -107,10 +109,12 @@
 /extensions/team-hours/ @vlad-terin
 /extensions/tech-stack/ @vlad-terin
 /extensions/tempo/ @vlad-terin
+/extensions/text-hash/ @vlad-terin
 /extensions/tire-size/ @vlad-terin
 /extensions/tldr/ @vlad-terin
 /extensions/training-zones/ @vlad-terin
 /extensions/travel-distance/ @vlad-terin
+/extensions/trip-fuel/ @vlad-terin
 /extensions/unit-price/ @vlad-terin
 /extensions/urban-dictionary/ @vlad-terin
 /extensions/utm-builder/ @vlad-terin
