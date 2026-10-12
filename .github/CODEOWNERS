@@ -7,6 +7,7 @@
 /extensions/age-calc/ @vlad-terin
 /extensions/agent-commission/ @vlad-terin
 /extensions/air-quality/ @vlad-terin
+/extensions/apr-apy/ @vlad-terin
 /extensions/baking/ @vlad-terin
 /extensions/bedside-math/ @vlad-terin
 /extensions/billable-time/ @vlad-terin
@@ -18,6 +19,7 @@
 /extensions/caffeine/ @vlad-terin
 /extensions/calls/ @vlad-terin
 /extensions/can-i-use/ @vlad-terin
+/extensions/car-lease/ @vlad-terin
 /extensions/cheatsheets/ @vlad-terin
 /extensions/chord-transpose/ @vlad-terin
 /extensions/clinical-calculators/ @vlad-terin
@@ -30,6 +32,7 @@
 /extensions/crosswind/ @vlad-terin
 /extensions/css-clamp/ @vlad-terin
 /extensions/curl-to-fetch/ @vlad-terin
+/extensions/days-supply/ @vlad-terin
 /extensions/debt-to-income/ @vlad-terin
 /extensions/design-math/ @vlad-terin
 /extensions/discount-stack/ @vlad-terin
@@ -37,6 +40,7 @@
 /extensions/docker-containers/ @vlad-terin
 /extensions/doi-citation/ @vlad-terin
 /extensions/drug-label/ @vlad-terin
+/extensions/ecommerce-math/ @vlad-terin
 /extensions/email-setup/ @vlad-terin
 /extensions/email-subject/ @vlad-terin
 /extensions/end-of-life/ @vlad-terin
