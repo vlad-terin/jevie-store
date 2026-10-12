@@ -6,7 +6,7 @@ h1{margin:0 0 4px}header p{color:var(--faint);margin:0 0 24px}input{width:100%;b
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
 h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4px 0}.open{display:inline-block;margin-top:6px;padding:6px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
 #shared,#card{display:none;margin-bottom:20px}#shared.on,#card.on{display:block}#card ul{margin:8px 0;padding-left:18px}</style></head><body><main>
-<header><h1>Jevie extensions</h1><p>90 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
+<header><h1>Jevie extensions</h1><p>94 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
 <article id="shared"><h2>An extension shared with you</h2><p class="meta" id="shared-source"></p><a class="open" id="shared-open" href="#">Open in Jevie</a></article>
 <article id="card"><p class="meta" id="card-label"></p><h2 id="card-summary"></h2><ul id="card-shown"></ul><p class="say" id="card-text"></p><a class="open" id="card-need" href="#" style="display:none;margin-right:6px"></a><a class="open" id="card-open" href="#">Open in Jevie</a></article>
 <input id="q" placeholder="Search extensions" autocomplete="off"><div class="grid"><article id="budget-503020"><h2>50/30/20 Budget</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
@@ -87,6 +87,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="energy-cost"><h2>Energy Cost</h2><p class="meta">Productivity · Finance · by vlad-terin · v1.0.0 · official</p>
 <p>What running an appliance costs and how long an EV takes to charge, as cards while you type - kWh, cost a day, a month and a year.</p><p class="say">“energy 1500w 4 hours at 0.15” · “ev charge 75 kwh at 11 kw”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Energy%20Cost%20extension">Open in Jevie</a></article>
+<article id="event-planning"><h2>Event Planning</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>Party and event sums as cards while you type: tables for the guests, the budget per head, and how many drinks to buy.</p><p class="say">“tables for 120 guests 8 per table” · “drinks for 80 guests 4 hours”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Event%20Planning%20extension">Open in Jevie</a></article>
 <article id="f1-standings"><h2>F1 Standings</h2><p class="meta">Fun · News · by vlad-terin · v1.0.0 · official</p>
 <p>The Formula 1 championship as a card while you type: the leader, the top five and the gaps - drivers or constructors, from Jolpica&#39;s F1 data.</p><p class="say">“f1 standings” · “f1 constructors”</p>
 <a class="open" href="jevie://ask?q=install%20the%20F1%20Standings%20extension">Open in Jevie</a></article>
@@ -153,6 +156,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="mdn"><h2>MDN</h2><p class="meta">Developer Tools · Documentation · by vlad-terin · v1.0.0 · official</p>
 <p>MDN Web Docs search - a port of Raycast&#39;s MDN extension.</p><p class="say">“mdn flexbox” · “mdn array map”</p>
 <a class="open" href="jevie://ask?q=install%20the%20MDN%20extension">Open in Jevie</a></article>
+<article id="media-math"><h2>Media Math</h2><p class="meta">Media · by vlad-terin · v1.0.0 · official</p>
+<p>Creator sums as cards while you type: a video&#39;s file size from its bitrate, how long a script takes to read aloud, and how big a photo prints.</p><p class="say">“video size 10 min at 8 mbps” · “speaking time 1500 words” · “print size 6000x4000 at 300 dpi”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Media%20Math%20extension">Open in Jevie</a></article>
 <article id="mime-types"><h2>MIME Types</h2><p class="meta">Developer Tools · Web · by vlad-terin · v1.0.0 · official</p>
 <p>A file extension&#39;s MIME type, or the extensions of a MIME type, as a card while you type - for headers, uploads and servers.</p><p class="say">“mime webp” · “mime application/json”</p>
 <a class="open" href="jevie://ask?q=install%20the%20MIME%20Types%20extension">Open in Jevie</a></article>
@@ -234,6 +240,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="ssl-certificate"><h2>SSL Certificate</h2><p class="meta">Developer Tools · Security · by vlad-terin · v1.0.0 · official</p>
 <p>A site&#39;s TLS certificate as a card while you type: who issued it, when it runs out, and the names it covers - read from the server itself.</p><p class="say">“ssl github.com” · “cert example.org”</p>
 <a class="open" href="jevie://ask?q=install%20the%20SSL%20Certificate%20extension">Open in Jevie</a></article>
+<article id="startup-math"><h2>Startup Math</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
+<p>A founder&#39;s numbers as cards while you type: months of runway from cash and burn, and what a priced round does to ownership.</p><p class="say">“runway 400k burn 35k” · “raise 2m at 8m pre”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Startup%20Math%20extension">Open in Jevie</a></article>
 <article id="stats"><h2>Stats</h2><p class="meta">Data · Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>The numbers of a list at a glance, as a card while you type: count, mean, median, standard deviation, quartiles, min and max - typed, or from the clipboard.</p><p class="say">“stats 3 5 7 9 11 40” · “stats clipboard”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Stats%20extension">Open in Jevie</a></article>
@@ -264,6 +273,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="travel-distance"><h2>Travel Distance</h2><p class="meta">Productivity · by vlad-terin · v1.0.1 · official</p>
 <p>How far apart two places are and roughly how long the flight takes, as a card while you type - the great-circle distance in kilometres and miles.</p><p class="say">“distance london to tokyo” · “flight time new york to paris”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Travel%20Distance%20extension">Open in Jevie</a></article>
+<article id="unit-price"><h2>Unit Price</h2><p class="meta">Finance · Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>Which pack is the better buy, as a card while you type: the price per ounce, gram, litre or item, side by side.</p><p class="say">“unit price 4.99 for 12 oz vs 7.49 for 20 oz” · “unit price 3.20 for 500 g vs 5.50 for 1 kg”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Unit%20Price%20extension">Open in Jevie</a></article>
 <article id="urban-dictionary"><h2>Urban</h2><p class="meta">Fun · by vlad-terin · v1.0.1 · official</p>
 <p>What slang means, from Urban Dictionary, as a card while you type: the top definition and an example.</p><p class="say">“urban yeet” · “urban touch grass”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Urban%20extension">Open in Jevie</a></article>

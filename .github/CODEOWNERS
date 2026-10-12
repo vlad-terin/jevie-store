@@ -25,6 +25,7 @@
 /extensions/email-subject/ @vlad-terin
 /extensions/end-of-life/ @vlad-terin
 /extensions/energy-cost/ @vlad-terin
+/extensions/event-planning/ @vlad-terin
 /extensions/f1-standings/ @vlad-terin
 /extensions/feeds/ @vlad-terin
 /extensions/fitness-calories/ @vlad-terin
@@ -49,6 +50,7 @@
 /extensions/loan-payoff/ @vlad-terin
 /extensions/market-rates/ @vlad-terin
 /extensions/mdn/ @vlad-terin
+/extensions/media-math/ @vlad-terin
 /extensions/mime-types/ @vlad-terin
 /extensions/moon-phase/ @vlad-terin
 /extensions/npm-search/ @vlad-terin
@@ -75,6 +77,7 @@
 /extensions/simple-interest/ @vlad-terin
 /extensions/sla-uptime/ @vlad-terin
 /extensions/ssl-certificate/ @vlad-terin
+/extensions/startup-math/ @vlad-terin
 /extensions/stats/ @vlad-terin
 /extensions/subnet/ @vlad-terin
 /extensions/sun-times/ @vlad-terin
@@ -85,6 +88,7 @@
 /extensions/tempo/ @vlad-terin
 /extensions/tldr/ @vlad-terin
 /extensions/travel-distance/ @vlad-terin
+/extensions/unit-price/ @vlad-terin
 /extensions/urban-dictionary/ @vlad-terin
 /extensions/utm-builder/ @vlad-terin
 /extensions/whois/ @vlad-terin
