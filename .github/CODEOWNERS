@@ -74,7 +74,9 @@
 /extensions/options-pricing/ @vlad-terin
 /extensions/payment-fees/ @vlad-terin
 /extensions/percent-change/ @vlad-terin
+/extensions/pert-estimate/ @vlad-terin
 /extensions/pet-age/ @vlad-terin
+/extensions/photo-math/ @vlad-terin
 /extensions/portfolio-math/ @vlad-terin
 /extensions/position-size/ @vlad-terin
 /extensions/post-length/ @vlad-terin
@@ -86,6 +88,7 @@
 /extensions/restaurant-math/ @vlad-terin
 /extensions/retirement/ @vlad-terin
 /extensions/rhymes/ @vlad-terin
+/extensions/running-pace/ @vlad-terin
 /extensions/sales-math/ @vlad-terin
 /extensions/semver/ @vlad-terin
 /extensions/seo-check/ @vlad-terin
@@ -98,6 +101,7 @@
 /extensions/stats/ @vlad-terin
 /extensions/subnet/ @vlad-terin
 /extensions/sun-times/ @vlad-terin
+/extensions/survey-math/ @vlad-terin
 /extensions/svgl/ @vlad-terin
 /extensions/tailwind-colors/ @vlad-terin
 /extensions/team-hours/ @vlad-terin
