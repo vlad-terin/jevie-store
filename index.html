@@ -6,7 +6,7 @@ h1{margin:0 0 4px}header p{color:var(--faint);margin:0 0 24px}input{width:100%;b
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
 h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4px 0}.open{display:inline-block;margin-top:6px;padding:6px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
 #shared,#card{display:none;margin-bottom:20px}#shared.on,#card.on{display:block}#card ul{margin:8px 0;padding-left:18px}</style></head><body><main>
-<header><h1>Jevie extensions</h1><p>122 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
+<header><h1>Jevie extensions</h1><p>128 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
 <article id="shared"><h2>An extension shared with you</h2><p class="meta" id="shared-source"></p><a class="open" id="shared-open" href="#">Open in Jevie</a></article>
 <article id="card"><p class="meta" id="card-label"></p><h2 id="card-summary"></h2><ul id="card-shown"></ul><p class="say" id="card-text"></p><a class="open" id="card-need" href="#" style="display:none;margin-right:6px"></a><a class="open" id="card-open" href="#">Open in Jevie</a></article>
 <input id="q" placeholder="Search extensions" autocomplete="off"><div class="grid"><article id="budget-503020"><h2>50/30/20 Budget</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
@@ -15,12 +15,18 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="ab-test"><h2>A/B Test</h2><p class="meta">Productivity · Data · by vlad-terin · v1.0.0 · official</p>
 <p>Whether an A/B test&#39;s difference is real, as a card while you type - the lift, the confidence and the p-value - and how many visitors a test needs.</p><p class="say">“ab 120/2400 vs 150/2380” · “sample size 4% baseline 10% lift”</p>
 <a class="open" href="jevie://ask?q=install%20the%20A%2FB%20Test%20extension">Open in Jevie</a></article>
+<article id="ac-size"><h2>AC Size</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>How big an air conditioner a room needs, in BTU, as a card while you type - by ENERGY STAR&#39;s room chart, adjusted for sun, people and a kitchen.</p><p class="say">“btu 400 sq ft” · “ac size 300 sq ft sunny kitchen 4 people”</p>
+<a class="open" href="jevie://ask?q=install%20the%20AC%20Size%20extension">Open in Jevie</a></article>
 <article id="accounting-math"><h2>Accounting Math</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
 <p>VAT and sales tax in and out of a price, and depreciation schedules - straight-line and double-declining - as cards while you type.</p><p class="say">“vat 20% on 100” · “remove vat 20% from 120” · “depreciation 50000 over 5 years”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Accounting%20Math%20extension">Open in Jevie</a></article>
 <article id="ad-metrics"><h2>Ad Metrics</h2><p class="meta">Finance · Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>The marketing numbers, as cards while you type: ROAS, CAC, CTR, CPC, CPM, conversion rate, and customer lifetime value.</p><p class="say">“roas revenue 5000 spend 1200” · “ctr 120 clicks 8000 impressions”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Ad%20Metrics%20extension">Open in Jevie</a></article>
+<article id="age-calc"><h2>Age</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>An age from a birth date as a card while you type - in years, months and days, a baby&#39;s weeks, and the next birthday.</p><p class="say">“age born 1990-05-04” · “baby age born mar 3 2026”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Age%20extension">Open in Jevie</a></article>
 <article id="agent-commission"><h2>Agent Commission</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
 <p>A real-estate commission split as a card while you type: the total, each side&#39;s share, and what the agent keeps after the broker split.</p><p class="say">“commission split 500000 at 6%” · “commission split 750k at 5% 50/50 70/30”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Agent%20Commission%20extension">Open in Jevie</a></article>
@@ -54,6 +60,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="cheatsheets"><h2>Cheatsheets</h2><p class="meta">Developer Tools · Documentation · by vlad-terin · v1.0.0 · official</p>
 <p>Developer cheat sheets from devhints.io - a port of Raycast&#39;s Cheatsheets extension.</p><p class="say">“cheatsheet git” · “cheatsheets”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Cheatsheets%20extension">Open in Jevie</a></article>
+<article id="chord-transpose"><h2>Chord Transpose</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>Chords moved to a new key as a card while you type - by semitones or to a key - and what a capo makes of the shapes you play.</p><p class="say">“transpose G C D up 2” · “capo 2 G C Em D”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Chord%20Transpose%20extension">Open in Jevie</a></article>
 <article id="clinical-calculators"><h2>Clinical Calculators</h2><p class="meta">Productivity · by vlad-terin · v1.1.0 · official</p>
 <p>BMI with body surface area, a due date, creatinine clearance, a dose by weight, an infusion rate, glucose units and A1c, as cards while you type - worked out on your Mac.</p><p class="say">“bmi 180 cm 75 kg” · “due date lmp 2026-03-01” · “crcl 65 years 70 kg creatinine 1.2 male”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Clinical%20Calculators%20extension">Open in Jevie</a></article>
@@ -162,6 +171,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="inflation"><h2>Inflation</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
 <p>What money from one year is worth in another, as a card while you type - from the US consumer price index (CPI-U, FRED).</p><p class="say">“inflation $100 in 1990” · “$50 in 1975 dollars”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Inflation%20extension">Open in Jevie</a></article>
+<article id="inventory-math"><h2>Inventory Math</h2><p class="meta">Finance · Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>When to reorder and how much, as cards while you type: the reorder point from daily use, lead time and safety stock, and the economic order quantity.</p><p class="say">“reorder point 20 a day lead 7 days safety 50” · “eoq demand 1200 order cost 50 holding 2”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Inventory%20Math%20extension">Open in Jevie</a></article>
 <article id="ip-info"><h2>IP Info</h2><p class="meta">Developer Tools · Web · by vlad-terin · v1.0.0 · official</p>
 <p>Where an IP address is and whose network it belongs to, as a card while you type - from ipwho.is.</p><p class="say">“ip 8.8.8.8” · “ip 1.1.1.1”</p>
 <a class="open" href="jevie://ask?q=install%20the%20IP%20Info%20extension">Open in Jevie</a></article>
@@ -363,6 +375,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="utm-builder"><h2>UTM Builder</h2><p class="meta">Productivity · Web · by vlad-terin · v1.0.0 · official</p>
 <p>A link with UTM tags, built as a card while you type - source, medium and campaign - and copied with ↵.</p><p class="say">“utm https://jevie.app twitter social launch” · “utm jevie.app source=newsletter campaign=october”</p>
 <a class="open" href="jevie://ask?q=install%20the%20UTM%20Builder%20extension">Open in Jevie</a></article>
+<article id="voltage-drop"><h2>Voltage Drop</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>A wire run&#39;s voltage drop as a card while you type - copper or aluminium, by AWG, one way length, volts and amps - and the gauge that keeps it under 3%.</p><p class="say">“voltage drop 12v 20a 30 ft 10 awg” · “voltage drop 120v 15a 100 ft 12 awg”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Voltage%20Drop%20extension">Open in Jevie</a></article>
 <article id="whois"><h2>Whois</h2><p class="meta">Developer Tools · Web · by vlad-terin · v1.1.0 · official</p>
 <p>Who holds a domain and until when, and whether a name is free - as cards while you type, from RDAP (whois&#39;s successor).</p><p class="say">“whois github.com” · “is jevie.ai available” · “domain jevie”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Whois%20extension">Open in Jevie</a></article>
@@ -374,7 +389,10 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <a class="open" href="jevie://ask?q=install%20the%20World%20Clock%20extension">Open in Jevie</a></article>
 <article id="writing-math"><h2>Writing Math</h2><p class="meta">Productivity · Documentation · by vlad-terin · v1.0.0 · official</p>
 <p>A writer&#39;s sums as cards while you type: how many pages a word count makes, and what a translation or a piece costs at a rate per word.</p><p class="say">“pages 2500 words” · “translation 2500 words at 0.12”</p>
-<a class="open" href="jevie://ask?q=install%20the%20Writing%20Math%20extension">Open in Jevie</a></article></div></main>
+<a class="open" href="jevie://ask?q=install%20the%20Writing%20Math%20extension">Open in Jevie</a></article>
+<article id="z-score"><h2>Z-Score</h2><p class="meta">Productivity · Data · by vlad-terin · v1.0.0 · official</p>
+<p>A value&#39;s z-score and percentile as a card while you type, from the mean and standard deviation - or the value at a percentile.</p><p class="say">“z score 85 mean 70 sd 10” · “percentile 90 mean 100 sd 15”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Z-Score%20extension">Open in Jevie</a></article></div></main>
 <script>const h=new URLSearchParams(location.hash.slice(1)).get('install');if(h&&/^(?:git|npm):[\w.@:/#-]+$/.test(h)){const s=document.getElementById('shared');s.classList.add('on');document.getElementById('shared-source').textContent=h;document.getElementById('shared-open').href='jevie://ask?q='+encodeURIComponent('install extension '+h)}
 const c=new URLSearchParams(location.hash.slice(1)).get('card');if(c&&/^[\w.-]+\/[\w.-]+\/[0-9a-f]{7,40}\/cards\/[\w.-]+\.json$/.test(c)){fetch('https://raw.githubusercontent.com/'+c).then(r=>r.json()).then(k=>{const el=id=>document.getElementById(id);el('card').classList.add('on');el('card-label').textContent=(k.label||'Card')+' · shared '+(k.shared||'');el('card-summary').textContent=k.summary||k.label||'';for(const t of (k.shown||[]).slice(0,12)){const li=document.createElement('li');li.textContent=t;el('card-shown').appendChild(li)}el('card-text').textContent='Its words: “'+(k.text||'')+'”';el('card-open').href='jevie://ask?q='+encodeURIComponent(k.text||'');if(k.extension){const n=el('card-need');n.style.display='inline-block';n.textContent='Install '+k.extension+' first';n.href='jevie://ask?q='+encodeURIComponent('install the '+k.extension+' extension')}}).catch(()=>{})}
 document.getElementById('q').addEventListener('input',e=>{const w=e.target.value.toLowerCase();for(const a of document.querySelectorAll('.grid article'))a.style.display=a.textContent.toLowerCase().includes(w)?'':'none'})</script></body></html>
