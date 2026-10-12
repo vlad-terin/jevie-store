@@ -1,0 +1,23 @@
+{
+  "id": "photo-math",
+  "title": "Photo Math",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "A photographer's sums as cards while you type: depth of field and hyperfocal distance for a lens, and the shutter speed that keeps an exposure when the aperture or ISO changes.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity",
+    "Design Tools"
+  ],
+  "icon": "camera.aperture",
+  "author": "vlad-terin",
+  "topics": [
+    "depth of field",
+    "hyperfocal",
+    "equivalent exposure"
+  ],
+  "examples": [
+    "dof 50mm f/1.8 3m",
+    "exposure f/8 1/125 iso 100 to f/4"
+  ]
+}

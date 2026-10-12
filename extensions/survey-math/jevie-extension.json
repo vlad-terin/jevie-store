@@ -1,0 +1,23 @@
+{
+  "id": "survey-math",
+  "title": "Survey Math",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "A survey's margin of error from its responses, and the responses needed for a margin, as cards while you type - with the population when it is small.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity",
+    "Data"
+  ],
+  "icon": "checklist",
+  "author": "vlad-terin",
+  "topics": [
+    "margin of error",
+    "survey sample size",
+    "responses needed"
+  ],
+  "examples": [
+    "margin of error 400 responses",
+    "responses needed 5% population 2000"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "pert-estimate",
+  "title": "PERT Estimate",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "A three-point estimate as a card while you type: optimistic, likely and pessimistic give the expected time and a range you can promise.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "chart.bar.xaxis",
+  "author": "vlad-terin",
+  "topics": [
+    "three point estimate",
+    "pert",
+    "estimate range"
+  ],
+  "examples": [
+    "pert 2 4 10",
+    "pert 3 5 12 days"
+  ]
+}

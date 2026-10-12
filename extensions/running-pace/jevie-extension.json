@@ -1,0 +1,22 @@
+{
+  "id": "running-pace",
+  "title": "Running Pace",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "A runner's pace, finish time or distance as a card while you type - per kilometre and per mile - for 5k, 10k, half and full marathons or any distance.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "figure.run",
+  "author": "vlad-terin",
+  "topics": [
+    "running pace",
+    "race time",
+    "pace calculator"
+  ],
+  "examples": [
+    "pace 5k in 25 min",
+    "marathon at 5:30 per km"
+  ]
+}
