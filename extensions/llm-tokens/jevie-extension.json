@@ -1,0 +1,23 @@
+{
+  "id": "llm-tokens",
+  "title": "LLM Tokens",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "How many tokens a text or a word count is, roughly, and whether it fits common context windows - as a card while you type.",
+  "entry": "index.mjs",
+  "categories": [
+    "Developer Tools",
+    "Productivity"
+  ],
+  "icon": "text.word.spacing",
+  "author": "vlad-terin",
+  "topics": [
+    "tokens",
+    "token count",
+    "context window"
+  ],
+  "examples": [
+    "tokens 2000 words",
+    "tokens clipboard"
+  ]
+}

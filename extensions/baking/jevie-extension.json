@@ -1,0 +1,22 @@
+{
+  "id": "baking",
+  "title": "Baking",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Cups to grams by ingredient, and a dough's hydration and baker's percentages, as cards while you type - from King Arthur Baking's weight chart.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "birthday.cake",
+  "author": "vlad-terin",
+  "topics": [
+    "cups to grams",
+    "baking conversion",
+    "hydration"
+  ],
+  "examples": [
+    "2 cups flour in grams",
+    "hydration 500g flour 350g water"
+  ]
+}

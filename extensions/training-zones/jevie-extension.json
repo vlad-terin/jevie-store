@@ -1,0 +1,23 @@
+{
+  "id": "training-zones",
+  "title": "Training Zones",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Heart-rate zones from your age (and resting rate), and cycling power zones and watts per kilo from your FTP - as cards while you type.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "heart.circle",
+  "author": "vlad-terin",
+  "topics": [
+    "heart rate zones",
+    "ftp zones",
+    "watts per kg"
+  ],
+  "examples": [
+    "heart rate zones age 35 resting 60",
+    "ftp zones 250",
+    "watts per kg 250w 75kg"
+  ]
+}
