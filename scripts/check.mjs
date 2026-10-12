@@ -122,18 +122,26 @@ export async function check(folder, { timeoutMs = 20000 } = {}) {
 /// The child: load the entry with a stand-in `jevie` that refuses what the
 /// real one refuses (runtime.mjs), then say each example.
 async function loadAndTry(entry, examples, manifest = {}) {
-  const { List, Detail, Form, Action, command, Secret, Answer, Row, Table, Gauge, Progress, Note, Cards } = await import('./api.mjs');
+  const { List, Detail, Form, Action, command, Secret, Answer, Row, Table, Gauge, Progress, Note, Cards, CardParts } = await import('./api.mjs');
   const NAME = /^[a-z][a-z0-9_-]{0,63}$/;
   const fail = message => { throw new Error(message); };
-  const surfaces = [], tools = [], names = [], counts = { surfaces: 0, commands: 0, tools: 0, mcp: 0 };
+  const surfaces = [], tools = [], names = [], cards = [], counts = { surfaces: 0, commands: 0, tools: 0, mcp: 0, cards: 0 };
   const tool = spec => {
     if (!NAME.test(spec?.name ?? '') || typeof spec.execute !== 'function' || !spec.description) fail('A tool needs name, description, and execute');
     if (tools.some(t => t.name === spec.name)) fail(`Duplicate tool: ${spec.name}`);
     if ((spec.inputSchema?.type ?? 'object') !== 'object') fail('Tool inputSchema must have type object');
     tools.push(spec); counts.tools++;
   };
-  const jevie = Object.freeze({ apiVersion: 1, List, Detail, Form, Action, command, Secret, Answer, Row, Table, Gauge, Progress, Note, Cards,
+  const jevie = Object.freeze({ apiVersion: 1, List, Detail, Form, Action, command, Secret, Answer, Row, Table, Gauge, Progress, Note, Cards, CardParts,
     registerTool: tool,
+    // As runtime.mjs registerCard: the match is decided in code.
+    registerCard(card) {
+      if (!NAME.test(card?.name ?? '') || typeof card.render !== 'function' || !card.label) fail('A card needs name, label and render');
+      const words = (card.match?.words ?? []).map(w => String(w).toLowerCase().trim()).filter(Boolean);
+      const pattern = card.match?.pattern ? new RegExp(String(card.match.pattern), 'i') : null;
+      if (!words.length && !pattern) fail(`Card ${card.name} needs match.words or match.pattern`);
+      cards.push({ ...card, words, pattern }); counts.cards++;
+    },
     registerCommand(name, spec) {
       if (typeof spec?.execute !== 'function') fail('A command needs execute');
       tool({ name, description: spec.description, readOnly: spec.readOnly, execute: (args, ctx) => spec.execute(args.text ?? '', ctx) });
@@ -172,6 +180,18 @@ async function loadAndTry(entry, examples, manifest = {}) {
       if (Object.values(args).some(v => /^\/(?:path|absolute)\//.test(v))) { tried.push({ sentence, answered: true, skipped: true, why: 'not run: the example names a placeholder path' }); continue; }
       try { const out = await within(Promise.resolve(found.execute(args, context))); tried.push({ sentence, answered: out != null, ms: Date.now() - started, ...(out == null ? { why: 'the tool answered nothing' } : {}) }); }
       catch (error) { tried.push({ sentence, answered: false, ms: Date.now() - started, why: String(error.message ?? error).slice(0, 200) }); }
+      continue;
+    }
+    // A card's line: matched as the palette matches it, rendered as it would be shown.
+    const lower = sentence.toLowerCase();
+    const card = cards.find(c => c.words.some(w => lower === w || lower.startsWith(`${w} `)) || c.pattern?.test(sentence));
+    if (card) {
+      try {
+        const shown = await within(Promise.resolve(card.render(sentence, { now: new Date().toISOString() })));
+        const ok = shown && Array.isArray(shown.body);
+        tried.push({ sentence, answered: Boolean(ok), ms: Date.now() - started, card: card.name, ...(ok ? { shown: shown.body.length, status: shown.error ? 'failed' : 'ok', first: String(shown.summary ?? '').slice(0, 120) }
+          : { why: 'a card answers { body: [lines…], summary, complete?, copy? } (jevie.CardParts builds the lines)' }) });
+      } catch (error) { tried.push({ sentence, answered: false, ms: Date.now() - started, why: String(error.message ?? error).slice(0, 200) }); }
       continue;
     }
     const candidates = (await Promise.all(surfaces.map(s => Promise.resolve(s.propose?.({ head: sentence, sentence, ctx: {} })).catch(() => [])))).flat().filter(Boolean);

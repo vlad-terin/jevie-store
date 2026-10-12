@@ -28,6 +28,22 @@ index.html           the store's page, built with it
 - **Pulled:** a version in `revoked.json` is never listed again, and Jevie
   tells whoever installed it.
 
+## Cards
+
+An extension can add a **card**: drawn under the field while a line is typed,
+as Jevie's own event, split and time-zone cards are. Examples: "bundle size
+zod", "air quality berlin", "dns github.com". Type `extensions cards` in Jevie
+to see them. A card is matched by its words in code (never by a model) and
+rendered when typing pauses, and ↵ copies its answer. Start from
+[templates/card](templates/card); the API is in
+[docs/API.md](docs/API.md#cards).
+
+**A single card** (a checklist, a split bill, a lookup) can be shared too:
+say **share the last card**, or **share a card** to pick one. It goes into
+`cards/` in your own repository. The link shows it on the store's page, and
+"Open in Jevie" types its words, which makes the card again. If the card is
+an extension's, the page offers that extension first.
+
 ## Sharing yours
 
 The easy way is from Jevie. It asks "Share it?" once an extension of yours has

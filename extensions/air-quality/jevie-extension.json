@@ -1,0 +1,13 @@
+{
+  "id": "air-quality",
+  "title": "Air Quality",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "The air anywhere as a card while you type: the US AQI with its band and the pollutants behind it, from Open-Meteo.",
+  "entry": "index.mjs",
+  "categories": ["Productivity"],
+  "icon": "aqi.medium",
+  "author": "vlad-terin",
+  "topics": ["air quality", "aqi", "pollution"],
+  "examples": ["air quality berlin", "aqi delhi"]
+}

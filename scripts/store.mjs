@@ -101,6 +101,17 @@ export function storeIssues(manifest, { readme = null, changelog = null } = {}) 
 /// sentences are all answered so - it would only confuse the gate (the
 /// speedtest port duplicated surfaces/network, 4 October 2026).
 export async function nativeAnswer(sentence, { timeoutMs = 8000 } = {}) {
+  // Jevie's own cards first: cron, chmod, pace, units, tips … worked out in
+  // code (kernel/cards/parse/instant*.mjs), and the plot and table cards.
+  const card = await (async () => {
+    const { instantAnswer } = await import('../cards/parse/instant.mjs');
+    const { utilityKind } = await import('../cards/utility-cards.mjs');
+    const hit = instantAnswer(sentence, { now: new Date() });
+    if (hit) return { surface: 'Cards', label: `Jevie's ${String(hit.kind ?? 'instant').toLowerCase()} card` };
+    const utility = utilityKind(sentence);
+    return utility ? { surface: 'Cards', label: `Jevie's ${utility} card` } : null;
+  })().catch(() => null);
+  if (card) return card;
   const { SURFACES } = await import('../../surfaces/index.mjs');
   const input = { head: sentence, sentence, said: sentence, ctx: {}, acts: [], mentions: [], rest: '' };
   const own = new Set(['Extensions', 'Extension store']);
@@ -139,13 +150,15 @@ export async function entryOf(folder, { source = null, deep = false } = {}) {
   }
   // Read from the code when it was not loaded: shown before installing.
   if (!reaches) { const read = await reachesOf(folder).catch(() => null); if (read) reaches = { hosts: read.hosts, programs: read.programs, writes: read.writes }; }
+  // A card of its own (registerCard): shown as one in the store, "extensions cards".
+  const cards = await (async () => { for (const f of (await readdir(folder).catch(() => [])).filter(f => /\.(?:mjs|js)$/.test(f))) if (/\bregisterCard\s*\(/.test(await readFile(join(folder, f), 'utf8').catch(() => ''))) return true; return false; })();
   let iconFile = null;
   for (const name of ['assets/icon.png', 'assets/icon.svg', 'icon.png']) if (await exists(join(folder, name))) { iconFile = name; break; }
   const entry = {
     id: manifest.id, title: manifest.title ?? manifest.id, description: String(manifest.description ?? ''), version: String(manifest.version ?? ''),
     categories: manifest.categories ?? [], icon: manifest.icon ?? 'puzzlepiece.extension', ...(iconFile ? { iconFile } : {}),
     author: manifest.author ?? null, requires: manifest.requires ?? null, topics: manifest.topics ?? [], examples: manifest.examples ?? [],
-    settings: (manifest.preferences ?? []).length, changes: manifest.changes ?? null, ...(reaches ? { reaches } : {}),
+    settings: (manifest.preferences ?? []).length, changes: manifest.changes ?? null, ...(reaches ? { reaches } : {}), ...(cards ? { cards: true } : {}),
     readme: readme ? readme.slice(0, 6000) : null, change: latestChange(changelog),
     source: source ?? folder
   };
@@ -288,11 +301,13 @@ body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,
 h1{margin:0 0 4px}header p{color:var(--faint);margin:0 0 24px}input{width:100%;box-sizing:border-box;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;margin-bottom:20px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
 h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4px 0}.open{display:inline-block;margin-top:6px;padding:6px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
-#shared{display:none;margin-bottom:20px}#shared.on{display:block}</style></head><body><main>
+#shared,#card{display:none;margin-bottom:20px}#shared.on,#card.on{display:block}#card ul{margin:8px 0;padding-left:18px}</style></head><body><main>
 <header><h1>${esc(title)}</h1><p>${store.extensions.length} extensions · found by what you say to them · <a href="https://github.com/${esc(store.repo ?? '')}">add yours</a></p></header>
 <article id="shared"><h2>An extension shared with you</h2><p class="meta" id="shared-source"></p><a class="open" id="shared-open" href="#">Open in Jevie</a></article>
+<article id="card"><p class="meta" id="card-label"></p><h2 id="card-summary"></h2><ul id="card-shown"></ul><p class="say" id="card-text"></p><a class="open" id="card-need" href="#" style="display:none;margin-right:6px"></a><a class="open" id="card-open" href="#">Open in Jevie</a></article>
 <input id="q" placeholder="Search extensions" autocomplete="off"><div class="grid">${cards}</div></main>
 <script>const h=new URLSearchParams(location.hash.slice(1)).get('install');if(h&&/^(?:git|npm):[\\w.@:/#-]+$/.test(h)){const s=document.getElementById('shared');s.classList.add('on');document.getElementById('shared-source').textContent=h;document.getElementById('shared-open').href='jevie://ask?q='+encodeURIComponent('install extension '+h)}
+const c=new URLSearchParams(location.hash.slice(1)).get('card');if(c&&/^[\\w.-]+\\/[\\w.-]+\\/[0-9a-f]{7,40}\\/cards\\/[\\w.-]+\\.json$/.test(c)){fetch('https://raw.githubusercontent.com/'+c).then(r=>r.json()).then(k=>{const el=id=>document.getElementById(id);el('card').classList.add('on');el('card-label').textContent=(k.label||'Card')+' · shared '+(k.shared||'');el('card-summary').textContent=k.summary||k.label||'';for(const t of (k.shown||[]).slice(0,12)){const li=document.createElement('li');li.textContent=t;el('card-shown').appendChild(li)}el('card-text').textContent='Its words: “'+(k.text||'')+'”';el('card-open').href='jevie://ask?q='+encodeURIComponent(k.text||'');if(k.extension){const n=el('card-need');n.style.display='inline-block';n.textContent='Install '+k.extension+' first';n.href='jevie://ask?q='+encodeURIComponent('install the '+k.extension+' extension')}}).catch(()=>{})}
 document.getElementById('q').addEventListener('input',e=>{const w=e.target.value.toLowerCase();for(const a of document.querySelectorAll('.grid article'))a.style.display=a.textContent.toLowerCase().includes(w)?'':'none'})</script></body></html>
 `;
 }

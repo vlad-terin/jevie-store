@@ -47,8 +47,43 @@ with your permissions: isolated against crashes, not a sandbox.
 | `registerTool({ name, description, readOnly, inputSchema, execute(args, context) })` | an operation with JSON Schema arguments, for agents too |
 | `registerCommand(name, { execute(text, context) })` | a named command taking trailing text |
 | `registerSurface({ about, propose })` | your own objects found by name ("open my planning note"): `propose` observes and returns candidates, each `run` acts |
+| `registerCard({ name, label, symbol, match, examples, render })` | a card under the field as a line is typed; see [Cards](#cards) |
 | `registerMcpServer(name, config)` | an MCP server bundled with the extension |
 | `on(event, handler)`, `onDispose(cleanup)` | lifecycle; release timers and sockets on unload |
+
+## Cards
+
+A card is drawn under Jevie's field while a line is typed ("bundle size zod",
+"air quality berlin"). An extension adds one with `registerCard`:
+
+```js
+export default function (jevie, context) {
+  const { line, pair, stack, hero, chip, icon } = jevie.CardParts;
+  jevie.registerCard({
+    name: 'bundle-size', label: 'Bundle size', symbol: 'shippingbox',
+    match: { words: ['bundle size'] },          // or { pattern: '^dns\\s+\\S+\\.\\w+$' }
+    examples: ['bundle size zod'],
+    async render(text) {
+      return { summary: 'zod: 88.9 kB', copy: 'zod@4.6.6: 88.9 kB min+gzip', complete: 1,
+        body: [pair(stack('leading', line(hero('88.9 kB')), line(chip('min + gzip'))), icon('arrow.right'), stack('trailing', line(hero('386 kB', true))))] };
+    }
+  });
+}
+```
+
+| | |
+| --- | --- |
+| `match` | `words` that begin the line, or a `pattern` (a regular expression's source). Tested by Jevie on every keystroke with no call to your code. Never a model |
+| `render(text)` | called when typing pauses, in your extension's process; 2.5 s |
+| `body` | lines from `jevie.CardParts`: `line`, `spread`, `pair`, `halves`, `stack`, `title`, `text`, `hero`, `meta`, `mono`, `chip`, `icon`, `list`, `bar` |
+| `summary` | the line kept in the saved list |
+| `copy` | what ↵ puts on the clipboard |
+| `complete` | 0 to 1, how ready the card is |
+| `error: true` | a card that only says why it has nothing |
+
+Start from [templates/card](../templates/card). Jevie already has cards for
+cron, chmod, running pace, time zones, units, tips, salaries, colours and
+more, and the check refuses a duplicate.
 
 ## Answers
 

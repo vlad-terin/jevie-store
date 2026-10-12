@@ -11,6 +11,14 @@ people find it, how Jevie's check tests it, and what the store searches. Read
 [docs/API.md](docs/API.md) for the manifest and the API, and copy
 [templates/list](templates/list) to start.
 
+### A command or a card?
+
+- **A command** answers when the person asks: "hn show", "my prs". It runs
+  on Return and shows a list, a detail or a form.
+- **A card** shows under the field while they type: "bundle size zod", "aqi
+  delhi". It is one answer at a glance, and Return copies it. Its `match` must
+  be words or a pattern (decided in code). Start from `templates/card`.
+
 ## Where to write it
 
 - For the person you work for: `~/.jevie/extensions/<id>/`. Jevie finds it
@@ -34,7 +42,9 @@ people find it, how Jevie's check tests it, and what the store searches. Read
 - No home paths (`/Users/<name>`) and no private or workplace hosts. Make them
   `text` preferences.
 - Not a duplicate of what Jevie answers itself (weather, Spotify, clipboard
-  history, window layouts, processes, ports, system monitor, …). The check
+  history, window layouts, processes, ports, system monitor, and cards for
+  cron, chmod, pace, time zones, units, tips …). A card's words must not
+  take a word Jevie uses ("dig" is its file finder). The check
   says each example to Jevie's own surfaces and refuses the extension if all
   of them are answered there.
 
