@@ -1,5 +1,5 @@
 {
-  "built": "2026-10-12T05:22:56.584Z",
+  "built": "2026-10-12T05:38:43.502Z",
   "jevie": "0.0.0",
   "extensions": [
     {
@@ -41,7 +41,7 @@
           "First version: a card, from Open-Meteo."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/air-quality",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/air-quality",
       "trust": "official"
     },
     {
@@ -82,7 +82,88 @@
           "First version: a card, sized by bundlephobia."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/bundle-size",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/bundle-size",
+      "trust": "official"
+    },
+    {
+      "id": "business-days",
+      "title": "Business Days",
+      "description": "Working days, as a card while you type: 10 business days from today, workdays until a date, or between two - weekends and (optionally) US federal holidays left out.",
+      "version": "1.0.0",
+      "categories": [
+        "Productivity",
+        "Finance"
+      ],
+      "icon": "calendar.badge.clock",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "business days",
+        "working days",
+        "workdays"
+      ],
+      "examples": [
+        "10 business days from today",
+        "workdays until dec 15"
+      ],
+      "settings": 1,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Business Days\n\nWorking days, as a card while you type: 10 business days from today, workdays until a date, or between two - weekends and (optionally) US federal holidays left out.\n\n## Type\n\n- “10 business days from today”\n- “15 working days from mar 3”\n- “workdays until dec 15”\n- “business days between oct 1 and nov 15”\n\nWeekends are always left out. US federal holidays are left out too (observed dates, as the courts and banks count them), unless “settings for business-days” says none. ↵ copies the date or the count.\n\n## Reaches\n\nNothing: it is worked out on your Mac. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/business-days",
+      "trust": "official"
+    },
+    {
+      "id": "business-math",
+      "title": "Business Math",
+      "description": "Margin and markup, growth rate (CAGR) and break-even, as cards while you type - the numbers a price, a plan or a pitch needs.",
+      "version": "1.0.0",
+      "categories": [
+        "Finance",
+        "Productivity"
+      ],
+      "icon": "chart.line.uptrend.xyaxis",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "margin",
+        "markup",
+        "cagr",
+        "break even"
+      ],
+      "examples": [
+        "margin cost 25 price 40",
+        "cagr 100 to 250 in 5 years"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Business Math\n\nMargin and markup, growth rate (CAGR) and break-even, as cards while you type - the numbers a price, a plan or a pitch needs.\n\n## Type\n\n- “margin cost 25 price 40”\n- “price for 40% margin on 25”\n- “markup 25 40”\n- “cagr 100 to 250 in 5 years”\n- “break even fixed 50k price 120 cost 45”\n\nMargin is profit over price, markup is profit over cost; both are shown, since they are confused so often. Amounts take k, m and b. ↵ copies the line.\n\n## Reaches\n\nNothing: it is worked out on your Mac. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/business-math",
       "trust": "official"
     },
     {
@@ -126,7 +207,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/calls",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/calls",
       "trust": "official"
     },
     {
@@ -167,7 +248,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/can-i-use",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/can-i-use",
       "trust": "official"
     },
     {
@@ -209,7 +290,48 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/cheatsheets",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/cheatsheets",
+      "trust": "official"
+    },
+    {
+      "id": "clinical-calculators",
+      "title": "Clinical Calculators",
+      "description": "BMI with body surface area, a due date from the last period, and creatinine clearance (Cockcroft-Gault), as cards while you type - worked out on your Mac.",
+      "version": "1.0.0",
+      "categories": [
+        "Productivity"
+      ],
+      "icon": "cross.case",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "bmi",
+        "due date",
+        "creatinine clearance",
+        "bsa"
+      ],
+      "examples": [
+        "bmi 180 cm 75 kg",
+        "due date lmp 2026-03-01",
+        "crcl 65 years 70 kg creatinine 1.2 male"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Clinical Calculators\n\nBMI with body surface area, a due date from the last period, and creatinine clearance (Cockcroft-Gault), as cards while you type - worked out on your Mac.\n\n## Type\n\n- “bmi 180 cm 75 kg”\n- “bmi 5'11 170 lb”\n- “due date lmp 2026-03-01”\n- “edd lmp mar 1”\n- “crcl 65 years 70 kg creatinine 1.2 male”\n\nEach card names its formula: BMI with WHO bands and body surface area by Mosteller, the due date by Naegele's rule (last period + 280 days) with the weeks along today, and creatinine clearance by Cockcroft-Gault on actual body weight. A creatinine above 30 is read as µmol/L. These are calculators, not medical advice. ↵ copies the line.\n\n## Reaches\n\nNothing: it is worked out on your Mac. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/clinical-calculators",
       "trust": "official"
     },
     {
@@ -250,7 +372,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/country",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/country",
       "trust": "official"
     },
     {
@@ -290,7 +412,7 @@
           "First version: a card, from the Mac's resolver."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/dns-lookup",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/dns-lookup",
       "trust": "official"
     },
     {
@@ -331,7 +453,92 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/docker-containers",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/docker-containers",
+      "trust": "official"
+    },
+    {
+      "id": "drug-label",
+      "title": "Drug Label",
+      "description": "A medicine's FDA label at a glance as a card while you type: its brand and generic names, what it is for, how it is taken, and whether it carries a boxed warning.",
+      "version": "1.0.0",
+      "categories": [
+        "Documentation"
+      ],
+      "icon": "pills",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "drug",
+        "medication",
+        "fda label"
+      ],
+      "examples": [
+        "drug ibuprofen",
+        "drug metformin"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "api.fda.gov",
+          "dailymed.nlm.nih.gov"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Drug Label\n\nA medicine's FDA label at a glance as a card while you type: its brand and generic names, what it is for, how it is taken, and whether it carries a boxed warning.\n\n## Type\n\n- “drug ibuprofen”\n- “drug lipitor”\n- “fda label metformin”\n\nIt shows the brand and generic names, whether it is prescription or over the counter, the form and route, the first line of what it is indicated for, and whether the label carries a boxed warning. The most recent label is used. It is reference, not medical advice. ↵ copies the full label's DailyMed link.\n\n## Reaches\n\napi.fda.gov (openFDA). It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/drug-label",
+      "trust": "official"
+    },
+    {
+      "id": "end-of-life",
+      "title": "End of Life",
+      "description": "When a language, framework, database or OS stops getting fixes, as a card while you type - the current and supported releases, from endoflife.date.",
+      "version": "1.0.0",
+      "categories": [
+        "Developer Tools",
+        "System"
+      ],
+      "icon": "calendar.badge.exclamationmark",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "end of life",
+        "eol",
+        "lts",
+        "support dates"
+      ],
+      "examples": [
+        "eol python",
+        "eol node 18"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "endoflife.date"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# End of Life\n\nWhen a language, framework, database or OS stops getting fixes, as a card while you type - the current and supported releases, from endoflife.date.\n\n## Type\n\n- “eol python”\n- “eol node 18”\n- “end of life ubuntu”\n- “eol postgresql 13”\n\nWithout a release, it shows the newest and every supported one. With one, it shows whether that release is supported and until when. Common names work: node, postgres, k8s, rails, golang. ↵ copies the line.\n\n## Reaches\n\nendoflife.date. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/end-of-life",
       "trust": "official"
     },
     {
@@ -373,7 +580,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/f1-standings",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/f1-standings",
       "trust": "official"
     },
     {
@@ -420,7 +627,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/feeds",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/feeds",
       "trust": "official"
     },
     {
@@ -461,7 +668,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/github",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/github",
       "trust": "official"
     },
     {
@@ -503,7 +710,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/github-repo",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/github-repo",
       "trust": "official"
     },
     {
@@ -544,7 +751,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/hacker-news",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/hacker-news",
       "trust": "official"
     },
     {
@@ -588,7 +795,90 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/homebrew",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/homebrew",
+      "trust": "official"
+    },
+    {
+      "id": "http-headers",
+      "title": "HTTP Headers",
+      "description": "A site's response at a glance as a card while you type: status, server, caching, and which security headers it sends.",
+      "version": "1.0.0",
+      "categories": [
+        "Developer Tools",
+        "Security"
+      ],
+      "icon": "list.bullet.rectangle",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "http headers",
+        "security headers",
+        "response headers"
+      ],
+      "examples": [
+        "headers github.com",
+        "headers https://example.org"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "example.org"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# HTTP Headers\n\nA site's response at a glance as a card while you type: status, server, caching, and which security headers it sends.\n\n## Type\n\n- “headers github.com”\n- “http headers https://example.org/path”\n\nThe grade counts six security headers (HSTS, CSP, X-Content-Type-Options, X-Frame-Options or CSP frame-ancestors, Referrer-Policy, Permissions-Policy): A+ for all six. ↵ copies every header.\n\n## Reaches\n\nThe site itself (a HEAD request, or GET when HEAD is refused). It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/http-headers",
+      "trust": "official"
+    },
+    {
+      "id": "icd-10",
+      "title": "ICD-10",
+      "description": "ICD-10-CM codes as a card while you type: a condition's codes, or what a code means - from the National Library of Medicine.",
+      "version": "1.0.0",
+      "categories": [
+        "Documentation"
+      ],
+      "icon": "list.clipboard",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "icd10",
+        "icd-10",
+        "diagnosis code"
+      ],
+      "examples": [
+        "icd10 asthma",
+        "icd J45.909"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "clinicaltables.nlm.nih.gov"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# ICD-10\n\nICD-10-CM codes as a card while you type: a condition's codes, or what a code means - from the National Library of Medicine.\n\n## Type\n\n- “icd10 asthma”\n- “icd-10 type 2 diabetes”\n- “icd J45.909”\n\nA code (J45.909) finds its name; words find up to six codes, the best first. ↵ copies the first code.\n\n## Reaches\n\nclinicaltables.nlm.nih.gov (the National Library of Medicine). It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/icd-10",
       "trust": "official"
     },
     {
@@ -628,7 +918,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/iconify",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/iconify",
       "trust": "official"
     },
     {
@@ -670,7 +960,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/ip-info",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/ip-info",
       "trust": "official"
     },
     {
@@ -710,7 +1000,50 @@
           "With no API key yet it asks for one (↵ opens its settings), rather than saying Linear refused it."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/linear",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/linear",
+      "trust": "official"
+    },
+    {
+      "id": "link-preview",
+      "title": "Link Preview",
+      "description": "How a link will look when shared: its Open Graph title, description, image and card type, as a card while you type - and the tags it is missing.",
+      "version": "1.0.0",
+      "categories": [
+        "Web",
+        "Productivity"
+      ],
+      "icon": "rectangle.and.text.magnifyingglass",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "open graph",
+        "og tags",
+        "link preview",
+        "social card"
+      ],
+      "examples": [
+        "og github.com",
+        "preview https://vercel.com"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "vercel.com"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Link Preview\n\nHow a link will look when shared: its Open Graph title, description, image and card type, as a card while you type - and the tags it is missing.\n\n## Type\n\n- “og github.com”\n- “preview https://vercel.com”\n- “open graph stripe.com/pricing”\n\nIt shows the title, description and image a share would use, and says which tags are missing (og:title, og:image, description, twitter:card). Only the page's head is read, at most 512 kB. ↵ copies the title, description and image address.\n\n## Reaches\n\nThe page itself. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/link-preview",
       "trust": "official"
     },
     {
@@ -753,7 +1086,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/mdn",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/mdn",
       "trust": "official"
     },
     {
@@ -792,7 +1125,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/moon-phase",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/moon-phase",
       "trust": "official"
     },
     {
@@ -832,7 +1165,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/npm-search",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/npm-search",
       "trust": "official"
     },
     {
@@ -870,7 +1203,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/obsidian",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/obsidian",
       "trust": "official"
     },
     {
@@ -911,7 +1244,49 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/pypi",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/pypi",
+      "trust": "official"
+    },
+    {
+      "id": "readability",
+      "title": "Readability",
+      "description": "How easy a text is to read, as a card while you type: Flesch reading ease, the school grade, the longest sentence and the reading time.",
+      "version": "1.0.0",
+      "categories": [
+        "Productivity",
+        "Documentation"
+      ],
+      "icon": "text.magnifyingglass",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "readability",
+        "flesch",
+        "reading level"
+      ],
+      "examples": [
+        "readability The quick brown fox jumps over the lazy dog.",
+        "readability We hold these truths to be self-evident, that all men are created equal."
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [
+          "pbpaste"
+        ],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Readability\n\nHow easy a text is to read, as a card while you type: Flesch reading ease, the school grade, the longest sentence and the reading time.\n\n## Type\n\n- “readability The quick brown fox jumps over the lazy dog.”\n- “readability clipboard”\n\n60 to 70 is plain English, which most readers manage; under 30 reads like a legal or academic text. The longest sentence is shown when it runs past 25 words. ↵ copies the score.\n\n## Reaches\n\nNothing: it is worked out on your Mac (the clipboard is read only when you type “readability clipboard”). It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/readability",
       "trust": "official"
     },
     {
@@ -951,7 +1326,7 @@
           "A list asked for again within ten minutes comes from what was kept, and when Reddit limits requests the kept list is shown with its age instead of an error."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/reddit",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/reddit",
       "trust": "official"
     },
     {
@@ -993,7 +1368,86 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/rhymes",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/rhymes",
+      "trust": "official"
+    },
+    {
+      "id": "semver",
+      "title": "Semver",
+      "description": "Whether a version satisfies a range, and what a range like ^1.2.0 or ~2.1 allows, as a card while you type - npm's rules, on your Mac.",
+      "version": "1.0.0",
+      "categories": [
+        "Developer Tools"
+      ],
+      "icon": "number.square",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "semver",
+        "version range",
+        "caret range"
+      ],
+      "examples": [
+        "semver ^1.2.0 1.4.5",
+        "semver ~2.1"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Semver\n\nWhether a version satisfies a range, and what a range like ^1.2.0 or ~2.1 allows, as a card while you type - npm's rules, on your Mac.\n\n## Type\n\n- “semver ^1.2.0”\n- “semver ~2.1 2.1.9”\n- “semver >=1.2 <2 1.9.0”\n- “semver 1.x 1.5.2”\n\nIt reads npm's ranges: caret, tilde, x-ranges and comparators. A pre-release only satisfies a range that names one. A version after the range is tested against it. ↵ copies the answer.\n\n## Reaches\n\nNothing: it is worked out on your Mac. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/semver",
+      "trust": "official"
+    },
+    {
+      "id": "service-status",
+      "title": "Service Status",
+      "description": "Is GitHub, OpenAI, Slack or Vercel down? A service's own status page as a card while you type, with what is broken right now.",
+      "version": "1.0.0",
+      "categories": [
+        "Developer Tools",
+        "Productivity"
+      ],
+      "icon": "waveform.path.ecg",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "status page",
+        "is it down",
+        "outage"
+      ],
+      "examples": [
+        "is github down",
+        "status openai"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Service Status\n\nIs GitHub, OpenAI, Slack or Vercel down? A service's own status page as a card while you type, with what is broken right now.\n\n## Type\n\n- “is github down”\n- “status openai”\n- “vercel status”\n- “is slack up”\n\nIt knows the status pages of about 40 services (GitHub, OpenAI, Anthropic, Vercel, Cloudflare, Slack's Atlassian-hosted peers, Jira, Linear, Figma, Notion, Supabase and more). Another service is tried at `status.<name>.com`. It shows what is broken and the open incidents. ↵ copies the line with the status page's address.\n\n## Reaches\n\nThe service's own status page. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/service-status",
       "trust": "official"
     },
     {
@@ -1033,7 +1487,47 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/ssl-certificate",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/ssl-certificate",
+      "trust": "official"
+    },
+    {
+      "id": "subnet",
+      "title": "Subnet Calculator",
+      "description": "An IPv4 subnet as a card while you type: its network, broadcast, usable range, host count and mask - from CIDR or a mask.",
+      "version": "1.0.0",
+      "categories": [
+        "Developer Tools",
+        "System"
+      ],
+      "icon": "point.3.connected.trianglepath.dotted",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "cidr",
+        "subnet",
+        "netmask"
+      ],
+      "examples": [
+        "cidr 10.0.0.0/24",
+        "subnet 192.168.1.130/26"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Subnet Calculator\n\nAn IPv4 subnet as a card while you type: its network, broadcast, usable range, host count and mask - from CIDR or a mask.\n\n## Type\n\n- “cidr 10.0.0.0/24”\n- “subnet 192.168.1.130/26”\n- “subnet 172.16.0.0 255.255.240.0”\n\nIt shows the network, broadcast, usable range, host count, mask and wildcard, and whether the range is private. A /31 and a /32 count every address, as point-to-point links use them. ↵ copies the line.\n\n## Reaches\n\nNothing: it is worked out on your Mac. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/subnet",
       "trust": "official"
     },
     {
@@ -1075,7 +1569,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/sun-times",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/sun-times",
       "trust": "official"
     },
     {
@@ -1114,7 +1608,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/svgl",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/svgl",
       "trust": "official"
     },
     {
@@ -1154,14 +1648,14 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/tldr",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/tldr",
       "trust": "official"
     },
     {
       "id": "urban-dictionary",
-      "title": "Urban Dictionary",
+      "title": "Urban",
       "description": "What slang means, from Urban Dictionary, as a card while you type: the top definition and an example.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "categories": [
         "Fun"
       ],
@@ -1173,8 +1667,8 @@
         "slang"
       ],
       "examples": [
-        "urban dictionary yeet",
-        "slang for touch grass"
+        "urban yeet",
+        "urban touch grass"
       ],
       "settings": 0,
       "changes": null,
@@ -1186,7 +1680,49 @@
         "writes": 0
       },
       "cards": true,
-      "readme": "# Urban Dictionary\n\nWhat slang means, from Urban Dictionary, as a card while you type: the top definition and an example.\n\n## Type\n\n- “urban dictionary yeet”\n- “urban define touch grass”\n- “slang for no cap”\n\n↵ copies the definition. Urban Dictionary is written by its readers, and some of it is crude. The top definition is the one with the most thumbs up over thumbs down. A proper dictionary definition is Jevie's own: “define serendipity”.\n\n## Reaches\n\napi.urbandictionary.com. It changes nothing.\n",
+      "readme": "# Urban\n\nWhat slang means, from Urban Dictionary, as a card while you type: the top definition and an example.\n\n## Type\n\n- “urban yeet”\n- “urban touch grass”\n- “slang for no cap”\n\n↵ copies the definition. A shop's name after “urban” finds a definition too (“urban outfitters”): arrow down to the list to open the site instead. Urban Dictionary is written by its readers, and some of it is crude. The top definition is the one with the most thumbs up over thumbs down. A proper dictionary definition is Jevie's own: “define serendipity”.\n\n## Reaches\n\napi.urbandictionary.com. It changes nothing.\n",
+      "change": {
+        "version": "1.0.1",
+        "date": "2026-10-12",
+        "lines": [
+          "“urban yeet”: the word after “urban” alone, as Raycast has it."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/urban-dictionary",
+      "trust": "official"
+    },
+    {
+      "id": "utm-builder",
+      "title": "UTM Builder",
+      "description": "A link with UTM tags, built as a card while you type - source, medium and campaign - and copied with ↵.",
+      "version": "1.0.0",
+      "categories": [
+        "Productivity",
+        "Web"
+      ],
+      "icon": "link.badge.plus",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "utm",
+        "campaign link",
+        "tracking link"
+      ],
+      "examples": [
+        "utm https://jevie.app twitter social launch",
+        "utm jevie.app source=newsletter campaign=october"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "jevie.app"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# UTM Builder\n\nA link with UTM tags, built as a card while you type - source, medium and campaign - and copied with ↵.\n\n## Type\n\n- “utm https://jevie.app twitter social launch”\n- “utm jevie.app source=newsletter campaign=october”\n\nWords after the address are source, medium and campaign, in that order. Or name them: `source=` `medium=` `campaign=` `term=` `content=`. ↵ copies the link.\n\n## Reaches\n\nNothing: it is built on your Mac. It changes nothing.\n",
       "change": {
         "version": "1.0.0",
         "date": "2026-10-12",
@@ -1194,7 +1730,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/urban-dictionary",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/utm-builder",
       "trust": "official"
     },
     {
@@ -1236,7 +1772,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/whois",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/whois",
       "trust": "official"
     },
     {
@@ -1277,7 +1813,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/wikipedia",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/wikipedia",
       "trust": "official"
     },
     {
@@ -1314,7 +1850,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/world-clock",
+      "source": "git:github.com/vlad-terin/jevie-store@0b194c203597f66b944618d22e8a0a68f9f8e59a#extensions/world-clock",
       "trust": "official"
     }
   ],

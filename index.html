@@ -6,7 +6,7 @@ h1{margin:0 0 4px}header p{color:var(--faint);margin:0 0 24px}input{width:100%;b
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
 h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4px 0}.open{display:inline-block;margin-top:6px;padding:6px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
 #shared,#card{display:none;margin-bottom:20px}#shared.on,#card.on{display:block}#card ul{margin:8px 0;padding-left:18px}</style></head><body><main>
-<header><h1>Jevie extensions</h1><p>32 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
+<header><h1>Jevie extensions</h1><p>45 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
 <article id="shared"><h2>An extension shared with you</h2><p class="meta" id="shared-source"></p><a class="open" id="shared-open" href="#">Open in Jevie</a></article>
 <article id="card"><p class="meta" id="card-label"></p><h2 id="card-summary"></h2><ul id="card-shown"></ul><p class="say" id="card-text"></p><a class="open" id="card-need" href="#" style="display:none;margin-right:6px"></a><a class="open" id="card-open" href="#">Open in Jevie</a></article>
 <input id="q" placeholder="Search extensions" autocomplete="off"><div class="grid"><article id="air-quality"><h2>Air Quality</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
@@ -15,6 +15,12 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="bundle-size"><h2>Bundle Size</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
 <p>What an npm package adds to a web page, minified and gzipped, as a card while you type - from bundlephobia.</p><p class="say">“bundle size zod” · “bundle size react-dom”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Bundle%20Size%20extension">Open in Jevie</a></article>
+<article id="business-days"><h2>Business Days</h2><p class="meta">Productivity · Finance · by vlad-terin · v1.0.0 · official</p>
+<p>Working days, as a card while you type: 10 business days from today, workdays until a date, or between two - weekends and (optionally) US federal holidays left out.</p><p class="say">“10 business days from today” · “workdays until dec 15”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Business%20Days%20extension">Open in Jevie</a></article>
+<article id="business-math"><h2>Business Math</h2><p class="meta">Finance · Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>Margin and markup, growth rate (CAGR) and break-even, as cards while you type - the numbers a price, a plan or a pitch needs.</p><p class="say">“margin cost 25 price 40” · “cagr 100 to 250 in 5 years”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Business%20Math%20extension">Open in Jevie</a></article>
 <article id="calls"><h2>Call Transcripts</h2><p class="meta">Productivity · Communication · by vlad-terin · v1.0.0 · official</p>
 <p>Transcribe a call on this Mac: you through the microphone, the others through what the Mac plays. Text only, kept in ~/.jevie/calls and in recall.</p><p class="say">“transcribe this call” · “transcribe the standup” · “stop transcribing”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Call%20Transcripts%20extension">Open in Jevie</a></article>
@@ -24,6 +30,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="cheatsheets"><h2>Cheatsheets</h2><p class="meta">Developer Tools · Documentation · by vlad-terin · v1.0.0 · official</p>
 <p>Developer cheat sheets from devhints.io - a port of Raycast&#39;s Cheatsheets extension.</p><p class="say">“cheatsheet git” · “cheatsheets”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Cheatsheets%20extension">Open in Jevie</a></article>
+<article id="clinical-calculators"><h2>Clinical Calculators</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>BMI with body surface area, a due date from the last period, and creatinine clearance (Cockcroft-Gault), as cards while you type - worked out on your Mac.</p><p class="say">“bmi 180 cm 75 kg” · “due date lmp 2026-03-01” · “crcl 65 years 70 kg creatinine 1.2 male”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Clinical%20Calculators%20extension">Open in Jevie</a></article>
 <article id="country"><h2>Country</h2><p class="meta">Documentation · by vlad-terin · v1.0.0 · official</p>
 <p>A country at a glance as a card while you type: its flag, capital, region, languages, currencies, calling code and time zones.</p><p class="say">“country japan” · “country brazil”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Country%20extension">Open in Jevie</a></article>
@@ -33,6 +42,12 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="docker-containers"><h2>Docker</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
 <p>Docker containers - what is running, their logs - with stop, restart and start on each row. A port of Raycast&#39;s Docker extension.</p><p class="say">“docker containers” · “containers running” · “docker containers postgres”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Docker%20extension">Open in Jevie</a></article>
+<article id="drug-label"><h2>Drug Label</h2><p class="meta">Documentation · by vlad-terin · v1.0.0 · official</p>
+<p>A medicine&#39;s FDA label at a glance as a card while you type: its brand and generic names, what it is for, how it is taken, and whether it carries a boxed warning.</p><p class="say">“drug ibuprofen” · “drug metformin”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Drug%20Label%20extension">Open in Jevie</a></article>
+<article id="end-of-life"><h2>End of Life</h2><p class="meta">Developer Tools · System · by vlad-terin · v1.0.0 · official</p>
+<p>When a language, framework, database or OS stops getting fixes, as a card while you type - the current and supported releases, from endoflife.date.</p><p class="say">“eol python” · “eol node 18”</p>
+<a class="open" href="jevie://ask?q=install%20the%20End%20of%20Life%20extension">Open in Jevie</a></article>
 <article id="f1-standings"><h2>F1 Standings</h2><p class="meta">Fun · News · by vlad-terin · v1.0.0 · official</p>
 <p>The Formula 1 championship as a card while you type: the leader, the top five and the gaps - drivers or constructors, from Jolpica&#39;s F1 data.</p><p class="say">“f1 standings” · “f1 constructors”</p>
 <a class="open" href="jevie://ask?q=install%20the%20F1%20Standings%20extension">Open in Jevie</a></article>
@@ -51,6 +66,12 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="homebrew"><h2>Homebrew</h2><p class="meta">Developer Tools · System · by vlad-terin · v1.0.0 · official</p>
 <p>Search, install, upgrade and remove Homebrew formulae and casks - a port of Raycast&#39;s Homebrew extension.</p><p class="say">“homebrew wget” · “homebrew installed” · “homebrew outdated”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Homebrew%20extension">Open in Jevie</a></article>
+<article id="http-headers"><h2>HTTP Headers</h2><p class="meta">Developer Tools · Security · by vlad-terin · v1.0.0 · official</p>
+<p>A site&#39;s response at a glance as a card while you type: status, server, caching, and which security headers it sends.</p><p class="say">“headers github.com” · “headers https://example.org”</p>
+<a class="open" href="jevie://ask?q=install%20the%20HTTP%20Headers%20extension">Open in Jevie</a></article>
+<article id="icd-10"><h2>ICD-10</h2><p class="meta">Documentation · by vlad-terin · v1.0.0 · official</p>
+<p>ICD-10-CM codes as a card while you type: a condition&#39;s codes, or what a code means - from the National Library of Medicine.</p><p class="say">“icd10 asthma” · “icd J45.909”</p>
+<a class="open" href="jevie://ask?q=install%20the%20ICD-10%20extension">Open in Jevie</a></article>
 <article id="iconify"><h2>Iconify</h2><p class="meta">Design Tools · by vlad-terin · v1.0.0 · official</p>
 <p>Search 200,000 open icons and copy their SVG - a port of Raycast&#39;s Iconify extension.</p><p class="say">“iconify home” · “iconify arrow right”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Iconify%20extension">Open in Jevie</a></article>
@@ -60,6 +81,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="linear"><h2>Linear</h2><p class="meta">Productivity · Developer Tools · by vlad-terin · v1.0.1 · official</p>
 <p>Your Linear issues - assigned, or searched by words - read-only, with a personal API key kept in the Keychain. A lean port of Raycast&#39;s Linear extension.</p><p class="say">“linear issues” · “linear issue onboarding”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Linear%20extension">Open in Jevie</a></article>
+<article id="link-preview"><h2>Link Preview</h2><p class="meta">Web · Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>How a link will look when shared: its Open Graph title, description, image and card type, as a card while you type - and the tags it is missing.</p><p class="say">“og github.com” · “preview https://vercel.com”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Link%20Preview%20extension">Open in Jevie</a></article>
 <article id="mdn"><h2>MDN</h2><p class="meta">Developer Tools · Documentation · by vlad-terin · v1.0.0 · official</p>
 <p>MDN Web Docs search - a port of Raycast&#39;s MDN extension.</p><p class="say">“mdn flexbox” · “mdn array map”</p>
 <a class="open" href="jevie://ask?q=install%20the%20MDN%20extension">Open in Jevie</a></article>
@@ -75,15 +99,27 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="pypi"><h2>PyPI</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
 <p>A Python package&#39;s latest version, what it is, which Python it needs and when it was released - as a card while you type.</p><p class="say">“pypi requests” · “pypi fastapi”</p>
 <a class="open" href="jevie://ask?q=install%20the%20PyPI%20extension">Open in Jevie</a></article>
+<article id="readability"><h2>Readability</h2><p class="meta">Productivity · Documentation · by vlad-terin · v1.0.0 · official</p>
+<p>How easy a text is to read, as a card while you type: Flesch reading ease, the school grade, the longest sentence and the reading time.</p><p class="say">“readability The quick brown fox jumps over the lazy dog.” · “readability We hold these truths to be self-evident, that all men are created equal.”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Readability%20extension">Open in Jevie</a></article>
 <article id="reddit"><h2>Reddit</h2><p class="meta">News · Web · by vlad-terin · v1.1.0 · official</p>
 <p>A subreddit&#39;s hot posts, through Reddit&#39;s public feed - a port of Raycast&#39;s Reddit extension.</p><p class="say">“subreddit programming” · “subreddit macapps top”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Reddit%20extension">Open in Jevie</a></article>
 <article id="rhymes"><h2>Rhymes &amp; Synonyms</h2><p class="meta">Fun · Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>Words that rhyme with a word, mean the same, or sound like it, as a card while you type - from Datamuse.</p><p class="say">“rhymes with light” · “synonyms for happy”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Rhymes%20%26%20Synonyms%20extension">Open in Jevie</a></article>
+<article id="semver"><h2>Semver</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
+<p>Whether a version satisfies a range, and what a range like ^1.2.0 or ~2.1 allows, as a card while you type - npm&#39;s rules, on your Mac.</p><p class="say">“semver ^1.2.0 1.4.5” · “semver ~2.1”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Semver%20extension">Open in Jevie</a></article>
+<article id="service-status"><h2>Service Status</h2><p class="meta">Developer Tools · Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>Is GitHub, OpenAI, Slack or Vercel down? A service&#39;s own status page as a card while you type, with what is broken right now.</p><p class="say">“is github down” · “status openai”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Service%20Status%20extension">Open in Jevie</a></article>
 <article id="ssl-certificate"><h2>SSL Certificate</h2><p class="meta">Developer Tools · Security · by vlad-terin · v1.0.0 · official</p>
 <p>A site&#39;s TLS certificate as a card while you type: who issued it, when it runs out, and the names it covers - read from the server itself.</p><p class="say">“ssl github.com” · “cert example.org”</p>
 <a class="open" href="jevie://ask?q=install%20the%20SSL%20Certificate%20extension">Open in Jevie</a></article>
+<article id="subnet"><h2>Subnet Calculator</h2><p class="meta">Developer Tools · System · by vlad-terin · v1.0.0 · official</p>
+<p>An IPv4 subnet as a card while you type: its network, broadcast, usable range, host count and mask - from CIDR or a mask.</p><p class="say">“cidr 10.0.0.0/24” · “subnet 192.168.1.130/26”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Subnet%20Calculator%20extension">Open in Jevie</a></article>
 <article id="sun-times"><h2>Sunrise &amp; Sunset</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>When the sun rises and sets anywhere today, and how long the day is, as a card while you type - from Open-Meteo.</p><p class="say">“sunrise tokyo” · “sunset in lisbon”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Sunrise%20%26%20Sunset%20extension">Open in Jevie</a></article>
@@ -93,9 +129,12 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="tldr"><h2>tldr</h2><p class="meta">Developer Tools · Documentation · by vlad-terin · v1.0.0 · official</p>
 <p>Command-line examples from tldr pages - a port of Raycast&#39;s TLDR extension.</p><p class="say">“tldr tar” · “tldr git log”</p>
 <a class="open" href="jevie://ask?q=install%20the%20tldr%20extension">Open in Jevie</a></article>
-<article id="urban-dictionary"><h2>Urban Dictionary</h2><p class="meta">Fun · by vlad-terin · v1.0.0 · official</p>
-<p>What slang means, from Urban Dictionary, as a card while you type: the top definition and an example.</p><p class="say">“urban dictionary yeet” · “slang for touch grass”</p>
-<a class="open" href="jevie://ask?q=install%20the%20Urban%20Dictionary%20extension">Open in Jevie</a></article>
+<article id="urban-dictionary"><h2>Urban</h2><p class="meta">Fun · by vlad-terin · v1.0.1 · official</p>
+<p>What slang means, from Urban Dictionary, as a card while you type: the top definition and an example.</p><p class="say">“urban yeet” · “urban touch grass”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Urban%20extension">Open in Jevie</a></article>
+<article id="utm-builder"><h2>UTM Builder</h2><p class="meta">Productivity · Web · by vlad-terin · v1.0.0 · official</p>
+<p>A link with UTM tags, built as a card while you type - source, medium and campaign - and copied with ↵.</p><p class="say">“utm https://jevie.app twitter social launch” · “utm jevie.app source=newsletter campaign=october”</p>
+<a class="open" href="jevie://ask?q=install%20the%20UTM%20Builder%20extension">Open in Jevie</a></article>
 <article id="whois"><h2>Whois</h2><p class="meta">Developer Tools · Web · by vlad-terin · v1.0.0 · official</p>
 <p>Who registered a domain, when, and when it runs out - as a card while you type, from RDAP (whois&#39;s successor).</p><p class="say">“whois github.com” · “whois example.org”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Whois%20extension">Open in Jevie</a></article>
