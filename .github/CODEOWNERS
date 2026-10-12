@@ -8,6 +8,7 @@
 /extensions/agent-commission/ @vlad-terin
 /extensions/air-quality/ @vlad-terin
 /extensions/baking/ @vlad-terin
+/extensions/bedside-math/ @vlad-terin
 /extensions/bond-yield/ @vlad-terin
 /extensions/budget-503020/ @vlad-terin
 /extensions/bundle-size/ @vlad-terin
@@ -89,6 +90,7 @@
 /extensions/pypi/ @vlad-terin
 /extensions/readability/ @vlad-terin
 /extensions/real-estate/ @vlad-terin
+/extensions/recipe-scale/ @vlad-terin
 /extensions/reddit/ @vlad-terin
 /extensions/restaurant-math/ @vlad-terin
 /extensions/retirement/ @vlad-terin

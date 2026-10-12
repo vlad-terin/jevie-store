@@ -6,7 +6,7 @@ h1{margin:0 0 4px}header p{color:var(--faint);margin:0 0 24px}input{width:100%;b
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
 h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4px 0}.open{display:inline-block;margin-top:6px;padding:6px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
 #shared,#card{display:none;margin-bottom:20px}#shared.on,#card.on{display:block}#card ul{margin:8px 0;padding-left:18px}</style></head><body><main>
-<header><h1>Jevie extensions</h1><p>128 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
+<header><h1>Jevie extensions</h1><p>130 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
 <article id="shared"><h2>An extension shared with you</h2><p class="meta" id="shared-source"></p><a class="open" id="shared-open" href="#">Open in Jevie</a></article>
 <article id="card"><p class="meta" id="card-label"></p><h2 id="card-summary"></h2><ul id="card-shown"></ul><p class="say" id="card-text"></p><a class="open" id="card-need" href="#" style="display:none;margin-right:6px"></a><a class="open" id="card-open" href="#">Open in Jevie</a></article>
 <input id="q" placeholder="Search extensions" autocomplete="off"><div class="grid"><article id="budget-503020"><h2>50/30/20 Budget</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
@@ -36,6 +36,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="baking"><h2>Baking</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>Cups to grams by ingredient, and a dough&#39;s hydration and baker&#39;s percentages, as cards while you type - from King Arthur Baking&#39;s weight chart.</p><p class="say">“2 cups flour in grams” · “hydration 500g flour 350g water”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Baking%20extension">Open in Jevie</a></article>
+<article id="bedside-math"><h2>Bedside Math</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>Ward numbers as cards while you type: corrected QT (Bazett, Fridericia), anion gap, mean arterial pressure, corrected calcium and maintenance fluids by the 4-2-1 rule.</p><p class="say">“qtc 400 hr 75” · “anion gap na 140 cl 104 hco3 24” · “map 120/80”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Bedside%20Math%20extension">Open in Jevie</a></article>
 <article id="bond-yield"><h2>Bond Yield</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
 <p>A bond&#39;s current yield and yield to maturity from its price, as a card while you type - and the price from a yield.</p><p class="say">“bond price 950 face 1000 coupon 5% 10 years” · “bond yield 6% face 1000 coupon 5% 10 years”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Bond%20Yield%20extension">Open in Jevie</a></article>
@@ -270,9 +273,12 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="readability"><h2>Readability</h2><p class="meta">Productivity · Documentation · by vlad-terin · v1.0.0 · official</p>
 <p>How easy a text is to read, as a card while you type: Flesch reading ease, the school grade, the longest sentence and the reading time.</p><p class="say">“readability The quick brown fox jumps over the lazy dog.” · “readability We hold these truths to be self-evident, that all men are created equal.”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Readability%20extension">Open in Jevie</a></article>
-<article id="real-estate"><h2>Real Estate Returns</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
-<p>A rental property&#39;s returns as cards while you type: cap rate, cash-on-cash return, gross rental yield and the 1% rule.</p><p class="say">“cap rate noi 24000 price 400000” · “rental yield rent 2000 price 350000”</p>
+<article id="real-estate"><h2>Real Estate Returns</h2><p class="meta">Finance · by vlad-terin · v1.1.0 · official</p>
+<p>A property&#39;s numbers as cards while you type: cap rate, cash-on-cash return, gross rental yield and the 1% rule, and price per square foot.</p><p class="say">“cap rate noi 24000 price 400000” · “rental yield rent 2000 price 350000” · “450k for 1800 sq ft”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Real%20Estate%20Returns%20extension">Open in Jevie</a></article>
+<article id="recipe-scale"><h2>Recipe Scale</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>A recipe scaled to a new number of servings as a card while you type - double, halve or 4 to 6 - with the amounts in kitchen fractions.</p><p class="say">“scale recipe 4 to 6: 2 cups flour, 1 tsp salt, 3 eggs” · “double 1 1/2 cups sugar, 2 eggs”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Recipe%20Scale%20extension">Open in Jevie</a></article>
 <article id="reddit"><h2>Reddit</h2><p class="meta">News · Web · by vlad-terin · v1.1.0 · official</p>
 <p>A subreddit&#39;s hot posts, through Reddit&#39;s public feed - a port of Raycast&#39;s Reddit extension.</p><p class="say">“subreddit programming” · “subreddit macapps top”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Reddit%20extension">Open in Jevie</a></article>
