@@ -106,7 +106,10 @@ export async function nativeAnswer(sentence, { timeoutMs = 8000 } = {}) {
   const own = new Set(['Extensions', 'Extension store']);
   const found = await Promise.all(SURFACES.filter(x => !own.has(x.about?.name)).map(async surface => {
     if (surface.available && !surface.available(input)) return null;
-    const offered = await Promise.race([Promise.resolve().then(() => surface.propose(input)), new Promise(done => setTimeout(() => done([]), timeoutMs).unref?.())]).catch(() => []);
+    // A held timer, cleared after: an unheld one let the process end when a
+    // surface's proposal never settled (no answer, no error, no exit code).
+    let timer;
+    const offered = await Promise.race([Promise.resolve().then(() => surface.propose(input)), new Promise(done => { timer = setTimeout(() => done([]), timeoutMs); })]).catch(() => []).finally(() => clearTimeout(timer));
     const hit = (offered ?? []).find(c => c?.exact && (c.whole || (c.strength ?? 0) >= 2.5) && !String(c.kind ?? '').startsWith('ext'));
     return hit ? { surface: surface.about?.name ?? '?', label: String(hit.label ?? '') } : null;
   }));
@@ -158,6 +161,8 @@ export async function build(root, { source = null, deep = false, sub = 'extensio
   for (const d of (await readdir(base, { withFileTypes: true }).catch(() => [])).filter(d => d.isDirectory()).sort((a, b) => a.name.localeCompare(b.name))) {
     const folder = join(base, d.name);
     const pinned = source ? `${source}#${base === root ? d.name : `${sub}/${d.name}`}` : null;
+    // "store": false - a sample or an experiment, kept in Jevie, not listed.
+    if ((await readJSON(join(folder, 'jevie-extension.json'), {})).store === false) continue;
     const report = await entryOf(folder, { source: pinned, deep });
     if (!report.entry) continue;
     if (report.ok) out.push(report.entry); else refused.push({ id: d.name, errors: report.errors });
@@ -320,7 +325,11 @@ export async function buildStore(root, { source = null, exec = sh, previous = nu
   return { store, refused: official.refused, unlisted, codeowners: codeowners(registry, official.store.extensions) };
 }
 
-if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+// Run as a script: in a function, not at the top level, so this module has
+// finished loading when the surfaces it reaches (nativeAnswer) import it
+// back - awaited at the top, each waited for the other and Node quit.
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main().catch(error => { console.error(error.message); process.exit(1); });
+async function main() {
   const [verb, folder, ...rest] = process.argv.slice(2);
   const flag = name => { const i = rest.indexOf(name); return i >= 0 ? rest[i + 1] : null; };
   if (verb === 'check' && folder) {

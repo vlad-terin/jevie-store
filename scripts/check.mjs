@@ -111,6 +111,7 @@ export async function check(folder, { timeoutMs = 20000 } = {}) {
       if (!ex.answered) errors.push(`example "${ex.sentence}": ${ex.why}`);
       else if (ex.skipped) warnings.push(`example "${ex.sentence}": ${ex.why}`);
       else if (ex.ms > 8000) warnings.push(`example "${ex.sentence}" took ${(ex.ms / 1000).toFixed(1)}s`);
+      if (['failed', 'needs-help', 'error'].includes(ex.status)) warnings.push(`example "${ex.sentence}" answered ${ex.status}: ${ex.first}${ex.detail ? ` · ${ex.detail}` : ''}`);
     }
   }
   return { ok: errors.length === 0, id: manifest.id, errors, warnings,
@@ -180,7 +181,10 @@ async function loadAndTry(entry, examples, manifest = {}) {
     try {
       const view = await within(Promise.resolve(candidates[0].run()));
       const ok = view && typeof view === 'object' && (view.lines || view.ui || view.markdown || view.status);
-      tried.push({ sentence, answered: Boolean(ok), ms: Date.now() - started, ...(ok ? { shown: view.lines?.length ?? 0 } : { why: 'the answer is not a view (List, Detail, Form or { status, lines })' }) });
+      // What it said, so an error dressed as an answer is seen: its status
+      // and first row ("Reddit refused: HTTP 429" is an answer, not a list).
+      const first = (view?.lines ?? []).find(l => l?.kind !== 'heading') ?? view?.lines?.[0];
+      tried.push({ sentence, answered: Boolean(ok), ms: Date.now() - started, ...(ok ? { shown: view.lines?.length ?? 0, status: view.status ?? 'ok', first: String(first?.title ?? '').slice(0, 120), detail: String(first?.subtitle ?? '').slice(0, 160) } : { why: 'the answer is not a view (List, Detail, Form or { status, lines })' }) });
     } catch (error) { tried.push({ sentence, answered: false, ms: Date.now() - started, why: String(error.message ?? error).slice(0, 200) }); }
   }
   return { registered: counts, names, examples: tried, error: null };

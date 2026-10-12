@@ -39,13 +39,15 @@ export default function linear(jevie, context) {
     async run(text) {
       const key = String(context?.preferences?.apiKey ?? '').trim();
       const query = String(text ?? '').trim();
+      // No key yet: asked for, not sent to Linear to be refused.
+      if (!key) return { status: 'needs-help', spoken: 'Linear needs your API key.', lines: [{ title: 'Linear needs your personal API key', subtitle: 'linear.app → Settings → Security & access → Personal API keys · ↵ opens the settings', says: 'settings for linear' }] };
       try {
         const json = await ask(key, query ? SEARCH : MINE, query ? { q: query } : {});
         return List({ title: query ? `Linear · ${query}` : 'Linear · assigned to you', empty: query ? `Nothing for ${query}` : 'Nothing assigned and open.',
           items: parseIssues(json).map(issue => ({ title: `${issue.key} ${issue.title}`, subtitle: issue.state, icon: 'circle.hexagongrid',
             accessory: issue.updated?.slice(0, 10) ?? '', actions: [Action.OpenInBrowser(issue.url), Action.CopyToClipboard(issue.url)] })) });
       } catch (error) {
-        if (error.message === 'key') return { status: 'needs-help', spoken: 'Linear refused the key.', lines: [{ title: 'Linear refused the key', subtitle: 'set a personal API key in "settings for linear"' }] };
+        if (error.message === 'key') return { status: 'needs-help', spoken: 'Linear refused the key.', lines: [{ title: 'Linear refused the key', subtitle: 'it may have been revoked · ↵ sets a new one', says: 'settings for linear' }] };
         return { status: 'needs-help', spoken: 'Linear did not answer.', lines: [{ title: 'Linear did not answer', subtitle: String(error.message).slice(0, 120) }] };
       }
     }

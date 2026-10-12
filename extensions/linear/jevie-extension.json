@@ -2,7 +2,7 @@
   "id": "linear",
   "title": "Linear",
   "apiVersion": 2,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Your Linear issues - assigned, or searched by words - read-only, with a personal API key kept in the Keychain. A lean port of Raycast's Linear extension.",
   "entry": "index.mjs",
   "topics": [
