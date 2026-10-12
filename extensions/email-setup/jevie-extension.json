@@ -1,0 +1,24 @@
+{
+  "id": "email-setup",
+  "title": "Email Setup",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Who runs a domain's email and whether it is set up to be trusted, as a card while you type: the provider, SPF, DMARC and DKIM.",
+  "entry": "index.mjs",
+  "categories": [
+    "Communication",
+    "Security"
+  ],
+  "icon": "envelope.badge.shield.half.filled",
+  "author": "vlad-terin",
+  "topics": [
+    "email setup",
+    "spf",
+    "dmarc",
+    "mx records"
+  ],
+  "examples": [
+    "email setup github.com",
+    "dmarc stripe.com"
+  ]
+}

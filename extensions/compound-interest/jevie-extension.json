@@ -1,0 +1,22 @@
+{
+  "id": "compound-interest",
+  "title": "Compound Interest",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "What savings or an investment grows to, as a card while you type: a lump sum, monthly saving, or both - with how much is interest.",
+  "entry": "index.mjs",
+  "categories": [
+    "Finance"
+  ],
+  "icon": "chart.line.uptrend.xyaxis.circle",
+  "author": "vlad-terin",
+  "topics": [
+    "compound interest",
+    "savings",
+    "future value"
+  ],
+  "examples": [
+    "save 500 a month at 7% for 10 years",
+    "compound 10000 at 5% for 20 years"
+  ]
+}
