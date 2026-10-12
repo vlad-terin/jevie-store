@@ -15,6 +15,7 @@
 /extensions/company-financials/ @vlad-terin
 /extensions/compound-interest/ @vlad-terin
 /extensions/country/ @vlad-terin
+/extensions/design-math/ @vlad-terin
 /extensions/dns-lookup/ @vlad-terin
 /extensions/docker-containers/ @vlad-terin
 /extensions/drug-label/ @vlad-terin
@@ -33,6 +34,7 @@
 /extensions/iconify/ @vlad-terin
 /extensions/inflation/ @vlad-terin
 /extensions/ip-info/ @vlad-terin
+/extensions/legal-terms/ @vlad-terin
 /extensions/linear/ @vlad-terin
 /extensions/link-preview/ @vlad-terin
 /extensions/loan-payoff/ @vlad-terin
@@ -57,9 +59,12 @@
 /extensions/service-status/ @vlad-terin
 /extensions/simple-interest/ @vlad-terin
 /extensions/ssl-certificate/ @vlad-terin
+/extensions/stats/ @vlad-terin
 /extensions/subnet/ @vlad-terin
 /extensions/sun-times/ @vlad-terin
 /extensions/svgl/ @vlad-terin
+/extensions/tailwind-colors/ @vlad-terin
+/extensions/team-hours/ @vlad-terin
 /extensions/tech-stack/ @vlad-terin
 /extensions/tldr/ @vlad-terin
 /extensions/urban-dictionary/ @vlad-terin
