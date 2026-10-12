@@ -1,0 +1,22 @@
+{
+  "id": "event-planning",
+  "title": "Event Planning",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Party and event sums as cards while you type: tables for the guests, the budget per head, and how many drinks to buy.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "party.popper",
+  "author": "vlad-terin",
+  "topics": [
+    "event planning",
+    "tables for guests",
+    "drinks per guest"
+  ],
+  "examples": [
+    "tables for 120 guests 8 per table",
+    "drinks for 80 guests 4 hours"
+  ]
+}

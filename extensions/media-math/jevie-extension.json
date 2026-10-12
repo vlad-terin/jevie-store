@@ -1,0 +1,23 @@
+{
+  "id": "media-math",
+  "title": "Media Math",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Creator sums as cards while you type: a video's file size from its bitrate, how long a script takes to read aloud, and how big a photo prints.",
+  "entry": "index.mjs",
+  "categories": [
+    "Media"
+  ],
+  "icon": "film",
+  "author": "vlad-terin",
+  "topics": [
+    "video file size",
+    "speaking time",
+    "print size"
+  ],
+  "examples": [
+    "video size 10 min at 8 mbps",
+    "speaking time 1500 words",
+    "print size 6000x4000 at 300 dpi"
+  ]
+}

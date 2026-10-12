@@ -1,0 +1,23 @@
+{
+  "id": "startup-math",
+  "title": "Startup Math",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "A founder's numbers as cards while you type: months of runway from cash and burn, and what a priced round does to ownership.",
+  "entry": "index.mjs",
+  "categories": [
+    "Finance"
+  ],
+  "icon": "flame.fill",
+  "author": "vlad-terin",
+  "topics": [
+    "runway",
+    "burn rate",
+    "post-money",
+    "dilution"
+  ],
+  "examples": [
+    "runway 400k burn 35k",
+    "raise 2m at 8m pre"
+  ]
+}

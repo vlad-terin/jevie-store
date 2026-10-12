@@ -1,0 +1,23 @@
+{
+  "id": "unit-price",
+  "title": "Unit Price",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Which pack is the better buy, as a card while you type: the price per ounce, gram, litre or item, side by side.",
+  "entry": "index.mjs",
+  "categories": [
+    "Finance",
+    "Productivity"
+  ],
+  "icon": "cart",
+  "author": "vlad-terin",
+  "topics": [
+    "unit price",
+    "price per ounce",
+    "better deal"
+  ],
+  "examples": [
+    "unit price 4.99 for 12 oz vs 7.49 for 20 oz",
+    "unit price 3.20 for 500 g vs 5.50 for 1 kg"
+  ]
+}
