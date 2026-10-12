@@ -1,0 +1,22 @@
+{
+  "id": "cheatsheets",
+  "title": "Cheatsheets",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Developer cheat sheets from devhints.io - a port of Raycast's Cheatsheets extension.",
+  "entry": "index.mjs",
+  "topics": [
+    "cheatsheet",
+    "devhints"
+  ],
+  "examples": [
+    "cheatsheet git",
+    "cheatsheets"
+  ],
+  "categories": [
+    "Developer Tools",
+    "Documentation"
+  ],
+  "icon": "doc.text",
+  "author": "vlad-terin"
+}

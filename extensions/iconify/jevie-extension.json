@@ -1,0 +1,21 @@
+{
+  "id": "iconify",
+  "title": "Iconify",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Search 200,000 open icons and copy their SVG - a port of Raycast's Iconify extension.",
+  "entry": "index.mjs",
+  "topics": [
+    "icons",
+    "iconify"
+  ],
+  "examples": [
+    "iconify home",
+    "iconify arrow right"
+  ],
+  "categories": [
+    "Design Tools"
+  ],
+  "icon": "square.grid.3x3",
+  "author": "vlad-terin"
+}

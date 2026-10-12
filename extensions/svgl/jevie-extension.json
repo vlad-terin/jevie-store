@@ -1,0 +1,21 @@
+{
+  "id": "svgl",
+  "title": "SVGL",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Brand logos as SVG from svgl.app - a port of Raycast's Svgl extension.",
+  "entry": "index.mjs",
+  "topics": [
+    "svg logos",
+    "brand logos"
+  ],
+  "examples": [
+    "svgl github",
+    "svg logo vercel"
+  ],
+  "categories": [
+    "Design Tools"
+  ],
+  "icon": "seal",
+  "author": "vlad-terin"
+}

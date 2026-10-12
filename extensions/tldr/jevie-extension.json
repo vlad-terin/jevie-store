@@ -1,0 +1,22 @@
+{
+  "id": "tldr",
+  "title": "tldr",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Command-line examples from tldr pages - a port of Raycast's TLDR extension.",
+  "entry": "index.mjs",
+  "topics": [
+    "tldr",
+    "command examples"
+  ],
+  "examples": [
+    "tldr tar",
+    "tldr git log"
+  ],
+  "categories": [
+    "Developer Tools",
+    "Documentation"
+  ],
+  "icon": "terminal",
+  "author": "vlad-terin"
+}

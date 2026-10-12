@@ -1,0 +1,19 @@
+{
+  "id": "workspace-info",
+  "title": "Workspace Info",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Read the package details of a local project.",
+  "entry": "index.mjs",
+  "topics": [
+    "package details"
+  ],
+  "examples": [
+    "@ext-workspace-info package directory=/path/to/project"
+  ],
+  "categories": [
+    "Developer Tools"
+  ],
+  "icon": "folder",
+  "author": "vlad-terin"
+}

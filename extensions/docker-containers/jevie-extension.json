@@ -1,0 +1,23 @@
+{
+  "id": "docker-containers",
+  "title": "Docker",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Docker containers - what is running, their logs - with stop, restart and start on each row. A port of Raycast's Docker extension.",
+  "entry": "index.mjs",
+  "topics": [
+    "docker",
+    "containers",
+    "colima"
+  ],
+  "examples": [
+    "docker containers",
+    "containers running",
+    "docker containers postgres"
+  ],
+  "categories": [
+    "Developer Tools"
+  ],
+  "icon": "shippingbox",
+  "author": "vlad-terin"
+}

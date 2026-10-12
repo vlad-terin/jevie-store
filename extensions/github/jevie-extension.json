@@ -1,0 +1,23 @@
+{
+  "id": "github",
+  "title": "GitHub",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Your pull requests, review requests, issues and repo search, through the gh CLI you are signed into - a lean port of Raycast's GitHub extension. Notifications and trending stay their own extensions.",
+  "entry": "index.mjs",
+  "topics": [
+    "github",
+    "pull requests"
+  ],
+  "examples": [
+    "my prs",
+    "prs to review",
+    "github issues",
+    "github repo sqlite vector"
+  ],
+  "categories": [
+    "Developer Tools"
+  ],
+  "icon": "arrow.triangle.pull",
+  "author": "vlad-terin"
+}

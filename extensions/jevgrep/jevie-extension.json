@@ -1,0 +1,21 @@
+{
+  "id": "jevgrep",
+  "title": "jevgrep",
+  "apiVersion": 1,
+  "version": "0.1.0",
+  "description": "Experimental behavior-based source search within an explicit local repository. Sends eligible source to the configured jevgrep provider.",
+  "entry": "index.mjs",
+  "topics": [
+    "code search",
+    "repository implementation",
+    "source evidence"
+  ],
+  "examples": [
+    "@ext-jevgrep search query=\"Where is microphone cancellation handled?\" directory=/absolute/path/to/repo"
+  ],
+  "categories": [
+    "Developer Tools"
+  ],
+  "icon": "magnifyingglass",
+  "author": "vlad-terin"
+}

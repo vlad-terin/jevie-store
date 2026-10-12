@@ -1,0 +1,821 @@
+{
+  "built": "2026-10-12T04:32:42.674Z",
+  "jevie": "0.0.0",
+  "extensions": [
+    {
+      "id": "calls",
+      "title": "Call Transcripts",
+      "description": "Transcribe a call on this Mac: you through the microphone, the others through what the Mac plays. Text only, kept in ~/.jevie/calls and in recall.",
+      "version": "1.0.0",
+      "categories": [
+        "Productivity",
+        "Communication"
+      ],
+      "icon": "phone.badge.waveform",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "call",
+        "meeting",
+        "transcribe",
+        "transcript"
+      ],
+      "examples": [
+        "transcribe this call",
+        "transcribe the standup",
+        "stop transcribing",
+        "my call transcripts"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [
+          "(a program named at run time)"
+        ],
+        "writes": 0
+      },
+      "readme": "# Call Transcripts\n\nTranscribe a call on this Mac: you through the microphone, the others through what the Mac plays. Text only, kept in ~/.jevie/calls and in recall.\n\n## Say\n\n- “transcribe this call”\n- “transcribe the standup”\n- “stop transcribing”\n- “my call transcripts”\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-11",
+        "lines": [
+          "In the store, with its README, categories and icon."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/calls",
+      "trust": "official"
+    },
+    {
+      "id": "can-i-use",
+      "title": "Can I Use",
+      "description": "Browser support for web features from caniuse.com - a port of Raycast's Can I Use extension.",
+      "version": "1.0.0",
+      "categories": [
+        "Developer Tools",
+        "Web"
+      ],
+      "icon": "globe",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "can i use",
+        "browser support"
+      ],
+      "examples": [
+        "can i use container queries",
+        "caniuse has"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "caniuse.com",
+          "raw.githubusercontent.com"
+        ],
+        "programs": [],
+        "writes": 1
+      },
+      "readme": "# Can I Use\n\nBrowser support for web features from caniuse.com - a port of Raycast's Can I Use extension.\n\n## Say\n\n- “can i use container queries”\n- “caniuse has”\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-11",
+        "lines": [
+          "In the store, with its README, categories and icon."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/can-i-use",
+      "trust": "official"
+    },
+    {
+      "id": "cheatsheets",
+      "title": "Cheatsheets",
+      "description": "Developer cheat sheets from devhints.io - a port of Raycast's Cheatsheets extension.",
+      "version": "1.0.0",
+      "categories": [
+        "Developer Tools",
+        "Documentation"
+      ],
+      "icon": "doc.text",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "cheatsheet",
+        "devhints"
+      ],
+      "examples": [
+        "cheatsheet git",
+        "cheatsheets"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "api.github.com",
+          "devhints.io",
+          "raw.githubusercontent.com"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "readme": "# Cheatsheets\n\nDeveloper cheat sheets from devhints.io - a port of Raycast's Cheatsheets extension.\n\n## Say\n\n- “cheatsheet git”\n- “cheatsheets”\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-11",
+        "lines": [
+          "In the store, with its README, categories and icon."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/cheatsheets",
+      "trust": "official"
+    },
+    {
+      "id": "docker-containers",
+      "title": "Docker",
+      "description": "Docker containers - what is running, their logs - with stop, restart and start on each row. A port of Raycast's Docker extension.",
+      "version": "1.0.0",
+      "categories": [
+        "Developer Tools"
+      ],
+      "icon": "shippingbox",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "docker",
+        "containers",
+        "colima"
+      ],
+      "examples": [
+        "docker containers",
+        "containers running",
+        "docker containers postgres"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [
+          "(a program named at run time)"
+        ],
+        "writes": 0
+      },
+      "readme": "# Docker\n\nDocker containers - what is running, their logs - with stop, restart and start on each row. A port of Raycast's Docker extension.\n\n## Say\n\n- “docker containers”\n- “containers running”\n- “docker containers postgres”\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-11",
+        "lines": [
+          "In the store, with its README, categories and icon."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/docker-containers",
+      "trust": "official"
+    },
+    {
+      "id": "feeds",
+      "title": "Feeds",
+      "description": "Your RSS and Atom feeds - blogs, changelogs, arXiv, YouTube - newest first, each post's text beside the list. Add one by pasting its page.",
+      "version": "1.0.0",
+      "categories": [
+        "News",
+        "Web"
+      ],
+      "icon": "dot.radiowaves.up.forward",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "rss",
+        "atom",
+        "feeds",
+        "blogs",
+        "news feeds"
+      ],
+      "examples": [
+        "feeds",
+        "feeds simon",
+        "add feed https://simonwillison.net"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "github.blog",
+          "hnrss.org",
+          "jevie.ai",
+          "simonwillison.net"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "readme": "# Feeds\n\nYour RSS and Atom feeds - blogs, changelogs, arXiv, YouTube - newest first, each post's text beside the list. Add one by pasting its page.\n\n## Say\n\n- “feeds”\n- “feeds simon”\n- “add feed https://simonwillison.net”\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-11",
+        "lines": [
+          "In the store, with its README, categories and icon."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/feeds",
+      "trust": "official"
+    },
+    {
+      "id": "github",
+      "title": "GitHub",
+      "description": "Your pull requests, review requests, issues and repo search, through the gh CLI you are signed into - a lean port of Raycast's GitHub extension. Notifications and trending stay their own extensions.",
+      "version": "1.0.0",
+      "categories": [
+        "Developer Tools"
+      ],
+      "icon": "arrow.triangle.pull",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "github",
+        "pull requests"
+      ],
+      "examples": [
+        "my prs",
+        "prs to review",
+        "github issues",
+        "github repo sqlite vector"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [
+          "gh"
+        ],
+        "writes": 0
+      },
+      "readme": "# GitHub\n\nYour pull requests, review requests, issues and repo search, through the gh CLI you are signed into - a lean port of Raycast's GitHub extension. Notifications and trending stay their own extensions.\n\n## Say\n\n- “my prs”\n- “prs to review”\n- “github issues”\n- “github repo sqlite vector”\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-11",
+        "lines": [
+          "In the store, with its README, categories and icon."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/github",
+      "trust": "official"
+    },
+    {
+      "id": "hacker-news",
+      "title": "Hacker News",
+      "description": "Hacker News front page, new, best, Ask and Show - a port of Raycast's Hacker News extension.",
+      "version": "1.1.0",
+      "categories": [
+        "News"
+      ],
+      "icon": "newspaper",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "hacker news",
+        "hn"
+      ],
+      "examples": [
+        "hacker news",
+        "hn best",
+        "hn show"
+      ],
+      "settings": 2,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "hacker-news.firebaseio.com",
+          "news.ycombinator.com"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "readme": "# Hacker News\n\nHacker News front page, new, best, Ask and Show - a port of Raycast's Hacker News extension.\n\n## Say\n\n- “hacker news”\n- “hn best”\n- “hn show”\n\n## Settings\n\n- **Stories**: How many stories a list shows, up to 100.\n- **Opens on**\n\n“settings for hacker-news” changes them; secrets are kept in the Keychain.\n",
+      "change": {
+        "version": "1.1.0",
+        "date": "2026-10-11",
+        "lines": [
+          "In the store, with its README, categories and icon."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/hacker-news",
+      "trust": "official"
+    },
+    {
+      "id": "homebrew",
+      "title": "Homebrew",
+      "description": "Search, install, upgrade and remove Homebrew formulae and casks - a port of Raycast's Homebrew extension.",
+      "version": "1.0.0",
+      "categories": [
+        "Developer Tools",
+        "System"
+      ],
+      "icon": "mug",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "homebrew",
+        "brew package",
+        "brew formula",
+        "brew cask"
+      ],
+      "examples": [
+        "homebrew wget",
+        "homebrew installed",
+        "homebrew outdated",
+        "homebrew install ffmpeg"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [
+          "brew"
+        ],
+        "writes": 0
+      },
+      "readme": "# Homebrew\n\nSearch, install, upgrade and remove Homebrew formulae and casks - a port of Raycast's Homebrew extension.\n\n## Say\n\n- “homebrew wget”\n- “homebrew installed”\n- “homebrew outdated”\n- “homebrew install ffmpeg”\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-11",
+        "lines": [
+          "In the store, with its README, categories and icon."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/homebrew",
+      "trust": "official"
+    },
+    {
+      "id": "iconify",
+      "title": "Iconify",
+      "description": "Search 200,000 open icons and copy their SVG - a port of Raycast's Iconify extension.",
+      "version": "1.0.0",
+      "categories": [
+        "Design Tools"
+      ],
+      "icon": "square.grid.3x3",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "icons",
+        "iconify"
+      ],
+      "examples": [
+        "iconify home",
+        "iconify arrow right"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "api.iconify.design",
+          "icon-sets.iconify.design"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "readme": "# Iconify\n\nSearch 200,000 open icons and copy their SVG - a port of Raycast's Iconify extension.\n\n## Say\n\n- “iconify home”\n- “iconify arrow right”\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-11",
+        "lines": [
+          "In the store, with its README, categories and icon."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/iconify",
+      "trust": "official"
+    },
+    {
+      "id": "jevgrep",
+      "title": "jevgrep",
+      "description": "Experimental behavior-based source search within an explicit local repository. Sends eligible source to the configured jevgrep provider.",
+      "version": "0.1.0",
+      "categories": [
+        "Developer Tools"
+      ],
+      "icon": "magnifyingglass",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "code search",
+        "repository implementation",
+        "source evidence"
+      ],
+      "examples": [
+        "@ext-jevgrep search query=\"Where is microphone cancellation handled?\" directory=/absolute/path/to/repo"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [
+          "(a program named at run time)"
+        ],
+        "writes": 0
+      },
+      "readme": "# jevgrep\n\nExperimental behavior-based source search within an explicit local repository. Sends eligible source to the configured jevgrep provider.\n\n## Say\n\n- “@ext-jevgrep search query=\"Where is microphone cancellation handled?\" directory=/absolute/path/to/repo”\n",
+      "change": {
+        "version": "0.1.0",
+        "date": "2026-10-11",
+        "lines": [
+          "In the store, with its README, categories and icon."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/jevgrep",
+      "trust": "official"
+    },
+    {
+      "id": "linear",
+      "title": "Linear",
+      "description": "Your Linear issues - assigned, or searched by words - read-only, with a personal API key kept in the Keychain. A lean port of Raycast's Linear extension.",
+      "version": "1.0.0",
+      "categories": [
+        "Productivity",
+        "Developer Tools"
+      ],
+      "icon": "checklist",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "linear",
+        "issues"
+      ],
+      "examples": [
+        "linear issues",
+        "linear issue onboarding"
+      ],
+      "settings": 1,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "api.linear.app"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "readme": "# Linear\n\nYour Linear issues - assigned, or searched by words - read-only, with a personal API key kept in the Keychain. A lean port of Raycast's Linear extension.\n\n## Say\n\n- “linear issues”\n- “linear issue onboarding”\n\n## Settings\n\n- **Linear API key** (required): linear.app → Settings → Security & access → Personal API keys.\n\n“settings for linear” changes them; secrets are kept in the Keychain.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-11",
+        "lines": [
+          "In the store, with its README, categories and icon."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/linear",
+      "trust": "official"
+    },
+    {
+      "id": "mdn",
+      "title": "MDN",
+      "description": "MDN Web Docs search - a port of Raycast's MDN extension.",
+      "version": "1.0.0",
+      "categories": [
+        "Developer Tools",
+        "Documentation"
+      ],
+      "icon": "book",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "mdn",
+        "web docs",
+        "javascript",
+        "css",
+        "html"
+      ],
+      "examples": [
+        "mdn flexbox",
+        "mdn array map"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "developer.mozilla.org"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "readme": "# MDN\n\nMDN Web Docs search - a port of Raycast's MDN extension.\n\n## Say\n\n- “mdn flexbox”\n- “mdn array map”\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-11",
+        "lines": [
+          "In the store, with its README, categories and icon."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/mdn",
+      "trust": "official"
+    },
+    {
+      "id": "npm-search",
+      "title": "npm",
+      "description": "npm package search - a port of Raycast's npm extension.",
+      "version": "1.0.0",
+      "categories": [
+        "Developer Tools"
+      ],
+      "icon": "shippingbox.circle",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "npm",
+        "packages"
+      ],
+      "examples": [
+        "npm package zod",
+        "npm search date"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "registry.npmjs.org",
+          "www.npmjs.com"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "readme": "# npm\n\nnpm package search - a port of Raycast's npm extension.\n\n## Say\n\n- “npm package zod”\n- “npm search date”\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-11",
+        "lines": [
+          "In the store, with its README, categories and icon."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/npm-search",
+      "trust": "official"
+    },
+    {
+      "id": "obsidian",
+      "title": "Obsidian",
+      "description": "Search your Obsidian vault and read notes beside the list; return opens the note in Obsidian. Read-only - a lean port of Raycast's Obsidian extension.",
+      "version": "1.0.0",
+      "categories": [
+        "Productivity"
+      ],
+      "icon": "note.text",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "obsidian",
+        "notes",
+        "vault"
+      ],
+      "examples": [
+        "obsidian notes",
+        "obsidian note networking"
+      ],
+      "settings": 1,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "readme": "# Obsidian\n\nSearch your Obsidian vault and read notes beside the list; return opens the note in Obsidian. Read-only - a lean port of Raycast's Obsidian extension.\n\n## Say\n\n- “obsidian notes”\n- “obsidian note networking”\n\n## Settings\n\n- **Vault folder**: Empty: the vault Obsidian itself lists first.\n\n“settings for obsidian” changes them; secrets are kept in the Keychain.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-11",
+        "lines": [
+          "In the store, with its README, categories and icon."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/obsidian",
+      "trust": "official"
+    },
+    {
+      "id": "reddit",
+      "title": "Reddit",
+      "description": "A subreddit's hot posts, through Reddit's public feed - a port of Raycast's Reddit extension.",
+      "version": "1.0.0",
+      "categories": [
+        "News",
+        "Web"
+      ],
+      "icon": "bubble.left.and.bubble.right",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "reddit",
+        "subreddit"
+      ],
+      "examples": [
+        "subreddit programming",
+        "subreddit macapps top"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "www.reddit.com"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "readme": "# Reddit\n\nA subreddit's hot posts, through Reddit's public feed - a port of Raycast's Reddit extension.\n\n## Say\n\n- “subreddit programming”\n- “subreddit macapps top”\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-11",
+        "lines": [
+          "In the store, with its README, categories and icon."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/reddit",
+      "trust": "official"
+    },
+    {
+      "id": "svgl",
+      "title": "SVGL",
+      "description": "Brand logos as SVG from svgl.app - a port of Raycast's Svgl extension.",
+      "version": "1.0.0",
+      "categories": [
+        "Design Tools"
+      ],
+      "icon": "seal",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "svg logos",
+        "brand logos"
+      ],
+      "examples": [
+        "svgl github",
+        "svg logo vercel"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "api.svgl.app"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "readme": "# SVGL\n\nBrand logos as SVG from svgl.app - a port of Raycast's Svgl extension.\n\n## Say\n\n- “svgl github”\n- “svg logo vercel”\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-11",
+        "lines": [
+          "In the store, with its README, categories and icon."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/svgl",
+      "trust": "official"
+    },
+    {
+      "id": "tldr",
+      "title": "tldr",
+      "description": "Command-line examples from tldr pages - a port of Raycast's TLDR extension.",
+      "version": "1.0.0",
+      "categories": [
+        "Developer Tools",
+        "Documentation"
+      ],
+      "icon": "terminal",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "tldr",
+        "command examples"
+      ],
+      "examples": [
+        "tldr tar",
+        "tldr git log"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "raw.githubusercontent.com"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "readme": "# tldr\n\nCommand-line examples from tldr pages - a port of Raycast's TLDR extension.\n\n## Say\n\n- “tldr tar”\n- “tldr git log”\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-11",
+        "lines": [
+          "In the store, with its README, categories and icon."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/tldr",
+      "trust": "official"
+    },
+    {
+      "id": "wikipedia",
+      "title": "Wikipedia",
+      "description": "Wikipedia search, today's featured article and a random one - a port of Raycast's wikipedia extension.",
+      "version": "1.0.0",
+      "categories": [
+        "Documentation",
+        "Web"
+      ],
+      "icon": "books.vertical",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "wikipedia",
+        "reference"
+      ],
+      "examples": [
+        "wiki article einstein",
+        "wiki article random"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "en.wikipedia.org",
+          "github.com"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "readme": "# Wikipedia\n\nWikipedia search, today's featured article and a random one - a port of Raycast's wikipedia extension.\n\n## Say\n\n- “wiki article einstein”\n- “wiki article random”\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-11",
+        "lines": [
+          "In the store, with its README, categories and icon."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/wikipedia",
+      "trust": "official"
+    },
+    {
+      "id": "workspace-info",
+      "title": "Workspace Info",
+      "description": "Read the package details of a local project.",
+      "version": "1.0.0",
+      "categories": [
+        "Developer Tools"
+      ],
+      "icon": "folder",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "package details"
+      ],
+      "examples": [
+        "@ext-workspace-info package directory=/path/to/project"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "readme": "# Workspace Info\n\nRead the package details of a local project.\n\n## Say\n\n- “@ext-workspace-info package directory=/path/to/project”\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-11",
+        "lines": [
+          "In the store, with its README, categories and icon."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/workspace-info",
+      "trust": "official"
+    },
+    {
+      "id": "world-clock",
+      "title": "World Clock",
+      "description": "The time anywhere - \"time in tokyo\", a city, a country, a timezone - and a world clock of the usual places. A port of Raycast's World Clock.",
+      "version": "1.0.0",
+      "categories": [
+        "Productivity"
+      ],
+      "icon": "clock",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "time",
+        "timezones"
+      ],
+      "examples": [
+        "time in tokyo",
+        "world clock"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "readme": "# World Clock\n\nThe time anywhere - \"time in tokyo\", a city, a country, a timezone - and a world clock of the usual places. A port of Raycast's World Clock.\n\n## Say\n\n- “time in tokyo”\n- “world clock”\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-11",
+        "lines": [
+          "In the store, with its README, categories and icon."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/world-clock",
+      "trust": "official"
+    }
+  ],
+  "repo": "vlad-terin/jevie-store",
+  "revoked": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "world-clock",
+  "title": "World Clock",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "The time anywhere - \"time in tokyo\", a city, a country, a timezone - and a world clock of the usual places. A port of Raycast's World Clock.",
+  "entry": "index.mjs",
+  "topics": [
+    "time",
+    "timezones"
+  ],
+  "examples": [
+    "time in tokyo",
+    "world clock"
+  ],
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "clock",
+  "author": "vlad-terin"
+}

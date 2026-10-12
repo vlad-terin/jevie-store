@@ -1,0 +1,13 @@
+{
+  "id": "my-extension",
+  "title": "My Extension",
+  "apiVersion": 2,
+  "version": "1.0.0",
+  "description": "What it does, in one sentence.",
+  "entry": "index.mjs",
+  "categories": ["Productivity"],
+  "icon": "list.bullet",
+  "author": "your-github-name",
+  "topics": ["my thing"],
+  "examples": ["my things", "my things search words"]
+}

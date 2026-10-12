@@ -1,0 +1,32 @@
+{
+  "id": "obsidian",
+  "title": "Obsidian",
+  "apiVersion": 2,
+  "version": "1.0.0",
+  "description": "Search your Obsidian vault and read notes beside the list; return opens the note in Obsidian. Read-only - a lean port of Raycast's Obsidian extension.",
+  "entry": "index.mjs",
+  "topics": [
+    "obsidian",
+    "notes",
+    "vault"
+  ],
+  "preferences": [
+    {
+      "name": "vault",
+      "title": "Vault folder",
+      "description": "Empty: the vault Obsidian itself lists first.",
+      "type": "text",
+      "required": false,
+      "default": ""
+    }
+  ],
+  "examples": [
+    "obsidian notes",
+    "obsidian note networking"
+  ],
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "note.text",
+  "author": "vlad-terin"
+}

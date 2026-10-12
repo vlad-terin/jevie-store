@@ -1,0 +1,44 @@
+{
+  "id": "hacker-news",
+  "title": "Hacker News",
+  "apiVersion": 2,
+  "version": "1.1.0",
+  "description": "Hacker News front page, new, best, Ask and Show - a port of Raycast's Hacker News extension.",
+  "entry": "index.mjs",
+  "topics": [
+    "hacker news",
+    "hn"
+  ],
+  "examples": [
+    "hacker news",
+    "hn best",
+    "hn show"
+  ],
+  "preferences": [
+    {
+      "name": "count",
+      "title": "Stories",
+      "type": "number",
+      "default": 30,
+      "description": "How many stories a list shows, up to 100."
+    },
+    {
+      "name": "feed",
+      "title": "Opens on",
+      "type": "choice",
+      "choices": [
+        "top",
+        "new",
+        "best",
+        "ask",
+        "show"
+      ],
+      "default": "top"
+    }
+  ],
+  "categories": [
+    "News"
+  ],
+  "icon": "newspaper",
+  "author": "vlad-terin"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "jevie-experimental-jevgrep",
+  "private": true,
+  "version": "0.1.0",
+  "dependencies": {
+    "@dzhng/jevgrep": "0.4.0"
+  }
+}

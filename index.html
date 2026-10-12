@@ -1,0 +1,72 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jevie extensions</title>
+<style>:root{--bg:#fafafa;--ink:#151517;--faint:#6b6b70;--card:#fff;--line:#e5e5ea;--accent:#c2486a}
+@media (prefers-color-scheme:dark){:root{--bg:#121214;--ink:#ececec;--faint:#8a8a8e;--card:#1c1c1f;--line:#2c2c30;--accent:#e58da4}}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,system-ui,sans-serif}main{max-width:880px;margin:0 auto;padding:32px 16px}
+h1{margin:0 0 4px}header p{color:var(--faint);margin:0 0 24px}input{width:100%;box-sizing:border-box;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4px 0}.open{display:inline-block;margin-top:6px;padding:6px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+#shared{display:none;margin-bottom:20px}#shared.on{display:block}</style></head><body><main>
+<header><h1>Jevie extensions</h1><p>20 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
+<article id="shared"><h2>An extension shared with you</h2><p class="meta" id="shared-source"></p><a class="open" id="shared-open" href="#">Open in Jevie</a></article>
+<input id="q" placeholder="Search extensions" autocomplete="off"><div class="grid"><article id="calls"><h2>Call Transcripts</h2><p class="meta">Productivity · Communication · by vlad-terin · v1.0.0 · official</p>
+<p>Transcribe a call on this Mac: you through the microphone, the others through what the Mac plays. Text only, kept in ~/.jevie/calls and in recall.</p><p class="say">“transcribe this call” · “transcribe the standup” · “stop transcribing”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Call%20Transcripts%20extension">Open in Jevie</a></article>
+<article id="can-i-use"><h2>Can I Use</h2><p class="meta">Developer Tools · Web · by vlad-terin · v1.0.0 · official</p>
+<p>Browser support for web features from caniuse.com - a port of Raycast&#39;s Can I Use extension.</p><p class="say">“can i use container queries” · “caniuse has”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Can%20I%20Use%20extension">Open in Jevie</a></article>
+<article id="cheatsheets"><h2>Cheatsheets</h2><p class="meta">Developer Tools · Documentation · by vlad-terin · v1.0.0 · official</p>
+<p>Developer cheat sheets from devhints.io - a port of Raycast&#39;s Cheatsheets extension.</p><p class="say">“cheatsheet git” · “cheatsheets”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Cheatsheets%20extension">Open in Jevie</a></article>
+<article id="docker-containers"><h2>Docker</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
+<p>Docker containers - what is running, their logs - with stop, restart and start on each row. A port of Raycast&#39;s Docker extension.</p><p class="say">“docker containers” · “containers running” · “docker containers postgres”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Docker%20extension">Open in Jevie</a></article>
+<article id="feeds"><h2>Feeds</h2><p class="meta">News · Web · by vlad-terin · v1.0.0 · official</p>
+<p>Your RSS and Atom feeds - blogs, changelogs, arXiv, YouTube - newest first, each post&#39;s text beside the list. Add one by pasting its page.</p><p class="say">“feeds” · “feeds simon” · “add feed https://simonwillison.net”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Feeds%20extension">Open in Jevie</a></article>
+<article id="github"><h2>GitHub</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
+<p>Your pull requests, review requests, issues and repo search, through the gh CLI you are signed into - a lean port of Raycast&#39;s GitHub extension. Notifications and trending stay their own extensions.</p><p class="say">“my prs” · “prs to review” · “github issues”</p>
+<a class="open" href="jevie://ask?q=install%20the%20GitHub%20extension">Open in Jevie</a></article>
+<article id="hacker-news"><h2>Hacker News</h2><p class="meta">News · by vlad-terin · v1.1.0 · official</p>
+<p>Hacker News front page, new, best, Ask and Show - a port of Raycast&#39;s Hacker News extension.</p><p class="say">“hacker news” · “hn best” · “hn show”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Hacker%20News%20extension">Open in Jevie</a></article>
+<article id="homebrew"><h2>Homebrew</h2><p class="meta">Developer Tools · System · by vlad-terin · v1.0.0 · official</p>
+<p>Search, install, upgrade and remove Homebrew formulae and casks - a port of Raycast&#39;s Homebrew extension.</p><p class="say">“homebrew wget” · “homebrew installed” · “homebrew outdated”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Homebrew%20extension">Open in Jevie</a></article>
+<article id="iconify"><h2>Iconify</h2><p class="meta">Design Tools · by vlad-terin · v1.0.0 · official</p>
+<p>Search 200,000 open icons and copy their SVG - a port of Raycast&#39;s Iconify extension.</p><p class="say">“iconify home” · “iconify arrow right”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Iconify%20extension">Open in Jevie</a></article>
+<article id="jevgrep"><h2>jevgrep</h2><p class="meta">Developer Tools · by vlad-terin · v0.1.0 · official</p>
+<p>Experimental behavior-based source search within an explicit local repository. Sends eligible source to the configured jevgrep provider.</p><p class="say">“@ext-jevgrep search query=&quot;Where is microphone cancellation handled?&quot; directory=/absolute/path/to/repo”</p>
+<a class="open" href="jevie://ask?q=install%20the%20jevgrep%20extension">Open in Jevie</a></article>
+<article id="linear"><h2>Linear</h2><p class="meta">Productivity · Developer Tools · by vlad-terin · v1.0.0 · official</p>
+<p>Your Linear issues - assigned, or searched by words - read-only, with a personal API key kept in the Keychain. A lean port of Raycast&#39;s Linear extension.</p><p class="say">“linear issues” · “linear issue onboarding”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Linear%20extension">Open in Jevie</a></article>
+<article id="mdn"><h2>MDN</h2><p class="meta">Developer Tools · Documentation · by vlad-terin · v1.0.0 · official</p>
+<p>MDN Web Docs search - a port of Raycast&#39;s MDN extension.</p><p class="say">“mdn flexbox” · “mdn array map”</p>
+<a class="open" href="jevie://ask?q=install%20the%20MDN%20extension">Open in Jevie</a></article>
+<article id="npm-search"><h2>npm</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
+<p>npm package search - a port of Raycast&#39;s npm extension.</p><p class="say">“npm package zod” · “npm search date”</p>
+<a class="open" href="jevie://ask?q=install%20the%20npm%20extension">Open in Jevie</a></article>
+<article id="obsidian"><h2>Obsidian</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>Search your Obsidian vault and read notes beside the list; return opens the note in Obsidian. Read-only - a lean port of Raycast&#39;s Obsidian extension.</p><p class="say">“obsidian notes” · “obsidian note networking”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Obsidian%20extension">Open in Jevie</a></article>
+<article id="reddit"><h2>Reddit</h2><p class="meta">News · Web · by vlad-terin · v1.0.0 · official</p>
+<p>A subreddit&#39;s hot posts, through Reddit&#39;s public feed - a port of Raycast&#39;s Reddit extension.</p><p class="say">“subreddit programming” · “subreddit macapps top”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Reddit%20extension">Open in Jevie</a></article>
+<article id="svgl"><h2>SVGL</h2><p class="meta">Design Tools · by vlad-terin · v1.0.0 · official</p>
+<p>Brand logos as SVG from svgl.app - a port of Raycast&#39;s Svgl extension.</p><p class="say">“svgl github” · “svg logo vercel”</p>
+<a class="open" href="jevie://ask?q=install%20the%20SVGL%20extension">Open in Jevie</a></article>
+<article id="tldr"><h2>tldr</h2><p class="meta">Developer Tools · Documentation · by vlad-terin · v1.0.0 · official</p>
+<p>Command-line examples from tldr pages - a port of Raycast&#39;s TLDR extension.</p><p class="say">“tldr tar” · “tldr git log”</p>
+<a class="open" href="jevie://ask?q=install%20the%20tldr%20extension">Open in Jevie</a></article>
+<article id="wikipedia"><h2>Wikipedia</h2><p class="meta">Documentation · Web · by vlad-terin · v1.0.0 · official</p>
+<p>Wikipedia search, today&#39;s featured article and a random one - a port of Raycast&#39;s wikipedia extension.</p><p class="say">“wiki article einstein” · “wiki article random”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Wikipedia%20extension">Open in Jevie</a></article>
+<article id="workspace-info"><h2>Workspace Info</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
+<p>Read the package details of a local project.</p><p class="say">“@ext-workspace-info package directory=/path/to/project”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Workspace%20Info%20extension">Open in Jevie</a></article>
+<article id="world-clock"><h2>World Clock</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>The time anywhere - &quot;time in tokyo&quot;, a city, a country, a timezone - and a world clock of the usual places. A port of Raycast&#39;s World Clock.</p><p class="say">“time in tokyo” · “world clock”</p>
+<a class="open" href="jevie://ask?q=install%20the%20World%20Clock%20extension">Open in Jevie</a></article></div></main>
+<script>const h=new URLSearchParams(location.hash.slice(1)).get('install');if(h&&/^(?:git|npm):[\w.@:/#-]+$/.test(h)){const s=document.getElementById('shared');s.classList.add('on');document.getElementById('shared-source').textContent=h;document.getElementById('shared-open').href='jevie://ask?q='+encodeURIComponent('install extension '+h)}
+document.getElementById('q').addEventListener('input',e=>{const w=e.target.value.toLowerCase();for(const a of document.querySelectorAll('.grid article'))a.style.display=a.textContent.toLowerCase().includes(w)?'':'none'})</script></body></html>

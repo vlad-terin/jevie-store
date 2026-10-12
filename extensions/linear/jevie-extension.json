@@ -1,0 +1,31 @@
+{
+  "id": "linear",
+  "title": "Linear",
+  "apiVersion": 2,
+  "version": "1.0.0",
+  "description": "Your Linear issues - assigned, or searched by words - read-only, with a personal API key kept in the Keychain. A lean port of Raycast's Linear extension.",
+  "entry": "index.mjs",
+  "topics": [
+    "linear",
+    "issues"
+  ],
+  "preferences": [
+    {
+      "name": "apiKey",
+      "title": "Linear API key",
+      "description": "linear.app → Settings → Security & access → Personal API keys.",
+      "type": "password",
+      "required": true
+    }
+  ],
+  "examples": [
+    "linear issues",
+    "linear issue onboarding"
+  ],
+  "categories": [
+    "Productivity",
+    "Developer Tools"
+  ],
+  "icon": "checklist",
+  "author": "vlad-terin"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "feeds",
+  "title": "Feeds",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Your RSS and Atom feeds - blogs, changelogs, arXiv, YouTube - newest first, each post's text beside the list. Add one by pasting its page.",
+  "entry": "index.mjs",
+  "topics": [
+    "rss",
+    "atom",
+    "feeds",
+    "blogs",
+    "news feeds"
+  ],
+  "examples": [
+    "feeds",
+    "feeds simon",
+    "add feed https://simonwillison.net"
+  ],
+  "categories": [
+    "News",
+    "Web"
+  ],
+  "icon": "dot.radiowaves.up.forward",
+  "author": "vlad-terin"
+}

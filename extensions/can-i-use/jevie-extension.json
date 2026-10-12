@@ -1,0 +1,22 @@
+{
+  "id": "can-i-use",
+  "title": "Can I Use",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Browser support for web features from caniuse.com - a port of Raycast's Can I Use extension.",
+  "entry": "index.mjs",
+  "topics": [
+    "can i use",
+    "browser support"
+  ],
+  "examples": [
+    "can i use container queries",
+    "caniuse has"
+  ],
+  "categories": [
+    "Developer Tools",
+    "Web"
+  ],
+  "icon": "globe",
+  "author": "vlad-terin"
+}

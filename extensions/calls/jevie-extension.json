@@ -1,0 +1,26 @@
+{
+  "id": "calls",
+  "title": "Call Transcripts",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Transcribe a call on this Mac: you through the microphone, the others through what the Mac plays. Text only, kept in ~/.jevie/calls and in recall.",
+  "entry": "index.mjs",
+  "topics": [
+    "call",
+    "meeting",
+    "transcribe",
+    "transcript"
+  ],
+  "examples": [
+    "transcribe this call",
+    "transcribe the standup",
+    "stop transcribing",
+    "my call transcripts"
+  ],
+  "categories": [
+    "Productivity",
+    "Communication"
+  ],
+  "icon": "phone.badge.waveform",
+  "author": "vlad-terin"
+}

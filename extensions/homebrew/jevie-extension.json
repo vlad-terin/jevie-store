@@ -1,0 +1,26 @@
+{
+  "id": "homebrew",
+  "title": "Homebrew",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Search, install, upgrade and remove Homebrew formulae and casks - a port of Raycast's Homebrew extension.",
+  "entry": "index.mjs",
+  "topics": [
+    "homebrew",
+    "brew package",
+    "brew formula",
+    "brew cask"
+  ],
+  "examples": [
+    "homebrew wget",
+    "homebrew installed",
+    "homebrew outdated",
+    "homebrew install ffmpeg"
+  ],
+  "categories": [
+    "Developer Tools",
+    "System"
+  ],
+  "icon": "mug",
+  "author": "vlad-terin"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "mdn",
+  "title": "MDN",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "MDN Web Docs search - a port of Raycast's MDN extension.",
+  "entry": "index.mjs",
+  "topics": [
+    "mdn",
+    "web docs",
+    "javascript",
+    "css",
+    "html"
+  ],
+  "examples": [
+    "mdn flexbox",
+    "mdn array map"
+  ],
+  "categories": [
+    "Developer Tools",
+    "Documentation"
+  ],
+  "icon": "book",
+  "author": "vlad-terin"
+}

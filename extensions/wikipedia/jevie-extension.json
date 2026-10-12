@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia",
+  "title": "Wikipedia",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Wikipedia search, today's featured article and a random one - a port of Raycast's wikipedia extension.",
+  "entry": "index.mjs",
+  "topics": [
+    "wikipedia",
+    "reference"
+  ],
+  "examples": [
+    "wiki article einstein",
+    "wiki article random"
+  ],
+  "categories": [
+    "Documentation",
+    "Web"
+  ],
+  "icon": "books.vertical",
+  "author": "vlad-terin"
+}

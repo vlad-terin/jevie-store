@@ -1,0 +1,21 @@
+{
+  "id": "npm-search",
+  "title": "npm",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "npm package search - a port of Raycast's npm extension.",
+  "entry": "index.mjs",
+  "topics": [
+    "npm",
+    "packages"
+  ],
+  "examples": [
+    "npm package zod",
+    "npm search date"
+  ],
+  "categories": [
+    "Developer Tools"
+  ],
+  "icon": "shippingbox.circle",
+  "author": "vlad-terin"
+}
