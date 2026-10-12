@@ -5,10 +5,17 @@ body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,
 h1{margin:0 0 4px}header p{color:var(--faint);margin:0 0 24px}input{width:100%;box-sizing:border-box;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;margin-bottom:20px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
 h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4px 0}.open{display:inline-block;margin-top:6px;padding:6px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
-#shared{display:none;margin-bottom:20px}#shared.on{display:block}</style></head><body><main>
-<header><h1>Jevie extensions</h1><p>18 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
+#shared,#card{display:none;margin-bottom:20px}#shared.on,#card.on{display:block}#card ul{margin:8px 0;padding-left:18px}</style></head><body><main>
+<header><h1>Jevie extensions</h1><p>21 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
 <article id="shared"><h2>An extension shared with you</h2><p class="meta" id="shared-source"></p><a class="open" id="shared-open" href="#">Open in Jevie</a></article>
-<input id="q" placeholder="Search extensions" autocomplete="off"><div class="grid"><article id="calls"><h2>Call Transcripts</h2><p class="meta">Productivity · Communication · by vlad-terin · v1.0.0 · official</p>
+<article id="card"><p class="meta" id="card-label"></p><h2 id="card-summary"></h2><ul id="card-shown"></ul><p class="say" id="card-text"></p><a class="open" id="card-need" href="#" style="display:none;margin-right:6px"></a><a class="open" id="card-open" href="#">Open in Jevie</a></article>
+<input id="q" placeholder="Search extensions" autocomplete="off"><div class="grid"><article id="air-quality"><h2>Air Quality</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>The air anywhere as a card while you type: the US AQI with its band and the pollutants behind it, from Open-Meteo.</p><p class="say">“air quality berlin” · “aqi delhi”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Air%20Quality%20extension">Open in Jevie</a></article>
+<article id="bundle-size"><h2>Bundle Size</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
+<p>What an npm package adds to a web page, minified and gzipped, as a card while you type - from bundlephobia.</p><p class="say">“bundle size zod” · “bundle size react-dom”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Bundle%20Size%20extension">Open in Jevie</a></article>
+<article id="calls"><h2>Call Transcripts</h2><p class="meta">Productivity · Communication · by vlad-terin · v1.0.0 · official</p>
 <p>Transcribe a call on this Mac: you through the microphone, the others through what the Mac plays. Text only, kept in ~/.jevie/calls and in recall.</p><p class="say">“transcribe this call” · “transcribe the standup” · “stop transcribing”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Call%20Transcripts%20extension">Open in Jevie</a></article>
 <article id="can-i-use"><h2>Can I Use</h2><p class="meta">Developer Tools · Web · by vlad-terin · v1.0.0 · official</p>
@@ -17,6 +24,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="cheatsheets"><h2>Cheatsheets</h2><p class="meta">Developer Tools · Documentation · by vlad-terin · v1.0.0 · official</p>
 <p>Developer cheat sheets from devhints.io - a port of Raycast&#39;s Cheatsheets extension.</p><p class="say">“cheatsheet git” · “cheatsheets”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Cheatsheets%20extension">Open in Jevie</a></article>
+<article id="dns-lookup"><h2>DNS Lookup</h2><p class="meta">Developer Tools · System · by vlad-terin · v1.0.0 · official</p>
+<p>A domain&#39;s DNS records as a card while you type - addresses, mail, name servers - asked of your Mac&#39;s own resolver.</p><p class="say">“dns github.com” · “nslookup example.org”</p>
+<a class="open" href="jevie://ask?q=install%20the%20DNS%20Lookup%20extension">Open in Jevie</a></article>
 <article id="docker-containers"><h2>Docker</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
 <p>Docker containers - what is running, their logs - with stop, restart and start on each row. A port of Raycast&#39;s Docker extension.</p><p class="say">“docker containers” · “containers running” · “docker containers postgres”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Docker%20extension">Open in Jevie</a></article>
@@ -63,4 +73,5 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <p>The time anywhere - &quot;time in tokyo&quot;, a city, a country, a timezone - and a world clock of the usual places. A port of Raycast&#39;s World Clock.</p><p class="say">“time in tokyo” · “world clock”</p>
 <a class="open" href="jevie://ask?q=install%20the%20World%20Clock%20extension">Open in Jevie</a></article></div></main>
 <script>const h=new URLSearchParams(location.hash.slice(1)).get('install');if(h&&/^(?:git|npm):[\w.@:/#-]+$/.test(h)){const s=document.getElementById('shared');s.classList.add('on');document.getElementById('shared-source').textContent=h;document.getElementById('shared-open').href='jevie://ask?q='+encodeURIComponent('install extension '+h)}
+const c=new URLSearchParams(location.hash.slice(1)).get('card');if(c&&/^[\w.-]+\/[\w.-]+\/[0-9a-f]{7,40}\/cards\/[\w.-]+\.json$/.test(c)){fetch('https://raw.githubusercontent.com/'+c).then(r=>r.json()).then(k=>{const el=id=>document.getElementById(id);el('card').classList.add('on');el('card-label').textContent=(k.label||'Card')+' · shared '+(k.shared||'');el('card-summary').textContent=k.summary||k.label||'';for(const t of (k.shown||[]).slice(0,12)){const li=document.createElement('li');li.textContent=t;el('card-shown').appendChild(li)}el('card-text').textContent='Its words: “'+(k.text||'')+'”';el('card-open').href='jevie://ask?q='+encodeURIComponent(k.text||'');if(k.extension){const n=el('card-need');n.style.display='inline-block';n.textContent='Install '+k.extension+' first';n.href='jevie://ask?q='+encodeURIComponent('install the '+k.extension+' extension')}}).catch(()=>{})}
 document.getElementById('q').addEventListener('input',e=>{const w=e.target.value.toLowerCase();for(const a of document.querySelectorAll('.grid article'))a.style.display=a.textContent.toLowerCase().includes(w)?'':'none'})</script></body></html>

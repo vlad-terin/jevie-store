@@ -1,7 +1,90 @@
 {
-  "built": "2026-10-12T04:52:32.889Z",
+  "built": "2026-10-12T05:08:07.909Z",
   "jevie": "0.0.0",
   "extensions": [
+    {
+      "id": "air-quality",
+      "title": "Air Quality",
+      "description": "The air anywhere as a card while you type: the US AQI with its band and the pollutants behind it, from Open-Meteo.",
+      "version": "1.0.0",
+      "categories": [
+        "Productivity"
+      ],
+      "icon": "aqi.medium",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "air quality",
+        "aqi",
+        "pollution"
+      ],
+      "examples": [
+        "air quality berlin",
+        "aqi delhi"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "air-quality-api.open-meteo.com",
+          "geocoding-api.open-meteo.com"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Air Quality\n\nA card under the field as you type: the air quality somewhere right now. It\nshows the US AQI with its band (\"Good\", \"Unhealthy for sensitive groups\", …),\nwhat the band means for being outside, and the pollutants behind it (PM2.5,\nPM10, ozone, NO₂). From [Open-Meteo](https://open-meteo.com), no key. A place\nis looked up once; a reading is kept an hour.\n\n## Type\n\n- “air quality berlin”\n- “aqi delhi”\n- “air quality in san francisco”\n\n↵ copies the line: `Berlin: AQI 34, good`.\n\n## Reaches\n\ngeocoding-api.open-meteo.com and air-quality-api.open-meteo.com. It changes\nnothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card, from Open-Meteo."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/air-quality",
+      "trust": "official"
+    },
+    {
+      "id": "bundle-size",
+      "title": "Bundle Size",
+      "description": "What an npm package adds to a web page, minified and gzipped, as a card while you type - from bundlephobia.",
+      "version": "1.0.0",
+      "categories": [
+        "Developer Tools"
+      ],
+      "icon": "shippingbox",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "bundle size",
+        "bundlephobia",
+        "package size"
+      ],
+      "examples": [
+        "bundle size zod",
+        "bundle size react-dom"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "bundlephobia.com"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Bundle Size\n\nA card under the field as you type: what an npm package costs a web page,\nminified and gzipped, with its dependency count and whether it is an ES\nmodule. From [bundlephobia](https://bundlephobia.com), no key. Each package\nis kept a day.\n\n## Type\n\n- “bundle size zod”\n- “bundle size react-dom@18.3.1”: one version\n- “package size date-fns”\n\n↵ copies the line: `zod@4.6.6: 88.9 kB min+gzip`.\n\n## Reaches\n\nbundlephobia.com. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card, sized by bundlephobia."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/bundle-size",
+      "trust": "official"
+    },
     {
       "id": "calls",
       "title": "Call Transcripts",
@@ -43,7 +126,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/calls",
+      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/calls",
       "trust": "official"
     },
     {
@@ -84,7 +167,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/can-i-use",
+      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/can-i-use",
       "trust": "official"
     },
     {
@@ -126,7 +209,47 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/cheatsheets",
+      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/cheatsheets",
+      "trust": "official"
+    },
+    {
+      "id": "dns-lookup",
+      "title": "DNS Lookup",
+      "description": "A domain's DNS records as a card while you type - addresses, mail, name servers - asked of your Mac's own resolver.",
+      "version": "1.0.0",
+      "categories": [
+        "Developer Tools",
+        "System"
+      ],
+      "icon": "network",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "dns",
+        "nslookup",
+        "dns records"
+      ],
+      "examples": [
+        "dns github.com",
+        "nslookup example.org"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# DNS Lookup\n\nA card under the field as you type: a domain's DNS records. It shows A, AAAA,\nCNAME, MX and NS, plus how many TXT records it has (and whether one is SPF).\nThey come from your Mac's own resolver, so nothing is sent anywhere but the\nlookups themselves.\n\n## Type\n\n- “dns github.com”\n- “nslookup mail.google.com”\n\n↵ copies every record, one per line.\n\nThe card needs a domain after the word, so “flush dns” and “dns cache” stay\nJevie's own. “dig” is Jevie's file finder, so it is not this card's.\n\n## Reaches\n\nThe DNS servers your Mac uses. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card, from the Mac's resolver."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/dns-lookup",
       "trust": "official"
     },
     {
@@ -167,7 +290,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/docker-containers",
+      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/docker-containers",
       "trust": "official"
     },
     {
@@ -214,7 +337,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/feeds",
+      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/feeds",
       "trust": "official"
     },
     {
@@ -255,7 +378,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/github",
+      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/github",
       "trust": "official"
     },
     {
@@ -296,7 +419,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/hacker-news",
+      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/hacker-news",
       "trust": "official"
     },
     {
@@ -340,7 +463,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/homebrew",
+      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/homebrew",
       "trust": "official"
     },
     {
@@ -380,7 +503,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/iconify",
+      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/iconify",
       "trust": "official"
     },
     {
@@ -420,7 +543,7 @@
           "With no API key yet it asks for one (↵ opens its settings), rather than saying Linear refused it."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/linear",
+      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/linear",
       "trust": "official"
     },
     {
@@ -463,7 +586,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/mdn",
+      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/mdn",
       "trust": "official"
     },
     {
@@ -503,7 +626,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/npm-search",
+      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/npm-search",
       "trust": "official"
     },
     {
@@ -541,7 +664,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/obsidian",
+      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/obsidian",
       "trust": "official"
     },
     {
@@ -581,7 +704,7 @@
           "A list asked for again within ten minutes comes from what was kept, and when Reddit limits requests the kept list is shown with its age instead of an error."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/reddit",
+      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/reddit",
       "trust": "official"
     },
     {
@@ -620,7 +743,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/svgl",
+      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/svgl",
       "trust": "official"
     },
     {
@@ -660,7 +783,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/tldr",
+      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/tldr",
       "trust": "official"
     },
     {
@@ -701,7 +824,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/wikipedia",
+      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/wikipedia",
       "trust": "official"
     },
     {
@@ -738,7 +861,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@a0d5deb752f0da6f7764a0440a58fc958d955c58#extensions/world-clock",
+      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/world-clock",
       "trust": "official"
     }
   ],
