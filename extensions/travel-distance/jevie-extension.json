@@ -2,7 +2,7 @@
   "id": "travel-distance",
   "title": "Travel Distance",
   "apiVersion": 1,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "How far apart two places are and roughly how long the flight takes, as a card while you type - the great-circle distance in kilometres and miles.",
   "entry": "index.mjs",
   "categories": [

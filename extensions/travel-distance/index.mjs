@@ -6,6 +6,8 @@
 //   "distance london to tokyo", "how far is paris from berlin", "flight time new york to paris"
 
 export const PATTERN = '^(?:distance|flight\\s+time|how\\s+far\\s+is)\\s+(?:from\\s+)?[a-z][a-z .\'-]{1,40}\\s+(?:to|from|and)\\s+[a-z][a-z .\'-]{1,40}\\??$';
+export const NOT_PLACES = /^(?:my\s+|the\s+)?(?:home|house|work|office|school|the\s+gym|gym|here|there|airport|station|hotel|parents|mom'?s|dad'?s)$/i;
+const fold = s => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z]/g, '');
 export function placesIn(said) {
   const t = String(said).trim().toLowerCase().replace(/\?$/, '');
   const m = t.match(/^(?:distance|flight\s+time|how\s+far\s+is)\s+(?:from\s+)?(.+?)\s+(?:to|from|and)\s+(.+)$/);
@@ -24,10 +26,14 @@ export default function travelDistance(jevie, context) {
   const { line, pair, stack, hero, chip, meta, icon } = jevie.CardParts;
   const note = (t, error = false) => ({ summary: 'Distance', complete: 0, ...(error ? { error: true } : {}), body: [line(meta(t))] });
   const find = async name => {
+    // "home", "work": places of the person's own, not a town called Homyel.
+    if (NOT_PLACES.test(name)) return { mine: true, name };
     const kept = (await context.state.get('places').catch(() => null)) ?? {};
     if (kept[name]) return kept[name];
-    const r = await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(name)}&count=1`, { signal: AbortSignal.timeout(6000) }).then(x => x.ok ? x.json() : null).catch(() => null);
-    const f = r?.results?.[0]; if (!f) return null;
+    const r = await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(name)}&count=5`, { signal: AbortSignal.timeout(6000) }).then(x => x.ok ? x.json() : null).catch(() => null);
+    // Only a place whose name is what was typed: the geocoder answers a
+    // near-miss ("work" → Workum) rather than nothing.
+    const f = (r?.results ?? []).find(x => fold(x.name).startsWith(fold(name)) || fold(name).startsWith(fold(x.name))); if (!f) return null;
     const place = { name: f.name, country: f.country_code, lat: f.latitude, lon: f.longitude };
     await context.state.set('places', Object.fromEntries([...Object.entries(kept), [name, place]].slice(-300))).catch(() => {});
     return place;
@@ -37,6 +43,7 @@ export default function travelDistance(jevie, context) {
     async render(said) {
       const names = placesIn(said); if (!names) return note('Type two places: “distance london to tokyo”');
       const [a, b] = await Promise.all(names.map(find));
+      if (a?.mine || b?.mine) return note(`“${(a?.mine ? a : b).name}” is a place of yours, not a city: name the towns`, true);
       if (!a || !b) return note(`No place called ${!a ? names[0] : names[1]}`, true);
       const km = haversine(a, b), mi = km * 0.621371, h = flightHours(km);
       const summary = `${a.name} → ${b.name}: ${Math.round(km).toLocaleString('en-US')} km (${Math.round(mi).toLocaleString('en-US')} mi) · about ${hm(h)} flying`;
