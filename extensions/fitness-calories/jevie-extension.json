@@ -1,0 +1,23 @@
+{
+  "id": "fitness-calories",
+  "title": "Calories & Macros",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Daily calories by Mifflin-St Jeor with your activity, and grams of protein, carbs and fat for a macro split - as cards while you type.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "flame",
+  "author": "vlad-terin",
+  "topics": [
+    "tdee",
+    "calories",
+    "macros",
+    "bmr"
+  ],
+  "examples": [
+    "tdee 30 male 180cm 80kg moderate",
+    "macros 2400 calories 40/30/30"
+  ]
+}

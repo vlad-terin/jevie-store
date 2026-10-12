@@ -1,0 +1,23 @@
+{
+  "id": "hr-pay",
+  "title": "Overtime & PTO",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Overtime pay and paid-time-off accrual, as cards while you type - time-and-a-half past 40 hours, and how much leave has built up.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity",
+    "Finance"
+  ],
+  "icon": "person.text.rectangle",
+  "author": "vlad-terin",
+  "topics": [
+    "overtime",
+    "pto accrual",
+    "paid time off"
+  ],
+  "examples": [
+    "overtime 32/h 46 hours",
+    "pto 15 days a year 3 months"
+  ]
+}

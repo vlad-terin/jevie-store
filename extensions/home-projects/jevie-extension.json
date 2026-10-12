@@ -1,0 +1,23 @@
+{
+  "id": "home-projects",
+  "title": "Home Projects",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "How much paint, flooring or concrete a job takes, as cards while you type - with waste and coats counted.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "hammer",
+  "author": "vlad-terin",
+  "topics": [
+    "paint calculator",
+    "flooring",
+    "concrete"
+  ],
+  "examples": [
+    "paint 12x14 room 8ft walls",
+    "flooring 12x14",
+    "concrete 10x10 4 inches"
+  ]
+}

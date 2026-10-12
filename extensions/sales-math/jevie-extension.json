@@ -1,0 +1,23 @@
+{
+  "id": "sales-math",
+  "title": "Sales Math",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Commission and quota attainment as cards while you type - flat rates, accelerators past quota, and how much is left to hit the number.",
+  "entry": "index.mjs",
+  "categories": [
+    "Finance",
+    "Productivity"
+  ],
+  "icon": "chart.bar.doc.horizontal",
+  "author": "vlad-terin",
+  "topics": [
+    "commission",
+    "quota attainment",
+    "sales"
+  ],
+  "examples": [
+    "commission 85000 at 8%",
+    "quota 420k of 500k"
+  ]
+}
