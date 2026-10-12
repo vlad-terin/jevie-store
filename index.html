@@ -6,7 +6,7 @@ h1{margin:0 0 4px}header p{color:var(--faint);margin:0 0 24px}input{width:100%;b
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
 h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4px 0}.open{display:inline-block;margin-top:6px;padding:6px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
 #shared,#card{display:none;margin-bottom:20px}#shared.on,#card.on{display:block}#card ul{margin:8px 0;padding-left:18px}</style></head><body><main>
-<header><h1>Jevie extensions</h1><p>133 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
+<header><h1>Jevie extensions</h1><p>137 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
 <article id="shared"><h2>An extension shared with you</h2><p class="meta" id="shared-source"></p><a class="open" id="shared-open" href="#">Open in Jevie</a></article>
 <article id="card"><p class="meta" id="card-label"></p><h2 id="card-summary"></h2><ul id="card-shown"></ul><p class="say" id="card-text"></p><a class="open" id="card-need" href="#" style="display:none;margin-right:6px"></a><a class="open" id="card-open" href="#">Open in Jevie</a></article>
 <input id="q" placeholder="Search extensions" autocomplete="off"><div class="grid"><article id="budget-503020"><h2>50/30/20 Budget</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
@@ -54,6 +54,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="business-math"><h2>Business Math</h2><p class="meta">Finance · Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>Margin and markup, growth rate (CAGR) and break-even, as cards while you type - the numbers a price, a plan or a pitch needs.</p><p class="say">“margin cost 25 price 40” · “cagr 100 to 250 in 5 years”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Business%20Math%20extension">Open in Jevie</a></article>
+<article id="caffeine"><h2>Caffeine</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>How much caffeine is still in you at bedtime, as a card while you type - from the cups you had and when - at a 5-hour half-life.</p><p class="say">“caffeine 200mg at 9am bedtime 11pm” · “caffeine 95mg 8am 95mg 2pm bedtime 10:30pm”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Caffeine%20extension">Open in Jevie</a></article>
 <article id="calls"><h2>Call Transcripts</h2><p class="meta">Productivity · Communication · by vlad-terin · v1.0.0 · official</p>
 <p>Transcribe a call on this Mac: you through the microphone, the others through what the Mac plays. Text only, kept in ~/.jevie/calls and in recall.</p><p class="say">“transcribe this call” · “transcribe the standup” · “stop transcribing”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Call%20Transcripts%20extension">Open in Jevie</a></article>
@@ -99,6 +102,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="curl-to-fetch"><h2>Curl to Fetch</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
 <p>A curl command turned into JavaScript fetch() as a card while you type - method, headers, body and auth - ready to paste.</p><p class="say">“curl to fetch curl -X POST https://api.example.com/items -H &quot;Content-Type: application/json&quot; -d &#39;{&quot;name&quot;:&quot;a&quot;}&#39;” · “curl to fetch curl https://api.github.com/user -u octo:token”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Curl%20to%20Fetch%20extension">Open in Jevie</a></article>
+<article id="debt-to-income"><h2>Debt to Income</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
+<p>A debt-to-income ratio as a card while you type - monthly debts over gross monthly income - and where lenders draw their lines.</p><p class="say">“dti debts 2000 income 6500” · “debt to income 1800 a month income 90k a year”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Debt%20to%20Income%20extension">Open in Jevie</a></article>
 <article id="design-math"><h2>Design Math</h2><p class="meta">Design Tools · by vlad-terin · v1.0.0 · official</p>
 <p>The sums designers do all day, as cards while you type: an aspect ratio, a size scaled to a new width or height, and px to rem.</p><p class="say">“aspect ratio 1920x1080” · “1920x1080 to width 1280” · “24px to rem”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Design%20Math%20extension">Open in Jevie</a></article>
@@ -129,6 +135,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="event-planning"><h2>Event Planning</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>Party and event sums as cards while you type: tables for the guests, the budget per head, and how many drinks to buy.</p><p class="say">“tables for 120 guests 8 per table” · “drinks for 80 guests 4 hours”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Event%20Planning%20extension">Open in Jevie</a></article>
+<article id="exit-codes"><h2>Exit Codes</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
+<p>What a process exit code or a Unix signal means, as a card while you type - 137 is SIGKILL, often the out-of-memory killer.</p><p class="say">“exit code 137” · “signal 15”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Exit%20Codes%20extension">Open in Jevie</a></article>
 <article id="f1-standings"><h2>F1 Standings</h2><p class="meta">Fun · News · by vlad-terin · v1.0.0 · official</p>
 <p>The Formula 1 championship as a card while you type: the leader, the top five and the gaps - drivers or constructors, from Jolpica&#39;s F1 data.</p><p class="say">“f1 standings” · “f1 constructors”</p>
 <a class="open" href="jevie://ask?q=install%20the%20F1%20Standings%20extension">Open in Jevie</a></article>
@@ -381,6 +390,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="trip-fuel"><h2>Trip Fuel</h2><p class="meta">Finance · Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>What a drive costs in fuel, as a card while you type - miles and mpg or km and L/100 km, at a price - and split between the people in the car.</p><p class="say">“fuel cost 300 miles at 30 mpg 3.50” · “trip cost 450 km 7 l/100km 1.80 split 3”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Trip%20Fuel%20extension">Open in Jevie</a></article>
+<article id="type-scale"><h2>Type Scale</h2><p class="meta">Design Tools · by vlad-terin · v1.0.0 · official</p>
+<p>A modular type scale from a base size and a ratio, as a card while you type - major third, perfect fourth, golden - and the golden-ratio split of a width.</p><p class="say">“type scale 16 1.25” · “type scale 16 perfect fourth” · “golden ratio 960”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Type%20Scale%20extension">Open in Jevie</a></article>
 <article id="unit-price"><h2>Unit Price</h2><p class="meta">Finance · Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>Which pack is the better buy, as a card while you type: the price per ounce, gram, litre or item, side by side.</p><p class="say">“unit price 4.99 for 12 oz vs 7.49 for 20 oz” · “unit price 3.20 for 500 g vs 5.50 for 1 kg”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Unit%20Price%20extension">Open in Jevie</a></article>

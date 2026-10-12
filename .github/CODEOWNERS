@@ -15,6 +15,7 @@
 /extensions/bundle-size/ @vlad-terin
 /extensions/business-days/ @vlad-terin
 /extensions/business-math/ @vlad-terin
+/extensions/caffeine/ @vlad-terin
 /extensions/calls/ @vlad-terin
 /extensions/can-i-use/ @vlad-terin
 /extensions/cheatsheets/ @vlad-terin
@@ -29,6 +30,7 @@
 /extensions/crosswind/ @vlad-terin
 /extensions/css-clamp/ @vlad-terin
 /extensions/curl-to-fetch/ @vlad-terin
+/extensions/debt-to-income/ @vlad-terin
 /extensions/design-math/ @vlad-terin
 /extensions/discount-stack/ @vlad-terin
 /extensions/dns-lookup/ @vlad-terin
@@ -40,6 +42,7 @@
 /extensions/end-of-life/ @vlad-terin
 /extensions/energy-cost/ @vlad-terin
 /extensions/event-planning/ @vlad-terin
+/extensions/exit-codes/ @vlad-terin
 /extensions/f1-standings/ @vlad-terin
 /extensions/feeds/ @vlad-terin
 /extensions/fitness-calories/ @vlad-terin
@@ -124,6 +127,7 @@
 /extensions/transfer-time/ @vlad-terin
 /extensions/travel-distance/ @vlad-terin
 /extensions/trip-fuel/ @vlad-terin
+/extensions/type-scale/ @vlad-terin
 /extensions/unit-price/ @vlad-terin
 /extensions/urban-dictionary/ @vlad-terin
 /extensions/utm-builder/ @vlad-terin
