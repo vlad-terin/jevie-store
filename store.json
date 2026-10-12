@@ -1,5 +1,5 @@
 {
-  "built": "2026-10-12T04:32:42.674Z",
+  "built": "2026-10-12T04:33:32.374Z",
   "jevie": "0.0.0",
   "extensions": [
     {
@@ -43,7 +43,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/calls",
+      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/calls",
       "trust": "official"
     },
     {
@@ -84,7 +84,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/can-i-use",
+      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/can-i-use",
       "trust": "official"
     },
     {
@@ -126,7 +126,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/cheatsheets",
+      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/cheatsheets",
       "trust": "official"
     },
     {
@@ -167,7 +167,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/docker-containers",
+      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/docker-containers",
       "trust": "official"
     },
     {
@@ -214,7 +214,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/feeds",
+      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/feeds",
       "trust": "official"
     },
     {
@@ -255,7 +255,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/github",
+      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/github",
       "trust": "official"
     },
     {
@@ -296,7 +296,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/hacker-news",
+      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/hacker-news",
       "trust": "official"
     },
     {
@@ -340,7 +340,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/homebrew",
+      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/homebrew",
       "trust": "official"
     },
     {
@@ -380,7 +380,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/iconify",
+      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/iconify",
       "trust": "official"
     },
     {
@@ -419,7 +419,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/jevgrep",
+      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/jevgrep",
       "trust": "official"
     },
     {
@@ -459,7 +459,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/linear",
+      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/linear",
       "trust": "official"
     },
     {
@@ -502,7 +502,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/mdn",
+      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/mdn",
       "trust": "official"
     },
     {
@@ -542,7 +542,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/npm-search",
+      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/npm-search",
       "trust": "official"
     },
     {
@@ -580,7 +580,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/obsidian",
+      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/obsidian",
       "trust": "official"
     },
     {
@@ -620,7 +620,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/reddit",
+      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/reddit",
       "trust": "official"
     },
     {
@@ -659,7 +659,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/svgl",
+      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/svgl",
       "trust": "official"
     },
     {
@@ -699,7 +699,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/tldr",
+      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/tldr",
       "trust": "official"
     },
     {
@@ -740,7 +740,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/wikipedia",
+      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/wikipedia",
       "trust": "official"
     },
     {
@@ -775,7 +775,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/workspace-info",
+      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/workspace-info",
       "trust": "official"
     },
     {
@@ -812,7 +812,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@HEAD#extensions/world-clock",
+      "source": "git:github.com/vlad-terin/jevie-store@56bc99b4eaff8b7803a2c72cb5ff1527bbe3d566#extensions/world-clock",
       "trust": "official"
     }
   ],
