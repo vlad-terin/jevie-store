@@ -6,7 +6,7 @@ h1{margin:0 0 4px}header p{color:var(--faint);margin:0 0 24px}input{width:100%;b
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
 h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4px 0}.open{display:inline-block;margin-top:6px;padding:6px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
 #shared,#card{display:none;margin-bottom:20px}#shared.on,#card.on{display:block}#card ul{margin:8px 0;padding-left:18px}</style></head><body><main>
-<header><h1>Jevie extensions</h1><p>75 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
+<header><h1>Jevie extensions</h1><p>79 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
 <article id="shared"><h2>An extension shared with you</h2><p class="meta" id="shared-source"></p><a class="open" id="shared-open" href="#">Open in Jevie</a></article>
 <article id="card"><p class="meta" id="card-label"></p><h2 id="card-summary"></h2><ul id="card-shown"></ul><p class="say" id="card-text"></p><a class="open" id="card-need" href="#" style="display:none;margin-right:6px"></a><a class="open" id="card-open" href="#">Open in Jevie</a></article>
 <input id="q" placeholder="Search extensions" autocomplete="off"><div class="grid"><article id="budget-503020"><h2>50/30/20 Budget</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
@@ -36,6 +36,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="calls"><h2>Call Transcripts</h2><p class="meta">Productivity · Communication · by vlad-terin · v1.0.0 · official</p>
 <p>Transcribe a call on this Mac: you through the microphone, the others through what the Mac plays. Text only, kept in ~/.jevie/calls and in recall.</p><p class="say">“transcribe this call” · “transcribe the standup” · “stop transcribing”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Call%20Transcripts%20extension">Open in Jevie</a></article>
+<article id="fitness-calories"><h2>Calories &amp; Macros</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>Daily calories by Mifflin-St Jeor with your activity, and grams of protein, carbs and fat for a macro split - as cards while you type.</p><p class="say">“tdee 30 male 180cm 80kg moderate” · “macros 2400 calories 40/30/30”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Calories%20%26%20Macros%20extension">Open in Jevie</a></article>
 <article id="can-i-use"><h2>Can I Use</h2><p class="meta">Developer Tools · Web · by vlad-terin · v1.0.0 · official</p>
 <p>Browser support for web features from caniuse.com - a port of Raycast&#39;s Can I Use extension.</p><p class="say">“can i use container queries” · “caniuse has”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Can%20I%20Use%20extension">Open in Jevie</a></article>
@@ -99,6 +102,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="home-affordability"><h2>Home Affordability</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
 <p>How much house an income can carry, as a card while you type - by the 28/36 rule, with the payment, the down payment and taxes counted.</p><p class="say">“afford 120k income 6.5% 20% down” · “afford 150k income 7% 10% down debts 600”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Home%20Affordability%20extension">Open in Jevie</a></article>
+<article id="home-projects"><h2>Home Projects</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>How much paint, flooring or concrete a job takes, as cards while you type - with waste and coats counted.</p><p class="say">“paint 12x14 room 8ft walls” · “flooring 12x14” · “concrete 10x10 4 inches”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Home%20Projects%20extension">Open in Jevie</a></article>
 <article id="homebrew"><h2>Homebrew</h2><p class="meta">Developer Tools · System · by vlad-terin · v1.0.0 · official</p>
 <p>Search, install, upgrade and remove Homebrew formulae and casks - a port of Raycast&#39;s Homebrew extension.</p><p class="say">“homebrew wget” · “homebrew installed” · “homebrew outdated”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Homebrew%20extension">Open in Jevie</a></article>
@@ -150,6 +156,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="options-pricing"><h2>Options Pricing</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
 <p>An option&#39;s fair price and Greeks by Black-Scholes, as a card while you type - calls and puts, with delta, gamma, theta, vega and the breakeven.</p><p class="say">“call 100 strike 105 30 days 25% vol” · “put 50 strike 45 60 days 40% vol”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Options%20Pricing%20extension">Open in Jevie</a></article>
+<article id="hr-pay"><h2>Overtime &amp; PTO</h2><p class="meta">Productivity · Finance · by vlad-terin · v1.0.0 · official</p>
+<p>Overtime pay and paid-time-off accrual, as cards while you type - time-and-a-half past 40 hours, and how much leave has built up.</p><p class="say">“overtime 32/h 46 hours” · “pto 15 days a year 3 months”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Overtime%20%26%20PTO%20extension">Open in Jevie</a></article>
 <article id="payment-fees"><h2>Payment Fees</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
 <p>What you keep after a payment processor&#39;s fee, as a card while you type - and what to charge to keep a round amount. Stripe&#39;s standard rate, or your own.</p><p class="say">“stripe fee 100” · “fee 250 at 3.49% + 0.49”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Payment%20Fees%20extension">Open in Jevie</a></article>
@@ -180,6 +189,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="rhymes"><h2>Rhymes &amp; Synonyms</h2><p class="meta">Fun · Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>Words that rhyme with a word, mean the same, or sound like it, as a card while you type - from Datamuse.</p><p class="say">“rhymes with light” · “synonyms for happy”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Rhymes%20%26%20Synonyms%20extension">Open in Jevie</a></article>
+<article id="sales-math"><h2>Sales Math</h2><p class="meta">Finance · Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>Commission and quota attainment as cards while you type - flat rates, accelerators past quota, and how much is left to hit the number.</p><p class="say">“commission 85000 at 8%” · “quota 420k of 500k”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Sales%20Math%20extension">Open in Jevie</a></article>
 <article id="semver"><h2>Semver</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
 <p>Whether a version satisfies a range, and what a range like ^1.2.0 or ~2.1 allows, as a card while you type - npm&#39;s rules, on your Mac.</p><p class="say">“semver ^1.2.0 1.4.5” · “semver ~2.1”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Semver%20extension">Open in Jevie</a></article>

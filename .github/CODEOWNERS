@@ -24,13 +24,16 @@
 /extensions/end-of-life/ @vlad-terin
 /extensions/f1-standings/ @vlad-terin
 /extensions/feeds/ @vlad-terin
+/extensions/fitness-calories/ @vlad-terin
 /extensions/freelance-rate/ @vlad-terin
 /extensions/github/ @vlad-terin
 /extensions/github-repo/ @vlad-terin
 /extensions/grade-calculator/ @vlad-terin
 /extensions/hacker-news/ @vlad-terin
 /extensions/home-affordability/ @vlad-terin
+/extensions/home-projects/ @vlad-terin
 /extensions/homebrew/ @vlad-terin
+/extensions/hr-pay/ @vlad-terin
 /extensions/http-headers/ @vlad-terin
 /extensions/icd-10/ @vlad-terin
 /extensions/iconify/ @vlad-terin
@@ -57,6 +60,7 @@
 /extensions/reddit/ @vlad-terin
 /extensions/retirement/ @vlad-terin
 /extensions/rhymes/ @vlad-terin
+/extensions/sales-math/ @vlad-terin
 /extensions/semver/ @vlad-terin
 /extensions/seo-check/ @vlad-terin
 /extensions/service-status/ @vlad-terin
