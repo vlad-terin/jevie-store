@@ -1,0 +1,24 @@
+{
+  "id": "clinical-calculators",
+  "title": "Clinical Calculators",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "BMI with body surface area, a due date from the last period, and creatinine clearance (Cockcroft-Gault), as cards while you type - worked out on your Mac.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "cross.case",
+  "author": "vlad-terin",
+  "topics": [
+    "bmi",
+    "due date",
+    "creatinine clearance",
+    "bsa"
+  ],
+  "examples": [
+    "bmi 180 cm 75 kg",
+    "due date lmp 2026-03-01",
+    "crcl 65 years 70 kg creatinine 1.2 male"
+  ]
+}

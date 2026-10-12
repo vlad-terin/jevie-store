@@ -1,0 +1,23 @@
+{
+  "id": "service-status",
+  "title": "Service Status",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Is GitHub, OpenAI, Slack or Vercel down? A service's own status page as a card while you type, with what is broken right now.",
+  "entry": "index.mjs",
+  "categories": [
+    "Developer Tools",
+    "Productivity"
+  ],
+  "icon": "waveform.path.ecg",
+  "author": "vlad-terin",
+  "topics": [
+    "status page",
+    "is it down",
+    "outage"
+  ],
+  "examples": [
+    "is github down",
+    "status openai"
+  ]
+}

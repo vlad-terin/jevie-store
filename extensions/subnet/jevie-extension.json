@@ -1,0 +1,23 @@
+{
+  "id": "subnet",
+  "title": "Subnet Calculator",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "An IPv4 subnet as a card while you type: its network, broadcast, usable range, host count and mask - from CIDR or a mask.",
+  "entry": "index.mjs",
+  "categories": [
+    "Developer Tools",
+    "System"
+  ],
+  "icon": "point.3.connected.trianglepath.dotted",
+  "author": "vlad-terin",
+  "topics": [
+    "cidr",
+    "subnet",
+    "netmask"
+  ],
+  "examples": [
+    "cidr 10.0.0.0/24",
+    "subnet 192.168.1.130/26"
+  ]
+}

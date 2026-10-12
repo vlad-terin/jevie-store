@@ -1,0 +1,23 @@
+{
+  "id": "utm-builder",
+  "title": "UTM Builder",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "A link with UTM tags, built as a card while you type - source, medium and campaign - and copied with ↵.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity",
+    "Web"
+  ],
+  "icon": "link.badge.plus",
+  "author": "vlad-terin",
+  "topics": [
+    "utm",
+    "campaign link",
+    "tracking link"
+  ],
+  "examples": [
+    "utm https://jevie.app twitter social launch",
+    "utm jevie.app source=newsletter campaign=october"
+  ]
+}

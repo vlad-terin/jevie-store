@@ -1,0 +1,24 @@
+{
+  "id": "business-math",
+  "title": "Business Math",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Margin and markup, growth rate (CAGR) and break-even, as cards while you type - the numbers a price, a plan or a pitch needs.",
+  "entry": "index.mjs",
+  "categories": [
+    "Finance",
+    "Productivity"
+  ],
+  "icon": "chart.line.uptrend.xyaxis",
+  "author": "vlad-terin",
+  "topics": [
+    "margin",
+    "markup",
+    "cagr",
+    "break even"
+  ],
+  "examples": [
+    "margin cost 25 price 40",
+    "cagr 100 to 250 in 5 years"
+  ]
+}

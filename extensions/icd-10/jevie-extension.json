@@ -1,0 +1,22 @@
+{
+  "id": "icd-10",
+  "title": "ICD-10",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "ICD-10-CM codes as a card while you type: a condition's codes, or what a code means - from the National Library of Medicine.",
+  "entry": "index.mjs",
+  "categories": [
+    "Documentation"
+  ],
+  "icon": "list.clipboard",
+  "author": "vlad-terin",
+  "topics": [
+    "icd10",
+    "icd-10",
+    "diagnosis code"
+  ],
+  "examples": [
+    "icd10 asthma",
+    "icd J45.909"
+  ]
+}

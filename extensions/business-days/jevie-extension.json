@@ -1,0 +1,36 @@
+{
+  "id": "business-days",
+  "title": "Business Days",
+  "apiVersion": 2,
+  "version": "1.0.0",
+  "description": "Working days, as a card while you type: 10 business days from today, workdays until a date, or between two - weekends and (optionally) US federal holidays left out.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity",
+    "Finance"
+  ],
+  "icon": "calendar.badge.clock",
+  "author": "vlad-terin",
+  "topics": [
+    "business days",
+    "working days",
+    "workdays"
+  ],
+  "examples": [
+    "10 business days from today",
+    "workdays until dec 15"
+  ],
+  "preferences": [
+    {
+      "name": "holidays",
+      "title": "Holidays left out",
+      "type": "choice",
+      "choices": [
+        "US",
+        "none"
+      ],
+      "default": "US",
+      "description": "US federal holidays (observed), or only weekends."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "end-of-life",
+  "title": "End of Life",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "When a language, framework, database or OS stops getting fixes, as a card while you type - the current and supported releases, from endoflife.date.",
+  "entry": "index.mjs",
+  "categories": [
+    "Developer Tools",
+    "System"
+  ],
+  "icon": "calendar.badge.exclamationmark",
+  "author": "vlad-terin",
+  "topics": [
+    "end of life",
+    "eol",
+    "lts",
+    "support dates"
+  ],
+  "examples": [
+    "eol python",
+    "eol node 18"
+  ]
+}

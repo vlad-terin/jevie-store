@@ -2,11 +2,12 @@
 // (most thumbs up) and its example, no key, kept a day. A proper definition
 // is Jevie's ("define serendipity").
 //
-//   "urban dictionary yeet", "urban define touch grass", "slang for no cap"
+//   "urban yeet", "urban touch grass", "slang for no cap"
 
-// Never "urban" or "slang" alone: "urban outfitters" is a shop, and a card
-// that finds a definition takes Return from the sentence.
-const WORDS = ['urban dictionary', 'urban define', 'slang for'];
+// "urban <word>", as Raycast's keyword. A shop's name after it ("urban
+// outfitters") finds a definition too, and then ↵ copies it: arrow down to
+// the list to open the site instead.
+const WORDS = ['urban dictionary', 'urban', 'slang for'];
 const plain = t => String(t ?? '').replace(/\[([^\]]+)\]/g, '$1').replace(/\s+/g, ' ').trim();
 
 export function termIn(said) {
@@ -32,10 +33,10 @@ export default function urbanDictionary(jevie, context) {
   const P = jevie.CardParts;
   const note = (t, error = false) => ({ summary: 'Urban Dictionary', complete: 0, ...(error ? { error: true } : {}), body: [P.line(P.text(t, true))] });
   jevie.registerCard({
-    name: 'urban', label: 'Urban Dictionary', symbol: 'text.bubble', match: { words: WORDS }, examples: ['urban dictionary yeet', 'slang for touch grass'],
+    name: 'urban', label: 'Urban Dictionary', symbol: 'text.bubble', match: { words: WORDS }, examples: ['urban yeet', 'urban touch grass'],
     async render(said) {
       const term = termIn(said);
-      if (!term) return note('Type a word after it, like “urban dictionary yeet”');
+      if (!term) return note('Type a word after it, like “urban yeet”');
       const key = term.toLowerCase();
       const kept = (await context.state.get('terms').catch(() => null)) ?? {};
       if (kept[key] && Date.now() - kept[key].at < 864e5) return kept[key].d ? cardOf(term, kept[key].d, P) : note(`Urban Dictionary has nothing for ${term}`, true);
