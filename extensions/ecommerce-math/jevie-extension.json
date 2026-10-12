@@ -1,0 +1,23 @@
+{
+  "id": "ecommerce-math",
+  "title": "E-commerce Math",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "An online store's unit economics as cards while you type: profit per order after costs, shipping and fees, and the break-even ROAS your margin allows.",
+  "entry": "index.mjs",
+  "categories": [
+    "Finance",
+    "Productivity"
+  ],
+  "icon": "cart.badge.plus",
+  "author": "vlad-terin",
+  "topics": [
+    "profit per order",
+    "break even roas",
+    "unit economics"
+  ],
+  "examples": [
+    "profit per order price 40 cost 12 shipping 6 fees 3%",
+    "break even roas margin 40%"
+  ]
+}

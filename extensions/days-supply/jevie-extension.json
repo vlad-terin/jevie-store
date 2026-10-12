@@ -1,0 +1,22 @@
+{
+  "id": "days-supply",
+  "title": "Days Supply",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "How many days a prescription lasts, as a card while you type - from the quantity and the dose - and when it runs out.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "pills",
+  "author": "vlad-terin",
+  "topics": [
+    "days supply",
+    "prescription refill",
+    "when will my pills run out"
+  ],
+  "examples": [
+    "days supply 90 tablets 2 a day",
+    "days supply 60 tablets 1 tablet twice daily"
+  ]
+}
