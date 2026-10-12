@@ -1,0 +1,24 @@
+{
+  "id": "clinical-scores",
+  "title": "Clinical Scores",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "eGFR by CKD-EPI 2021 with the CKD stage, pack-years and the Glasgow Coma Scale as cards while you type - for checking arithmetic.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "cross.vial",
+  "author": "vlad-terin",
+  "topics": [
+    "egfr",
+    "ckd-epi",
+    "pack years",
+    "glasgow coma scale"
+  ],
+  "examples": [
+    "egfr creatinine 1.1 age 60 female",
+    "pack years 20 a day 30 years",
+    "gcs e4 v5 m6"
+  ]
+}

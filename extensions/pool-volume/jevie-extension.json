@@ -1,0 +1,22 @@
+{
+  "id": "pool-volume",
+  "title": "Pool Volume",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "How much water a pool or hot tub holds, as a card while you type - rectangular, round or oval, with shallow and deep ends - in gallons and litres.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "figure.pool.swim",
+  "author": "vlad-terin",
+  "topics": [
+    "pool gallons",
+    "pool volume",
+    "how many gallons in my pool"
+  ],
+  "examples": [
+    "pool volume 16x32 ft 3 to 6 ft deep",
+    "pool volume round 24 ft 4 ft deep"
+  ]
+}
