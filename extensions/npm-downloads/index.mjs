@@ -3,7 +3,8 @@
 //
 //   "npm downloads react", "npm downloads zod vs yup vs valibot"
 
-export const PATTERN = '^(?:npm\\s+downloads|downloads)\\s+(?:@[a-z0-9][\\w.-]*\\/)?[a-z0-9][\\w.-]*(?:\\s+(?:vs\\.?|and|,)\\s+(?:@[a-z0-9][\\w.-]*\\/)?[a-z0-9][\\w.-]*){0,4}$';
+// "npm downloads" only: "downloads folder" is the Downloads folder, not a package.
+export const PATTERN = '^npm\\s+downloads\\s+(?:@[a-z0-9][\\w.-]*\\/)?[a-z0-9][\\w.-]*(?:\\s+(?:vs\\.?|and|,)\\s+(?:@[a-z0-9][\\w.-]*\\/)?[a-z0-9][\\w.-]*){0,4}$';
 const short = n => n >= 1e9 ? `${(n / 1e9).toFixed(1)}B` : n >= 1e6 ? `${(n / 1e6).toFixed(1)}M` : n >= 1e3 ? `${(n / 1e3).toFixed(1)}k` : String(n);
 
 export default function npmDownloads(jevie, context) {
@@ -22,7 +23,7 @@ export default function npmDownloads(jevie, context) {
   jevie.registerCard({
     name: 'npm-downloads', label: 'npm downloads', symbol: 'arrow.down.circle', match: { pattern: PATTERN }, examples: ['npm downloads react', 'npm downloads zod vs yup'],
     async render(said) {
-      const names = said.trim().toLowerCase().replace(/^(?:npm\s+downloads|downloads)\s+/, '').split(/\s+(?:vs\.?|and)\s+|\s*,\s*/).filter(Boolean);
+      const names = said.trim().toLowerCase().replace(/^npm\s+downloads\s+/, '').split(/\s+(?:vs\.?|and)\s+|\s*,\s*/).filter(Boolean);
       const rows = await Promise.all(names.map(async n => ({ name: n, week: await get('last-week', n), month: await get(span(30), n), prior: await get(before(), n) })));
       const ok = rows.filter(r => r.week !== null);
       if (!ok.length) return { summary: 'npm downloads', complete: 0, error: true, body: [line(meta(`No npm package ${names.join(', ')}`))] };
