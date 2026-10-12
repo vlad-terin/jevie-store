@@ -1,0 +1,22 @@
+{
+  "id": "text-hash",
+  "title": "Text Hash",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "The SHA-256, SHA-1, SHA-512 or MD5 of a text as a card while you type, computed on this Mac.",
+  "entry": "index.mjs",
+  "categories": [
+    "Developer Tools"
+  ],
+  "icon": "number.square",
+  "author": "vlad-terin",
+  "topics": [
+    "sha256",
+    "md5",
+    "hash text"
+  ],
+  "examples": [
+    "sha256 hello",
+    "md5 hello world"
+  ]
+}

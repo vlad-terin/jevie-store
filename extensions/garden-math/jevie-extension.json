@@ -1,0 +1,22 @@
+{
+  "id": "garden-math",
+  "title": "Garden Math",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "How much mulch, soil or compost a bed takes, and how many plants fit at a spacing, as cards while you type - in cubic yards, cubic feet and bags.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "leaf",
+  "author": "vlad-terin",
+  "topics": [
+    "mulch calculator",
+    "soil for raised bed",
+    "plant spacing"
+  ],
+  "examples": [
+    "mulch 10x12 ft 3 inches",
+    "plants 4x8 ft 12 inch spacing"
+  ]
+}

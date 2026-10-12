@@ -1,0 +1,22 @@
+{
+  "id": "sleep-cycles",
+  "title": "Sleep Cycles",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "When to go to bed for a wake-up time, or when to wake for a bedtime, in whole 90-minute sleep cycles - as a card while you type.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "bed.double",
+  "author": "vlad-terin",
+  "topics": [
+    "sleep calculator",
+    "bedtime",
+    "sleep cycles"
+  ],
+  "examples": [
+    "bedtime for 7am",
+    "sleep cycles 11pm"
+  ]
+}
