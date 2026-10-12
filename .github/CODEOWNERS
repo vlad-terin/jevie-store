@@ -5,6 +5,7 @@
 /extensions/ad-metrics/ @vlad-terin
 /extensions/agent-commission/ @vlad-terin
 /extensions/air-quality/ @vlad-terin
+/extensions/baking/ @vlad-terin
 /extensions/bond-yield/ @vlad-terin
 /extensions/budget-503020/ @vlad-terin
 /extensions/bundle-size/ @vlad-terin
@@ -18,6 +19,7 @@
 /extensions/compound-interest/ @vlad-terin
 /extensions/country/ @vlad-terin
 /extensions/court-deadline/ @vlad-terin
+/extensions/crosswind/ @vlad-terin
 /extensions/css-clamp/ @vlad-terin
 /extensions/curl-to-fetch/ @vlad-terin
 /extensions/design-math/ @vlad-terin
@@ -54,6 +56,7 @@
 /extensions/license-text/ @vlad-terin
 /extensions/linear/ @vlad-terin
 /extensions/link-preview/ @vlad-terin
+/extensions/llm-tokens/ @vlad-terin
 /extensions/loan-payoff/ @vlad-terin
 /extensions/market-rates/ @vlad-terin
 /extensions/mdn/ @vlad-terin
@@ -96,6 +99,7 @@
 /extensions/tech-stack/ @vlad-terin
 /extensions/tempo/ @vlad-terin
 /extensions/tldr/ @vlad-terin
+/extensions/training-zones/ @vlad-terin
 /extensions/travel-distance/ @vlad-terin
 /extensions/unit-price/ @vlad-terin
 /extensions/urban-dictionary/ @vlad-terin

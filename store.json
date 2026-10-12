@@ -1,5 +1,5 @@
 {
-  "built": "2026-10-12T06:31:11.556Z",
+  "built": "2026-10-12T06:34:10.272Z",
   "jevie": "0.0.0",
   "extensions": [
     {
@@ -38,7 +38,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/budget-503020",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/budget-503020",
       "trust": "official"
     },
     {
@@ -78,7 +78,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/ab-test",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/ab-test",
       "trust": "official"
     },
     {
@@ -118,7 +118,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/accounting-math",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/accounting-math",
       "trust": "official"
     },
     {
@@ -161,7 +161,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/ad-metrics",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/ad-metrics",
       "trust": "official"
     },
     {
@@ -200,7 +200,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/agent-commission",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/agent-commission",
       "trust": "official"
     },
     {
@@ -242,7 +242,46 @@
           "First version: a card, from Open-Meteo."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/air-quality",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/air-quality",
+      "trust": "official"
+    },
+    {
+      "id": "baking",
+      "title": "Baking",
+      "description": "Cups to grams by ingredient, and a dough's hydration and baker's percentages, as cards while you type - from King Arthur Baking's weight chart.",
+      "version": "1.0.0",
+      "categories": [
+        "Productivity"
+      ],
+      "icon": "birthday.cake",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "cups to grams",
+        "baking conversion",
+        "hydration"
+      ],
+      "examples": [
+        "2 cups flour in grams",
+        "hydration 500g flour 350g water"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Baking\n\nCups to grams by ingredient, and a dough's hydration and baker's percentages, as cards while you type - from King Arthur Baking's weight chart.\n\n## Type\n\n- “2 cups flour in grams”\n- “1/2 cup butter to grams”\n- “250 g sugar in cups”\n- “hydration 500g flour 350g water”\n- “hydration 1000 flour 700 water 20 salt 10 yeast”\n\nCup weights come from King Arthur Baking's ingredient weight chart (flour 120 g, sugar 198 g, butter 227 g a US cup …). They are approximate, since how an ingredient is scooped changes it. Fractions work (1/2, 1 1/4); so do tablespoons and teaspoons. Hydration is water over flour; every ingredient is also shown as a baker's percentage. ↵ copies the result.\n\n## Reaches\n\nNothing: it is worked out on your Mac. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/baking",
       "trust": "official"
     },
     {
@@ -281,7 +320,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/bond-yield",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/bond-yield",
       "trust": "official"
     },
     {
@@ -322,7 +361,7 @@
           "First version: a card, sized by bundlephobia."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/bundle-size",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/bundle-size",
       "trust": "official"
     },
     {
@@ -362,7 +401,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/business-days",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/business-days",
       "trust": "official"
     },
     {
@@ -403,7 +442,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/business-math",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/business-math",
       "trust": "official"
     },
     {
@@ -447,7 +486,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/calls",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/calls",
       "trust": "official"
     },
     {
@@ -487,7 +526,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/fitness-calories",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/fitness-calories",
       "trust": "official"
     },
     {
@@ -528,7 +567,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/can-i-use",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/can-i-use",
       "trust": "official"
     },
     {
@@ -570,7 +609,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/cheatsheets",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/cheatsheets",
       "trust": "official"
     },
     {
@@ -615,7 +654,7 @@
           "Dose by weight, infusion rate, glucose units and A1c."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/clinical-calculators",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/clinical-calculators",
       "trust": "official"
     },
     {
@@ -659,7 +698,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/company-financials",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/company-financials",
       "trust": "official"
     },
     {
@@ -698,7 +737,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/compound-interest",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/compound-interest",
       "trust": "official"
     },
     {
@@ -739,7 +778,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/country",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/country",
       "trust": "official"
     },
     {
@@ -779,7 +818,46 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/court-deadline",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/court-deadline",
+      "trust": "official"
+    },
+    {
+      "id": "crosswind",
+      "title": "Crosswind",
+      "description": "A runway's crosswind and headwind components from the wind, as a card while you type - with gusts - for pilots.",
+      "version": "1.0.0",
+      "categories": [
+        "Productivity"
+      ],
+      "icon": "wind",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "crosswind component",
+        "headwind",
+        "runway wind"
+      ],
+      "examples": [
+        "crosswind wind 270 at 15 runway 24",
+        "crosswind 310/18g25 runway 27"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Crosswind\n\nA runway's crosswind and headwind components from the wind, as a card while you type - with gusts - for pilots.\n\n## Type\n\n- “crosswind wind 270 at 15 runway 24”\n- “crosswind 310/18g25 runway 27”\n- “xwind 090 12 rwy 36”\n\nCrosswind is the wind speed × sin of the angle between the wind and the runway (its number × 10), headwind × cos; a negative headwind is a tailwind. Gusts give the worst case too. Use the same reference for both (magnetic, as ATIS and runways are). Check it against your aircraft's demonstrated crosswind. ↵ copies the line.\n\n## Reaches\n\nNothing: it is worked out on your Mac. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/crosswind",
       "trust": "official"
     },
     {
@@ -819,7 +897,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/css-clamp",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/css-clamp",
       "trust": "official"
     },
     {
@@ -859,7 +937,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/curl-to-fetch",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/curl-to-fetch",
       "trust": "official"
     },
     {
@@ -899,7 +977,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/design-math",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/design-math",
       "trust": "official"
     },
     {
@@ -939,7 +1017,7 @@
           "First version: a card, from the Mac's resolver."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/dns-lookup",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/dns-lookup",
       "trust": "official"
     },
     {
@@ -980,7 +1058,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/docker-containers",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/docker-containers",
       "trust": "official"
     },
     {
@@ -1022,7 +1100,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/doi-citation",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/doi-citation",
       "trust": "official"
     },
     {
@@ -1064,7 +1142,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/drug-label",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/drug-label",
       "trust": "official"
     },
     {
@@ -1105,7 +1183,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/email-setup",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/email-setup",
       "trust": "official"
     },
     {
@@ -1145,7 +1223,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/email-subject",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/email-subject",
       "trust": "official"
     },
     {
@@ -1188,7 +1266,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/end-of-life",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/end-of-life",
       "trust": "official"
     },
     {
@@ -1228,7 +1306,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/energy-cost",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/energy-cost",
       "trust": "official"
     },
     {
@@ -1267,7 +1345,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/event-planning",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/event-planning",
       "trust": "official"
     },
     {
@@ -1309,7 +1387,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/f1-standings",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/f1-standings",
       "trust": "official"
     },
     {
@@ -1356,7 +1434,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/feeds",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/feeds",
       "trust": "official"
     },
     {
@@ -1396,7 +1474,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/freelance-rate",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/freelance-rate",
       "trust": "official"
     },
     {
@@ -1437,7 +1515,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/github",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/github",
       "trust": "official"
     },
     {
@@ -1479,7 +1557,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/github-repo",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/github-repo",
       "trust": "official"
     },
     {
@@ -1519,7 +1597,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/gitignore",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/gitignore",
       "trust": "official"
     },
     {
@@ -1559,7 +1637,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/grade-calculator",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/grade-calculator",
       "trust": "official"
     },
     {
@@ -1600,7 +1678,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/hacker-news",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/hacker-news",
       "trust": "official"
     },
     {
@@ -1639,7 +1717,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/home-affordability",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/home-affordability",
       "trust": "official"
     },
     {
@@ -1679,7 +1757,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/home-projects",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/home-projects",
       "trust": "official"
     },
     {
@@ -1723,7 +1801,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/homebrew",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/homebrew",
       "trust": "official"
     },
     {
@@ -1765,7 +1843,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/http-headers",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/http-headers",
       "trust": "official"
     },
     {
@@ -1806,7 +1884,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/icd-10",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/icd-10",
       "trust": "official"
     },
     {
@@ -1846,7 +1924,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/iconify",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/iconify",
       "trust": "official"
     },
     {
@@ -1887,7 +1965,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/inflation",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/inflation",
       "trust": "official"
     },
     {
@@ -1929,7 +2007,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/ip-info",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/ip-info",
       "trust": "official"
     },
     {
@@ -1969,7 +2047,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/isbn-lookup",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/isbn-lookup",
       "trust": "official"
     },
     {
@@ -2009,7 +2087,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/lab-math",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/lab-math",
       "trust": "official"
     },
     {
@@ -2049,7 +2127,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/legal-terms",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/legal-terms",
       "trust": "official"
     },
     {
@@ -2093,7 +2171,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/license-text",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/license-text",
       "trust": "official"
     },
     {
@@ -2133,7 +2211,7 @@
           "With no API key yet it asks for one (↵ opens its settings), rather than saying Linear refused it."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/linear",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/linear",
       "trust": "official"
     },
     {
@@ -2176,7 +2254,49 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/link-preview",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/link-preview",
+      "trust": "official"
+    },
+    {
+      "id": "llm-tokens",
+      "title": "LLM Tokens",
+      "description": "How many tokens a text or a word count is, roughly, and whether it fits common context windows - as a card while you type.",
+      "version": "1.0.0",
+      "categories": [
+        "Developer Tools",
+        "Productivity"
+      ],
+      "icon": "text.word.spacing",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "tokens",
+        "token count",
+        "context window"
+      ],
+      "examples": [
+        "tokens 2000 words",
+        "tokens clipboard"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [
+          "pbpaste"
+        ],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# LLM Tokens\n\nHow many tokens a text or a word count is, roughly, and whether it fits common context windows - as a card while you type.\n\n## Type\n\n- “tokens 2000 words”\n- “tokens 15k words”\n- “tokens clipboard”\n\nIt estimates tokens as about 4 characters or 0.75 English words each, the rule of thumb of the common tokenizers, and shows which common context windows (8k, 32k, 128k, 200k, 1M) the text fits. Each model counts a little differently, more so for code and other languages. ↵ copies the count.\n\n## Reaches\n\nNothing: it is counted on your Mac (the clipboard only when you say “clipboard”). It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/llm-tokens",
       "trust": "official"
     },
     {
@@ -2215,7 +2335,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/loan-payoff",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/loan-payoff",
       "trust": "official"
     },
     {
@@ -2259,7 +2379,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/market-rates",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/market-rates",
       "trust": "official"
     },
     {
@@ -2302,7 +2422,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/mdn",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/mdn",
       "trust": "official"
     },
     {
@@ -2342,7 +2462,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/media-math",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/media-math",
       "trust": "official"
     },
     {
@@ -2382,7 +2502,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/mime-types",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/mime-types",
       "trust": "official"
     },
     {
@@ -2421,7 +2541,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/moon-phase",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/moon-phase",
       "trust": "official"
     },
     {
@@ -2461,7 +2581,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/npm-search",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/npm-search",
       "trust": "official"
     },
     {
@@ -2501,7 +2621,7 @@
           "Only “npm downloads …”: “downloads folder” had looked up a package called folder."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/npm-downloads",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/npm-downloads",
       "trust": "official"
     },
     {
@@ -2541,7 +2661,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/npv-irr",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/npv-irr",
       "trust": "official"
     },
     {
@@ -2579,7 +2699,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/obsidian",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/obsidian",
       "trust": "official"
     },
     {
@@ -2618,7 +2738,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/options-pricing",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/options-pricing",
       "trust": "official"
     },
     {
@@ -2658,7 +2778,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/hr-pay",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/hr-pay",
       "trust": "official"
     },
     {
@@ -2697,7 +2817,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/payment-fees",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/payment-fees",
       "trust": "official"
     },
     {
@@ -2737,7 +2857,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/percent-change",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/percent-change",
       "trust": "official"
     },
     {
@@ -2776,7 +2896,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/pet-age",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/pet-age",
       "trust": "official"
     },
     {
@@ -2815,7 +2935,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/portfolio-math",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/portfolio-math",
       "trust": "official"
     },
     {
@@ -2854,7 +2974,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/position-size",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/position-size",
       "trust": "official"
     },
     {
@@ -2896,7 +3016,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/post-length",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/post-length",
       "trust": "official"
     },
     {
@@ -2936,7 +3056,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/product-metrics",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/product-metrics",
       "trust": "official"
     },
     {
@@ -2977,7 +3097,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/pypi",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/pypi",
       "trust": "official"
     },
     {
@@ -3019,7 +3139,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/readability",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/readability",
       "trust": "official"
     },
     {
@@ -3058,7 +3178,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/real-estate",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/real-estate",
       "trust": "official"
     },
     {
@@ -3098,7 +3218,7 @@
           "A list asked for again within ten minutes comes from what was kept, and when Reddit limits requests the kept list is shown with its age instead of an error."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/reddit",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/reddit",
       "trust": "official"
     },
     {
@@ -3137,7 +3257,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/retirement",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/retirement",
       "trust": "official"
     },
     {
@@ -3179,7 +3299,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/rhymes",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/rhymes",
       "trust": "official"
     },
     {
@@ -3219,7 +3339,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/sales-math",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/sales-math",
       "trust": "official"
     },
     {
@@ -3258,7 +3378,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/semver",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/semver",
       "trust": "official"
     },
     {
@@ -3298,7 +3418,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/seo-check",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/seo-check",
       "trust": "official"
     },
     {
@@ -3338,7 +3458,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/service-status",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/service-status",
       "trust": "official"
     },
     {
@@ -3377,7 +3497,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/shipping-weight",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/shipping-weight",
       "trust": "official"
     },
     {
@@ -3417,7 +3537,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/simple-interest",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/simple-interest",
       "trust": "official"
     },
     {
@@ -3457,7 +3577,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/sla-uptime",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/sla-uptime",
       "trust": "official"
     },
     {
@@ -3497,7 +3617,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/ssl-certificate",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/ssl-certificate",
       "trust": "official"
     },
     {
@@ -3537,7 +3657,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/startup-math",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/startup-math",
       "trust": "official"
     },
     {
@@ -3579,7 +3699,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/stats",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/stats",
       "trust": "official"
     },
     {
@@ -3619,7 +3739,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/subnet",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/subnet",
       "trust": "official"
     },
     {
@@ -3661,7 +3781,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/sun-times",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/sun-times",
       "trust": "official"
     },
     {
@@ -3700,7 +3820,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/svgl",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/svgl",
       "trust": "official"
     },
     {
@@ -3741,7 +3861,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/tailwind-colors",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/tailwind-colors",
       "trust": "official"
     },
     {
@@ -3781,7 +3901,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/team-hours",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/team-hours",
       "trust": "official"
     },
     {
@@ -3824,7 +3944,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/tech-stack",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/tech-stack",
       "trust": "official"
     },
     {
@@ -3863,7 +3983,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/tempo",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/tempo",
       "trust": "official"
     },
     {
@@ -3903,7 +4023,47 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/tldr",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/tldr",
+      "trust": "official"
+    },
+    {
+      "id": "training-zones",
+      "title": "Training Zones",
+      "description": "Heart-rate zones from your age (and resting rate), and cycling power zones and watts per kilo from your FTP - as cards while you type.",
+      "version": "1.0.0",
+      "categories": [
+        "Productivity"
+      ],
+      "icon": "heart.circle",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "heart rate zones",
+        "ftp zones",
+        "watts per kg"
+      ],
+      "examples": [
+        "heart rate zones age 35 resting 60",
+        "ftp zones 250",
+        "watts per kg 250w 75kg"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Training Zones\n\nHeart-rate zones from your age (and resting rate), and cycling power zones and watts per kilo from your FTP - as cards while you type.\n\n## Type\n\n- “heart rate zones age 35 resting 60”\n- “hr zones 42”\n- “ftp zones 250”\n- “watts per kg 250w 75kg”\n\nMaximum heart rate is estimated by Tanaka (208 − 0.7 × age) unless you give one (“max 188”). With a resting rate the zones are Karvonen (a share of heart-rate reserve), otherwise a share of max. Power zones are Coggan's seven, from FTP. Watts per kilo is power over weight. Estimates, not medical advice. ↵ copies the zones.\n\n## Reaches\n\nNothing: it is worked out on your Mac. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/training-zones",
       "trust": "official"
     },
     {
@@ -3944,7 +4104,7 @@
           "“distance from home to work” is not two towns: home, work and the like are refused, and a place must be named as typed (the geocoder had answered Homyel and Workum)."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/travel-distance",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/travel-distance",
       "trust": "official"
     },
     {
@@ -3984,7 +4144,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/unit-price",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/unit-price",
       "trust": "official"
     },
     {
@@ -4024,7 +4184,7 @@
           "“urban yeet”: the word after “urban” alone, as Raycast has it."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/urban-dictionary",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/urban-dictionary",
       "trust": "official"
     },
     {
@@ -4066,7 +4226,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/utm-builder",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/utm-builder",
       "trust": "official"
     },
     {
@@ -4110,7 +4270,7 @@
           "Is a name free: “is jevie.ai available”, “domain jevie” for six endings at once."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/whois",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/whois",
       "trust": "official"
     },
     {
@@ -4151,7 +4311,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/wikipedia",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/wikipedia",
       "trust": "official"
     },
     {
@@ -4188,7 +4348,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/world-clock",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/world-clock",
       "trust": "official"
     },
     {
@@ -4228,7 +4388,7 @@
           "First version: a card."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@bb040ea8556ee6bdd85029b25dce36514c790956#extensions/writing-math",
+      "source": "git:github.com/vlad-terin/jevie-store@592d502f9d06ca28ba9e7f6a03547b8e107ebeb9#extensions/writing-math",
       "trust": "official"
     }
   ],
