@@ -1,0 +1,22 @@
+{
+  "id": "portfolio-math",
+  "title": "Portfolio Math",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "A portfolio's numbers as cards while you type: the Sharpe ratio, a weighted expected return, and real (after-inflation) return.",
+  "entry": "index.mjs",
+  "categories": [
+    "Finance"
+  ],
+  "icon": "chart.pie.fill",
+  "author": "vlad-terin",
+  "topics": [
+    "sharpe ratio",
+    "expected return",
+    "real return"
+  ],
+  "examples": [
+    "sharpe 12% return 15% vol 4%",
+    "expected return 60% at 8% 40% at 3%"
+  ]
+}

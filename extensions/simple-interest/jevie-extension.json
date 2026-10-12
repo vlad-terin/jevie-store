@@ -1,0 +1,23 @@
+{
+  "id": "simple-interest",
+  "title": "Simple Interest",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Interest for a number of days, as a card while you type - on an invoice, a late payment or a short loan - by the day count you choose.",
+  "entry": "index.mjs",
+  "categories": [
+    "Finance"
+  ],
+  "icon": "calendar.badge.clock",
+  "author": "vlad-terin",
+  "topics": [
+    "simple interest",
+    "late fee",
+    "interest for days",
+    "day count"
+  ],
+  "examples": [
+    "interest 5000 at 8% for 45 days",
+    "late fee 2500 at 1.5% a month for 60 days"
+  ]
+}
