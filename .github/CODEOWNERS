@@ -3,6 +3,7 @@
 /extensions/ab-test/ @vlad-terin
 /extensions/accounting-math/ @vlad-terin
 /extensions/ad-metrics/ @vlad-terin
+/extensions/agent-commission/ @vlad-terin
 /extensions/air-quality/ @vlad-terin
 /extensions/bond-yield/ @vlad-terin
 /extensions/budget-503020/ @vlad-terin
@@ -23,6 +24,7 @@
 /extensions/email-setup/ @vlad-terin
 /extensions/email-subject/ @vlad-terin
 /extensions/end-of-life/ @vlad-terin
+/extensions/energy-cost/ @vlad-terin
 /extensions/f1-standings/ @vlad-terin
 /extensions/feeds/ @vlad-terin
 /extensions/fitness-calories/ @vlad-terin
@@ -47,12 +49,14 @@
 /extensions/loan-payoff/ @vlad-terin
 /extensions/market-rates/ @vlad-terin
 /extensions/mdn/ @vlad-terin
+/extensions/mime-types/ @vlad-terin
 /extensions/moon-phase/ @vlad-terin
 /extensions/npm-search/ @vlad-terin
 /extensions/npv-irr/ @vlad-terin
 /extensions/obsidian/ @vlad-terin
 /extensions/options-pricing/ @vlad-terin
 /extensions/payment-fees/ @vlad-terin
+/extensions/pet-age/ @vlad-terin
 /extensions/portfolio-math/ @vlad-terin
 /extensions/position-size/ @vlad-terin
 /extensions/post-length/ @vlad-terin
@@ -80,6 +84,7 @@
 /extensions/tech-stack/ @vlad-terin
 /extensions/tempo/ @vlad-terin
 /extensions/tldr/ @vlad-terin
+/extensions/travel-distance/ @vlad-terin
 /extensions/urban-dictionary/ @vlad-terin
 /extensions/utm-builder/ @vlad-terin
 /extensions/whois/ @vlad-terin
