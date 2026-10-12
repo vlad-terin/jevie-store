@@ -1,0 +1,21 @@
+{
+  "id": "gitignore",
+  "title": "Gitignore",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "A .gitignore for a language or tool as a card while you type - GitHub's own templates - and ↵ copies the file.",
+  "entry": "index.mjs",
+  "categories": [
+    "Developer Tools"
+  ],
+  "icon": "eye.slash",
+  "author": "vlad-terin",
+  "topics": [
+    "gitignore",
+    "git ignore template"
+  ],
+  "examples": [
+    "gitignore node",
+    "gitignore python"
+  ]
+}

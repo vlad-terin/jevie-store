@@ -1,0 +1,21 @@
+{
+  "id": "curl-to-fetch",
+  "title": "Curl to Fetch",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "A curl command turned into JavaScript fetch() as a card while you type - method, headers, body and auth - ready to paste.",
+  "entry": "index.mjs",
+  "categories": [
+    "Developer Tools"
+  ],
+  "icon": "arrow.triangle.2.circlepath",
+  "author": "vlad-terin",
+  "topics": [
+    "curl to fetch",
+    "curl converter"
+  ],
+  "examples": [
+    "curl to fetch curl -X POST https://api.example.com/items -H \"Content-Type: application/json\" -d '{\"name\":\"a\"}'",
+    "curl to fetch curl https://api.github.com/user -u octo:token"
+  ]
+}
