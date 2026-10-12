@@ -1,5 +1,5 @@
 {
-  "built": "2026-10-12T05:08:07.909Z",
+  "built": "2026-10-12T05:22:56.584Z",
   "jevie": "0.0.0",
   "extensions": [
     {
@@ -41,7 +41,7 @@
           "First version: a card, from Open-Meteo."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/air-quality",
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/air-quality",
       "trust": "official"
     },
     {
@@ -82,7 +82,7 @@
           "First version: a card, sized by bundlephobia."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/bundle-size",
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/bundle-size",
       "trust": "official"
     },
     {
@@ -126,7 +126,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/calls",
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/calls",
       "trust": "official"
     },
     {
@@ -167,7 +167,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/can-i-use",
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/can-i-use",
       "trust": "official"
     },
     {
@@ -209,7 +209,48 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/cheatsheets",
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/cheatsheets",
+      "trust": "official"
+    },
+    {
+      "id": "country",
+      "title": "Country",
+      "description": "A country at a glance as a card while you type: its flag, capital, region, languages, currencies, calling code and time zones.",
+      "version": "1.0.0",
+      "categories": [
+        "Documentation"
+      ],
+      "icon": "flag",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "country",
+        "capital of",
+        "calling code"
+      ],
+      "examples": [
+        "country japan",
+        "country brazil"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "raw.githubusercontent.com"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Country\n\nA country at a glance as a card while you type: its flag, capital, region, languages, currencies, calling code and time zones.\n\n## Type\n\n- “country japan”\n- “country de”\n- “country of the capital ottawa”\n\n↵ copies the line: `Japan 🇯🇵 · Tokyo · Japanese · JPY · +81`. A name, an official name, a two- or three-letter code, another language's name or a capital all find it.\n\n## Reaches\n\nraw.githubusercontent.com (the mledoze/countries dataset, read once a month). It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/country",
       "trust": "official"
     },
     {
@@ -249,7 +290,7 @@
           "First version: a card, from the Mac's resolver."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/dns-lookup",
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/dns-lookup",
       "trust": "official"
     },
     {
@@ -290,7 +331,49 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/docker-containers",
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/docker-containers",
+      "trust": "official"
+    },
+    {
+      "id": "f1-standings",
+      "title": "F1 Standings",
+      "description": "The Formula 1 championship as a card while you type: the leader, the top five and the gaps - drivers or constructors, from Jolpica's F1 data.",
+      "version": "1.0.0",
+      "categories": [
+        "Fun",
+        "News"
+      ],
+      "icon": "flag.checkered",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "f1",
+        "formula 1",
+        "standings"
+      ],
+      "examples": [
+        "f1 standings",
+        "f1 constructors"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "api.jolpi.ca"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# F1 Standings\n\nThe Formula 1 championship as a card while you type: the leader, the top five and the gaps - drivers or constructors, from Jolpica's F1 data.\n\n## Type\n\n- “f1 standings”\n- “f1 constructors”\n- “formula 1 drivers”\n\n↵ copies the leader and the top five, one per line.\n\n## Reaches\n\napi.jolpi.ca. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/f1-standings",
       "trust": "official"
     },
     {
@@ -337,7 +420,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/feeds",
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/feeds",
       "trust": "official"
     },
     {
@@ -378,7 +461,49 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/github",
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/github",
+      "trust": "official"
+    },
+    {
+      "id": "github-repo",
+      "title": "GitHub Repo",
+      "description": "A GitHub repository at a glance as a card while you type: stars, forks, its latest release, last push and licence.",
+      "version": "1.0.0",
+      "categories": [
+        "Developer Tools"
+      ],
+      "icon": "star.circle",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "github repo card",
+        "repo stars"
+      ],
+      "examples": [
+        "repo vercel/next.js",
+        "repo sqlite/sqlite"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "api.github.com"
+        ],
+        "programs": [
+          "gh"
+        ],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# GitHub Repo\n\nA GitHub repository at a glance as a card while you type: stars, forks, its latest release, last push and licence.\n\n## Type\n\n- “repo vercel/next.js”\n- “gh repo sqlite/sqlite”\n\n↵ copies the repository's address. “github repo <words>” stays the GitHub extension's search; this card is one repository, by owner/name. A github.com address you type stays one to open.\n\n## Reaches\n\napi.github.com (60 requests an hour without a token; GITHUB_TOKEN or GH_TOKEN raises it, and past it the `gh` CLI you are signed into answers). It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/github-repo",
       "trust": "official"
     },
     {
@@ -419,7 +544,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/hacker-news",
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/hacker-news",
       "trust": "official"
     },
     {
@@ -463,7 +588,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/homebrew",
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/homebrew",
       "trust": "official"
     },
     {
@@ -503,7 +628,49 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/iconify",
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/iconify",
+      "trust": "official"
+    },
+    {
+      "id": "ip-info",
+      "title": "IP Info",
+      "description": "Where an IP address is and whose network it belongs to, as a card while you type - from ipwho.is.",
+      "version": "1.0.0",
+      "categories": [
+        "Developer Tools",
+        "Web"
+      ],
+      "icon": "mappin.and.ellipse",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "ip lookup",
+        "ip geolocation",
+        "asn"
+      ],
+      "examples": [
+        "ip 8.8.8.8",
+        "ip 1.1.1.1"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "ipwho.is"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# IP Info\n\nWhere an IP address is and whose network it belongs to, as a card while you type - from ipwho.is.\n\n## Type\n\n- “ip 8.8.8.8”\n- “ip 2606:4700:4700::1111”\n- “whois ip 1.1.1.1”\n\n↵ copies the line: `8.8.8.8 · Google LLC (AS15169) · Mountain View, US`. A private address (10.x, 192.168.x, …) is said to be one, and nothing is sent. Your own public address is Jevie's: “what is my ip”.\n\n## Reaches\n\nipwho.is (the address typed). It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/ip-info",
       "trust": "official"
     },
     {
@@ -543,7 +710,7 @@
           "With no API key yet it asks for one (↵ opens its settings), rather than saying Linear refused it."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/linear",
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/linear",
       "trust": "official"
     },
     {
@@ -586,7 +753,46 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/mdn",
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/mdn",
+      "trust": "official"
+    },
+    {
+      "id": "moon-phase",
+      "title": "Moon Phase",
+      "description": "Tonight's moon as a card while you type: its phase, how full it is, and the next full and new moon - worked out on your Mac.",
+      "version": "1.0.0",
+      "categories": [
+        "Fun"
+      ],
+      "icon": "moonphase.waxing.gibbous",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "moon phase",
+        "full moon",
+        "new moon"
+      ],
+      "examples": [
+        "moon phase",
+        "next full moon"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Moon Phase\n\nTonight's moon as a card while you type: its phase, how full it is, and the next full and new moon - worked out on your Mac.\n\n## Type\n\n- “moon phase”\n- “next full moon”\n- “moon on 2026-12-25”\n\n↵ copies the line: `Waxing gibbous, 81% lit · full Fri, Oct 16 · new Fri, Oct 30`. Worked out from the length of the moon's month, so it is right to within about a day.\n\n## Reaches\n\nNothing: it is worked out on your Mac. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/moon-phase",
       "trust": "official"
     },
     {
@@ -626,7 +832,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/npm-search",
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/npm-search",
       "trust": "official"
     },
     {
@@ -664,7 +870,48 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/obsidian",
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/obsidian",
+      "trust": "official"
+    },
+    {
+      "id": "pypi",
+      "title": "PyPI",
+      "description": "A Python package's latest version, what it is, which Python it needs and when it was released - as a card while you type.",
+      "version": "1.0.0",
+      "categories": [
+        "Developer Tools"
+      ],
+      "icon": "shippingbox.and.arrow.backward",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "pypi",
+        "python package",
+        "pip"
+      ],
+      "examples": [
+        "pypi requests",
+        "pypi fastapi"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "pypi.org"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# PyPI\n\nA Python package's latest version, what it is, which Python it needs and when it was released - as a card while you type.\n\n## Type\n\n- “pypi requests”\n- “pip package fastapi”\n- “python package numpy”\n\n↵ copies `pip install requests==2.32.5`. Each package is kept an hour.\n\n## Reaches\n\npypi.org. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/pypi",
       "trust": "official"
     },
     {
@@ -704,7 +951,131 @@
           "A list asked for again within ten minutes comes from what was kept, and when Reddit limits requests the kept list is shown with its age instead of an error."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/reddit",
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/reddit",
+      "trust": "official"
+    },
+    {
+      "id": "rhymes",
+      "title": "Rhymes & Synonyms",
+      "description": "Words that rhyme with a word, mean the same, or sound like it, as a card while you type - from Datamuse.",
+      "version": "1.0.0",
+      "categories": [
+        "Fun",
+        "Productivity"
+      ],
+      "icon": "textformat.alt",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "rhymes",
+        "synonyms",
+        "similar words"
+      ],
+      "examples": [
+        "rhymes with light",
+        "synonyms for happy"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "api.datamuse.com"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Rhymes & Synonyms\n\nWords that rhyme with a word, mean the same, or sound like it, as a card while you type - from Datamuse.\n\n## Type\n\n- “rhymes with light”\n- “synonyms for happy”\n- “antonyms of brave”\n- “sounds like knight”\n- “words like bright”\n\n↵ copies the words, comma separated.\n\n## Reaches\n\napi.datamuse.com. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/rhymes",
+      "trust": "official"
+    },
+    {
+      "id": "ssl-certificate",
+      "title": "SSL Certificate",
+      "description": "A site's TLS certificate as a card while you type: who issued it, when it runs out, and the names it covers - read from the server itself.",
+      "version": "1.0.0",
+      "categories": [
+        "Developer Tools",
+        "Security"
+      ],
+      "icon": "lock.shield",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "ssl",
+        "tls certificate",
+        "cert expiry"
+      ],
+      "examples": [
+        "ssl github.com",
+        "cert example.org"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# SSL Certificate\n\nA site's TLS certificate as a card while you type: who issued it, when it runs out, and the names it covers - read from the server itself.\n\n## Type\n\n- “ssl github.com”\n- “cert example.org:8443”\n- “tls api.stripe.com”\n\n↵ copies the line: `github.com · Sectigo · expires 2026-02-05 (in 116 days)`. It says whether this Mac trusts the certificate, and why not when it does not.\n\n## Reaches\n\nThe site itself, on its TLS port (443 unless one is typed). It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/ssl-certificate",
+      "trust": "official"
+    },
+    {
+      "id": "sun-times",
+      "title": "Sunrise & Sunset",
+      "description": "When the sun rises and sets anywhere today, and how long the day is, as a card while you type - from Open-Meteo.",
+      "version": "1.0.0",
+      "categories": [
+        "Productivity"
+      ],
+      "icon": "sunrise",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "sunrise",
+        "sunset",
+        "daylight"
+      ],
+      "examples": [
+        "sunrise tokyo",
+        "sunset in lisbon"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "api.open-meteo.com",
+          "geocoding-api.open-meteo.com"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Sunrise & Sunset\n\nWhen the sun rises and sets anywhere today, and how long the day is, as a card while you type - from Open-Meteo.\n\n## Type\n\n- “sunrise tokyo”\n- “sunset in lisbon”\n- “daylight reykjavik”\n\n↵ copies the line: `Tokyo: sunrise 5:43 AM, sunset 5:12 PM (11 h 29 min)`. The times are local to the place.\n\n## Reaches\n\ngeocoding-api.open-meteo.com and api.open-meteo.com. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/sun-times",
       "trust": "official"
     },
     {
@@ -743,7 +1114,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/svgl",
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/svgl",
       "trust": "official"
     },
     {
@@ -783,7 +1154,89 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/tldr",
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/tldr",
+      "trust": "official"
+    },
+    {
+      "id": "urban-dictionary",
+      "title": "Urban Dictionary",
+      "description": "What slang means, from Urban Dictionary, as a card while you type: the top definition and an example.",
+      "version": "1.0.0",
+      "categories": [
+        "Fun"
+      ],
+      "icon": "text.bubble",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "urban dictionary",
+        "slang"
+      ],
+      "examples": [
+        "urban dictionary yeet",
+        "slang for touch grass"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "api.urbandictionary.com"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Urban Dictionary\n\nWhat slang means, from Urban Dictionary, as a card while you type: the top definition and an example.\n\n## Type\n\n- “urban dictionary yeet”\n- “urban define touch grass”\n- “slang for no cap”\n\n↵ copies the definition. Urban Dictionary is written by its readers, and some of it is crude. The top definition is the one with the most thumbs up over thumbs down. A proper dictionary definition is Jevie's own: “define serendipity”.\n\n## Reaches\n\napi.urbandictionary.com. It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/urban-dictionary",
+      "trust": "official"
+    },
+    {
+      "id": "whois",
+      "title": "Whois",
+      "description": "Who registered a domain, when, and when it runs out - as a card while you type, from RDAP (whois's successor).",
+      "version": "1.0.0",
+      "categories": [
+        "Developer Tools",
+        "Web"
+      ],
+      "icon": "globe.badge.chevron.backward",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "whois",
+        "rdap",
+        "domain registration"
+      ],
+      "examples": [
+        "whois github.com",
+        "whois example.org"
+      ],
+      "settings": 0,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "rdap.org"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "cards": true,
+      "readme": "# Whois\n\nWho registered a domain, when, and when it runs out - as a card while you type, from RDAP (whois's successor).\n\n## Type\n\n- “whois github.com”\n- “rdap example.org”\n\n↵ copies the line: `github.com · MarkMonitor Inc. · expires 2026-10-09 (in 362 days)`. The days left turn into a warning under 30. Each domain is kept a day.\n\n## Reaches\n\nrdap.org, which sends the lookup to the registry of the domain (Verisign for .com, and so on). It changes nothing.\n",
+      "change": {
+        "version": "1.0.0",
+        "date": "2026-10-12",
+        "lines": [
+          "First version: a card."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/whois",
       "trust": "official"
     },
     {
@@ -824,7 +1277,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/wikipedia",
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/wikipedia",
       "trust": "official"
     },
     {
@@ -861,7 +1314,7 @@
           "In the store, with its README, categories and icon."
         ]
       },
-      "source": "git:github.com/vlad-terin/jevie-store@b487222eac57c37b7fd4c8ee1f550849f6f6d3b7#extensions/world-clock",
+      "source": "git:github.com/vlad-terin/jevie-store@c0b590941a4ae7512d01f0e63726c69ee66b492e#extensions/world-clock",
       "trust": "official"
     }
   ],
