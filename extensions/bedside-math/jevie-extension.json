@@ -1,0 +1,25 @@
+{
+  "id": "bedside-math",
+  "title": "Bedside Math",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Ward numbers as cards while you type: corrected QT (Bazett, Fridericia), anion gap, mean arterial pressure, corrected calcium and maintenance fluids by the 4-2-1 rule.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity"
+  ],
+  "icon": "stethoscope",
+  "author": "vlad-terin",
+  "topics": [
+    "qtc",
+    "anion gap",
+    "mean arterial pressure",
+    "corrected calcium",
+    "maintenance fluids"
+  ],
+  "examples": [
+    "qtc 400 hr 75",
+    "anion gap na 140 cl 104 hco3 24",
+    "map 120/80"
+  ]
+}

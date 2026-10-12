@@ -2,8 +2,8 @@
   "id": "real-estate",
   "title": "Real Estate Returns",
   "apiVersion": 1,
-  "version": "1.0.0",
-  "description": "A rental property's returns as cards while you type: cap rate, cash-on-cash return, gross rental yield and the 1% rule.",
+  "version": "1.1.0",
+  "description": "A property's numbers as cards while you type: cap rate, cash-on-cash return, gross rental yield and the 1% rule, and price per square foot.",
   "entry": "index.mjs",
   "categories": [
     "Finance"
@@ -13,10 +13,12 @@
   "topics": [
     "cap rate",
     "cash on cash",
-    "rental yield"
+    "rental yield",
+    "price per square foot"
   ],
   "examples": [
     "cap rate noi 24000 price 400000",
-    "rental yield rent 2000 price 350000"
+    "rental yield rent 2000 price 350000",
+    "450k for 1800 sq ft"
   ]
 }
