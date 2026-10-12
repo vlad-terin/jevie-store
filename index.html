@@ -6,7 +6,7 @@ h1{margin:0 0 4px}header p{color:var(--faint);margin:0 0 24px}input{width:100%;b
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
 h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4px 0}.open{display:inline-block;margin-top:6px;padding:6px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
 #shared,#card{display:none;margin-bottom:20px}#shared.on,#card.on{display:block}#card ul{margin:8px 0;padding-left:18px}</style></head><body><main>
-<header><h1>Jevie extensions</h1><p>79 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
+<header><h1>Jevie extensions</h1><p>85 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
 <article id="shared"><h2>An extension shared with you</h2><p class="meta" id="shared-source"></p><a class="open" id="shared-open" href="#">Open in Jevie</a></article>
 <article id="card"><p class="meta" id="card-label"></p><h2 id="card-summary"></h2><ul id="card-shown"></ul><p class="say" id="card-text"></p><a class="open" id="card-need" href="#" style="display:none;margin-right:6px"></a><a class="open" id="card-open" href="#">Open in Jevie</a></article>
 <input id="q" placeholder="Search extensions" autocomplete="off"><div class="grid"><article id="budget-503020"><h2>50/30/20 Budget</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
@@ -15,6 +15,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="ab-test"><h2>A/B Test</h2><p class="meta">Productivity · Data · by vlad-terin · v1.0.0 · official</p>
 <p>Whether an A/B test&#39;s difference is real, as a card while you type - the lift, the confidence and the p-value - and how many visitors a test needs.</p><p class="say">“ab 120/2400 vs 150/2380” · “sample size 4% baseline 10% lift”</p>
 <a class="open" href="jevie://ask?q=install%20the%20A%2FB%20Test%20extension">Open in Jevie</a></article>
+<article id="accounting-math"><h2>Accounting Math</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
+<p>VAT and sales tax in and out of a price, and depreciation schedules - straight-line and double-declining - as cards while you type.</p><p class="say">“vat 20% on 100” · “remove vat 20% from 120” · “depreciation 50000 over 5 years”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Accounting%20Math%20extension">Open in Jevie</a></article>
 <article id="ad-metrics"><h2>Ad Metrics</h2><p class="meta">Finance · Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>The marketing numbers, as cards while you type: ROAS, CAC, CTR, CPC, CPM, conversion rate, and customer lifetime value.</p><p class="say">“roas revenue 5000 spend 1200” · “ctr 120 clicks 8000 impressions”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Ad%20Metrics%20extension">Open in Jevie</a></article>
@@ -123,6 +126,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="ip-info"><h2>IP Info</h2><p class="meta">Developer Tools · Web · by vlad-terin · v1.0.0 · official</p>
 <p>Where an IP address is and whose network it belongs to, as a card while you type - from ipwho.is.</p><p class="say">“ip 8.8.8.8” · “ip 1.1.1.1”</p>
 <a class="open" href="jevie://ask?q=install%20the%20IP%20Info%20extension">Open in Jevie</a></article>
+<article id="lab-math"><h2>Lab Math</h2><p class="meta">Productivity · Documentation · by vlad-terin · v1.0.0 · official</p>
+<p>Bench sums as cards while you type: a dilution by C1V1 = C2V2, the mass for a molar solution, and a stock&#39;s molarity from a percentage.</p><p class="say">“dilution 10 m to 1 m 50 ml” · “molarity 0.5 m 250 ml mw 58.44”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Lab%20Math%20extension">Open in Jevie</a></article>
 <article id="legal-terms"><h2>Legal Terms</h2><p class="meta">Documentation · by vlad-terin · v1.0.0 · official</p>
 <p>What a legal term or a piece of Latin in a contract or judgment means, in plain English, as a card while you type.</p><p class="say">“legal term res judicata” · “legal term force majeure” · “legal mens rea”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Legal%20Terms%20extension">Open in Jevie</a></article>
@@ -171,6 +177,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="post-length"><h2>Post Length</h2><p class="meta">Productivity · Communication · by vlad-terin · v1.0.0 · official</p>
 <p>Whether a post fits each platform, as a card while you type: X, LinkedIn, Instagram, Threads, Bluesky, a meta description, an SMS - and how much shows before “see more”.</p><p class="say">“post length Launching our new AI launcher today” · “char limit Launching our new AI launcher today”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Post%20Length%20extension">Open in Jevie</a></article>
+<article id="product-metrics"><h2>Product Metrics</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>A product manager&#39;s numbers as cards while you type: RICE scores, NPS, churn and retention, and a sprint&#39;s capacity.</p><p class="say">“rice reach 2000 impact 2 confidence 80% effort 3” · “nps 120 promoters 40 passives 30 detractors”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Product%20Metrics%20extension">Open in Jevie</a></article>
 <article id="pypi"><h2>PyPI</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
 <p>A Python package&#39;s latest version, what it is, which Python it needs and when it was released - as a card while you type.</p><p class="say">“pypi requests” · “pypi fastapi”</p>
 <a class="open" href="jevie://ask?q=install%20the%20PyPI%20extension">Open in Jevie</a></article>
@@ -201,9 +210,15 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="service-status"><h2>Service Status</h2><p class="meta">Developer Tools · Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>Is GitHub, OpenAI, Slack or Vercel down? A service&#39;s own status page as a card while you type, with what is broken right now.</p><p class="say">“is github down” · “status openai”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Service%20Status%20extension">Open in Jevie</a></article>
+<article id="shipping-weight"><h2>Shipping Weight</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>A parcel&#39;s dimensional weight and the weight carriers will bill, as a card while you type - inches and pounds, or centimetres and kilos.</p><p class="say">“dim weight 20x16x12 in 18 lb” · “volumetric 50x40x30 cm 8 kg”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Shipping%20Weight%20extension">Open in Jevie</a></article>
 <article id="simple-interest"><h2>Simple Interest</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
 <p>Interest for a number of days, as a card while you type - on an invoice, a late payment or a short loan - by the day count you choose.</p><p class="say">“interest 5000 at 8% for 45 days” · “late fee 2500 at 1.5% a month for 60 days”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Simple%20Interest%20extension">Open in Jevie</a></article>
+<article id="sla-uptime"><h2>SLA Uptime</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
+<p>What an uptime promise allows in downtime, as a card while you type - per year, month, week and day - and what an outage did to this month&#39;s uptime.</p><p class="say">“99.9% uptime” · “downtime 43 minutes this month”</p>
+<a class="open" href="jevie://ask?q=install%20the%20SLA%20Uptime%20extension">Open in Jevie</a></article>
 <article id="ssl-certificate"><h2>SSL Certificate</h2><p class="meta">Developer Tools · Security · by vlad-terin · v1.0.0 · official</p>
 <p>A site&#39;s TLS certificate as a card while you type: who issued it, when it runs out, and the names it covers - read from the server itself.</p><p class="say">“ssl github.com” · “cert example.org”</p>
 <a class="open" href="jevie://ask?q=install%20the%20SSL%20Certificate%20extension">Open in Jevie</a></article>
@@ -228,6 +243,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="tech-stack"><h2>Tech Stack</h2><p class="meta">Web · Developer Tools · by vlad-terin · v1.0.0 · official</p>
 <p>What a site is built with, as a card while you type - its framework, CMS, hosting, CDN, analytics and marketing tools - like BuiltWith, from the open webappanalyzer fingerprints.</p><p class="say">“built with vercel.com” · “tech stack github.com”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Tech%20Stack%20extension">Open in Jevie</a></article>
+<article id="tempo"><h2>Tempo</h2><p class="meta">Media · by vlad-terin · v1.0.0 · official</p>
+<p>A tempo as delay and reverb times, as a card while you type: the milliseconds of each note value, dotted and triplet - for producers and musicians.</p><p class="say">“bpm 120” · “tempo 92 bpm”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Tempo%20extension">Open in Jevie</a></article>
 <article id="tldr"><h2>tldr</h2><p class="meta">Developer Tools · Documentation · by vlad-terin · v1.0.0 · official</p>
 <p>Command-line examples from tldr pages - a port of Raycast&#39;s TLDR extension.</p><p class="say">“tldr tar” · “tldr git log”</p>
 <a class="open" href="jevie://ask?q=install%20the%20tldr%20extension">Open in Jevie</a></article>
