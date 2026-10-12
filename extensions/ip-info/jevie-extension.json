@@ -1,0 +1,23 @@
+{
+  "id": "ip-info",
+  "title": "IP Info",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Where an IP address is and whose network it belongs to, as a card while you type - from ipwho.is.",
+  "entry": "index.mjs",
+  "categories": [
+    "Developer Tools",
+    "Web"
+  ],
+  "icon": "mappin.and.ellipse",
+  "author": "vlad-terin",
+  "topics": [
+    "ip lookup",
+    "ip geolocation",
+    "asn"
+  ],
+  "examples": [
+    "ip 8.8.8.8",
+    "ip 1.1.1.1"
+  ]
+}

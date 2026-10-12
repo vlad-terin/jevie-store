@@ -1,0 +1,22 @@
+{
+  "id": "pypi",
+  "title": "PyPI",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "A Python package's latest version, what it is, which Python it needs and when it was released - as a card while you type.",
+  "entry": "index.mjs",
+  "categories": [
+    "Developer Tools"
+  ],
+  "icon": "shippingbox.and.arrow.backward",
+  "author": "vlad-terin",
+  "topics": [
+    "pypi",
+    "python package",
+    "pip"
+  ],
+  "examples": [
+    "pypi requests",
+    "pypi fastapi"
+  ]
+}

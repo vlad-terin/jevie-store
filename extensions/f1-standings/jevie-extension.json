@@ -1,0 +1,23 @@
+{
+  "id": "f1-standings",
+  "title": "F1 Standings",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "The Formula 1 championship as a card while you type: the leader, the top five and the gaps - drivers or constructors, from Jolpica's F1 data.",
+  "entry": "index.mjs",
+  "categories": [
+    "Fun",
+    "News"
+  ],
+  "icon": "flag.checkered",
+  "author": "vlad-terin",
+  "topics": [
+    "f1",
+    "formula 1",
+    "standings"
+  ],
+  "examples": [
+    "f1 standings",
+    "f1 constructors"
+  ]
+}

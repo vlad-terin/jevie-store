@@ -1,0 +1,22 @@
+{
+  "id": "country",
+  "title": "Country",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "A country at a glance as a card while you type: its flag, capital, region, languages, currencies, calling code and time zones.",
+  "entry": "index.mjs",
+  "categories": [
+    "Documentation"
+  ],
+  "icon": "flag",
+  "author": "vlad-terin",
+  "topics": [
+    "country",
+    "capital of",
+    "calling code"
+  ],
+  "examples": [
+    "country japan",
+    "country brazil"
+  ]
+}
