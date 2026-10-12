@@ -9,6 +9,7 @@
 /extensions/air-quality/ @vlad-terin
 /extensions/baking/ @vlad-terin
 /extensions/bedside-math/ @vlad-terin
+/extensions/billable-time/ @vlad-terin
 /extensions/bond-yield/ @vlad-terin
 /extensions/budget-503020/ @vlad-terin
 /extensions/bundle-size/ @vlad-terin
@@ -58,6 +59,7 @@
 /extensions/iconify/ @vlad-terin
 /extensions/inflation/ @vlad-terin
 /extensions/inventory-math/ @vlad-terin
+/extensions/invest-math/ @vlad-terin
 /extensions/ip-info/ @vlad-terin
 /extensions/isbn-lookup/ @vlad-terin
 /extensions/lab-math/ @vlad-terin
@@ -119,6 +121,7 @@
 /extensions/tire-size/ @vlad-terin
 /extensions/tldr/ @vlad-terin
 /extensions/training-zones/ @vlad-terin
+/extensions/transfer-time/ @vlad-terin
 /extensions/travel-distance/ @vlad-terin
 /extensions/trip-fuel/ @vlad-terin
 /extensions/unit-price/ @vlad-terin

@@ -6,7 +6,7 @@ h1{margin:0 0 4px}header p{color:var(--faint);margin:0 0 24px}input{width:100%;b
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
 h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4px 0}.open{display:inline-block;margin-top:6px;padding:6px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
 #shared,#card{display:none;margin-bottom:20px}#shared.on,#card.on{display:block}#card ul{margin:8px 0;padding-left:18px}</style></head><body><main>
-<header><h1>Jevie extensions</h1><p>130 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
+<header><h1>Jevie extensions</h1><p>133 extensions · found by what you say to them · <a href="https://github.com/vlad-terin/jevie-store">add yours</a></p></header>
 <article id="shared"><h2>An extension shared with you</h2><p class="meta" id="shared-source"></p><a class="open" id="shared-open" href="#">Open in Jevie</a></article>
 <article id="card"><p class="meta" id="card-label"></p><h2 id="card-summary"></h2><ul id="card-shown"></ul><p class="say" id="card-text"></p><a class="open" id="card-need" href="#" style="display:none;margin-right:6px"></a><a class="open" id="card-open" href="#">Open in Jevie</a></article>
 <input id="q" placeholder="Search extensions" autocomplete="off"><div class="grid"><article id="budget-503020"><h2>50/30/20 Budget</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
@@ -39,6 +39,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="bedside-math"><h2>Bedside Math</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>Ward numbers as cards while you type: corrected QT (Bazett, Fridericia), anion gap, mean arterial pressure, corrected calcium and maintenance fluids by the 4-2-1 rule.</p><p class="say">“qtc 400 hr 75” · “anion gap na 140 cl 104 hco3 24” · “map 120/80”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Bedside%20Math%20extension">Open in Jevie</a></article>
+<article id="billable-time"><h2>Billable Time</h2><p class="meta">Productivity · Finance · by vlad-terin · v1.0.0 · official</p>
+<p>Time in billable tenths of an hour as a card while you type - 47 minutes is 0.8 - and what it bills at a rate.</p><p class="say">“billable 47 min” · “bill 6.3 hours at 450”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Billable%20Time%20extension">Open in Jevie</a></article>
 <article id="bond-yield"><h2>Bond Yield</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
 <p>A bond&#39;s current yield and yield to maturity from its price, as a card while you type - and the price from a yield.</p><p class="say">“bond price 950 face 1000 coupon 5% 10 years” · “bond yield 6% face 1000 coupon 5% 10 years”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Bond%20Yield%20extension">Open in Jevie</a></article>
@@ -147,8 +150,8 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="gitignore"><h2>Gitignore</h2><p class="meta">Developer Tools · by vlad-terin · v1.0.0 · official</p>
 <p>A .gitignore for a language or tool as a card while you type - GitHub&#39;s own templates - and ↵ copies the file.</p><p class="say">“gitignore node” · “gitignore python”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Gitignore%20extension">Open in Jevie</a></article>
-<article id="grade-calculator"><h2>Grade Calculator</h2><p class="meta">Productivity · Documentation · by vlad-terin · v1.0.0 · official</p>
-<p>What score a final exam needs for the grade you want, and a GPA from letter or number grades - as cards while you type.</p><p class="say">“grade needed current 78 target 82 final 30%” · “gpa A B+ A- B”</p>
+<article id="grade-calculator"><h2>Grade Calculator</h2><p class="meta">Productivity · Documentation · by vlad-terin · v1.1.0 · official</p>
+<p>What score a final exam needs for the grade you want, and a GPA from letter or number grades - as cards while you type.</p><p class="say">“grade needed current 78 target 82 final 30%” · “gpa A B+ A- B” · “score 42/50”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Grade%20Calculator%20extension">Open in Jevie</a></article>
 <article id="hacker-news"><h2>Hacker News</h2><p class="meta">News · by vlad-terin · v1.1.0 · official</p>
 <p>Hacker News front page, new, best, Ask and Show - a port of Raycast&#39;s Hacker News extension.</p><p class="say">“hacker news” · “hn best” · “hn show”</p>
@@ -177,6 +180,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="inventory-math"><h2>Inventory Math</h2><p class="meta">Finance · Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>When to reorder and how much, as cards while you type: the reorder point from daily use, lead time and safety stock, and the economic order quantity.</p><p class="say">“reorder point 20 a day lead 7 days safety 50” · “eoq demand 1200 order cost 50 holding 2”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Inventory%20Math%20extension">Open in Jevie</a></article>
+<article id="invest-math"><h2>Investing Math</h2><p class="meta">Finance · by vlad-terin · v1.0.0 · official</p>
+<p>An investor&#39;s quick sums as cards while you type: the rule of 72 (and the exact doubling time), dividend yield, and the tax-equivalent yield of a tax-free bond.</p><p class="say">“rule of 72 8%” · “dividend yield 2.40 price 80” · “tax equivalent yield 3% 32%”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Investing%20Math%20extension">Open in Jevie</a></article>
 <article id="ip-info"><h2>IP Info</h2><p class="meta">Developer Tools · Web · by vlad-terin · v1.0.0 · official</p>
 <p>Where an IP address is and whose network it belongs to, as a card while you type - from ipwho.is.</p><p class="say">“ip 8.8.8.8” · “ip 1.1.1.1”</p>
 <a class="open" href="jevie://ask?q=install%20the%20IP%20Info%20extension">Open in Jevie</a></article>
@@ -366,6 +372,9 @@ h2{font-size:16px;margin:0}.meta,.say{color:var(--faint);font-size:13px;margin:4
 <article id="training-zones"><h2>Training Zones</h2><p class="meta">Productivity · by vlad-terin · v1.0.0 · official</p>
 <p>Heart-rate zones from your age (and resting rate), and cycling power zones and watts per kilo from your FTP - as cards while you type.</p><p class="say">“heart rate zones age 35 resting 60” · “ftp zones 250” · “watts per kg 250w 75kg”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Training%20Zones%20extension">Open in Jevie</a></article>
+<article id="transfer-time"><h2>Transfer Time</h2><p class="meta">Developer Tools · Productivity · by vlad-terin · v1.0.0 · official</p>
+<p>How long a download, upload or copy takes at a connection speed, as a card while you type - and at a realistic 80%.</p><p class="say">“download 50 gb at 100 mbps” · “transfer 2 tb at 1 gbps”</p>
+<a class="open" href="jevie://ask?q=install%20the%20Transfer%20Time%20extension">Open in Jevie</a></article>
 <article id="travel-distance"><h2>Travel Distance</h2><p class="meta">Productivity · by vlad-terin · v1.0.1 · official</p>
 <p>How far apart two places are and roughly how long the flight takes, as a card while you type - the great-circle distance in kilometres and miles.</p><p class="say">“distance london to tokyo” · “flight time new york to paris”</p>
 <a class="open" href="jevie://ask?q=install%20the%20Travel%20Distance%20extension">Open in Jevie</a></article>
