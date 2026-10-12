@@ -1,0 +1,23 @@
+{
+  "id": "billable-time",
+  "title": "Billable Time",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Time in billable tenths of an hour as a card while you type - 47 minutes is 0.8 - and what it bills at a rate.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity",
+    "Finance"
+  ],
+  "icon": "clock.badge.checkmark",
+  "author": "vlad-terin",
+  "topics": [
+    "billable hours",
+    "time entry",
+    "tenths of an hour"
+  ],
+  "examples": [
+    "billable 47 min",
+    "bill 6.3 hours at 450"
+  ]
+}

@@ -2,9 +2,14 @@
 //
 //   "grade needed current 78 target 82 final 30%"   the final-exam score that reaches the target
 //   "gpa A B+ A- B", "gpa 4 3.7 3.3", "gpa A 4 B+ 3"  a GPA (4.0 scale), credits after a grade weight it
+//   "score 42/50", "grade 42 out of 50", "42 out of 50 points"   the percentage and the letter (the common US scale)
 
 export const NEEDED = '^(?:grade|score)\\s+needed\\s+(?:current\\s+)?[\\d.]+\\s*%?\\s+(?:target|want|goal)\\s+[\\d.]+\\s*%?\\s+(?:final|exam)\\s+(?:is\\s+|weight\\s+)?[\\d.]+\\s*%$';
 export const GPA = '^gpa\\s+(?:(?:[abcdf][+-]?|[0-4](?:\\.\\d+)?)(?:\\s+\\d+(?:\\.\\d+)?\\s*(?:cr|credits?|hrs?)?)?[\\s,]+)*(?:[abcdf][+-]?|[0-4](?:\\.\\d+)?)(?:\\s+\\d+(?:\\.\\d+)?\\s*(?:cr|credits?|hrs?)?)?$';
+export const SCORE = '^(?:(?:score|grade|mark)\\s+(?:of\\s+)?[\\d.]+\\s*(?:/|out\\s+of)\\s*[\\d.]+|[\\d.]+\\s+out\\s+of\\s+[\\d.]+\\s+(?:points|marks|questions|correct))$';
+/// The common US letter scale, lowest percentage for each letter.
+export const LETTERS = [[97, 'A+'], [93, 'A'], [90, 'A-'], [87, 'B+'], [83, 'B'], [80, 'B-'], [77, 'C+'], [73, 'C'], [70, 'C-'], [67, 'D+'], [63, 'D'], [60, 'D-'], [0, 'F']];
+export function score(said) { const [got, of] = (String(said).match(/\d+(?:\.\d+)?/g) ?? []).map(Number); if (!(of > 0) || got > of) return null; const pct = got / of * 100; return { got, of, pct, letter: LETTERS.find(([min]) => pct >= min - 1e-9)[1] }; }
 export const POINTS = { 'a+': 4, a: 4, 'a-': 3.7, 'b+': 3.3, b: 3, 'b-': 2.7, 'c+': 2.3, c: 2, 'c-': 1.7, 'd+': 1.3, d: 1, 'd-': 0.7, f: 0 };
 
 export function needed(said) {
@@ -55,6 +60,15 @@ export default function gradeCalculator(jevie) {
       return { summary, copy: g.gpa.toFixed(2), complete: 1, body: [
         spread(stack('leading', line(hero(g.gpa.toFixed(2))), line(chip('GPA (4.0 scale)', 'list.number'))), stack('trailing', line(meta(`${g.items.length} grades`)), line(meta(`${g.credits} credits`)))),
         line(meta(g.items.map(i => `${i.grade.toUpperCase()}${i.credits !== 1 ? `×${i.credits}` : ''}`).join(' · ')))] };
+    }
+  });
+  jevie.registerCard({
+    name: 'score', label: 'Score', symbol: 'checkmark.seal', match: { pattern: SCORE }, examples: ['score 42/50'],
+    async render(said) {
+      const r = score(said);
+      if (!r) return { summary: 'Score', complete: 0, body: [line(meta('Type points and the total: “score 42/50”'))] };
+      const summary = `${r.got}/${r.of} = ${Number(r.pct.toFixed(2))}% (${r.letter})`;
+      return { summary, copy: `${Number(r.pct.toFixed(2))}%`, complete: 1, body: [spread(stack('leading', line(hero(`${Number(r.pct.toFixed(1))}%`)), line(chip(`${r.got} of ${r.of}`, 'checkmark.seal'))), stack('trailing', line(hero(r.letter, true)), line(chip('letter')))), line(meta('A 93+, A− 90, B+ 87, B 83 … F under 60 · schools set their own scales'))] };
     }
   });
 }

@@ -1,0 +1,23 @@
+{
+  "id": "invest-math",
+  "title": "Investing Math",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "An investor's quick sums as cards while you type: the rule of 72 (and the exact doubling time), dividend yield, and the tax-equivalent yield of a tax-free bond.",
+  "entry": "index.mjs",
+  "categories": [
+    "Finance"
+  ],
+  "icon": "chart.line.uptrend.xyaxis",
+  "author": "vlad-terin",
+  "topics": [
+    "rule of 72",
+    "dividend yield",
+    "tax equivalent yield"
+  ],
+  "examples": [
+    "rule of 72 8%",
+    "dividend yield 2.40 price 80",
+    "tax equivalent yield 3% 32%"
+  ]
+}

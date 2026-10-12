@@ -1,0 +1,23 @@
+{
+  "id": "transfer-time",
+  "title": "Transfer Time",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "How long a download, upload or copy takes at a connection speed, as a card while you type - and at a realistic 80%.",
+  "entry": "index.mjs",
+  "categories": [
+    "Developer Tools",
+    "Productivity"
+  ],
+  "icon": "arrow.down.circle",
+  "author": "vlad-terin",
+  "topics": [
+    "download time",
+    "upload time",
+    "bandwidth calculator"
+  ],
+  "examples": [
+    "download 50 gb at 100 mbps",
+    "transfer 2 tb at 1 gbps"
+  ]
+}

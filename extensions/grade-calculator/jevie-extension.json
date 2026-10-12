@@ -2,7 +2,7 @@
   "id": "grade-calculator",
   "title": "Grade Calculator",
   "apiVersion": 1,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "What score a final exam needs for the grade you want, and a GPA from letter or number grades - as cards while you type.",
   "entry": "index.mjs",
   "categories": [
@@ -14,10 +14,12 @@
   "topics": [
     "final grade",
     "grade needed",
-    "gpa"
+    "gpa",
+    "test score"
   ],
   "examples": [
     "grade needed current 78 target 82 final 30%",
-    "gpa A B+ A- B"
+    "gpa A B+ A- B",
+    "score 42/50"
   ]
 }
