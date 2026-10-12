@@ -1,0 +1,23 @@
+{
+  "id": "ab-test",
+  "title": "A/B Test",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Whether an A/B test's difference is real, as a card while you type - the lift, the confidence and the p-value - and how many visitors a test needs.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity",
+    "Data"
+  ],
+  "icon": "arrow.left.arrow.right.square",
+  "author": "vlad-terin",
+  "topics": [
+    "ab test",
+    "significance",
+    "sample size"
+  ],
+  "examples": [
+    "ab 120/2400 vs 150/2380",
+    "sample size 4% baseline 10% lift"
+  ]
+}

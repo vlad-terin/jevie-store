@@ -1,0 +1,23 @@
+{
+  "id": "post-length",
+  "title": "Post Length",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "Whether a post fits each platform, as a card while you type: X, LinkedIn, Instagram, Threads, Bluesky, a meta description, an SMS - and how much shows before “see more”.",
+  "entry": "index.mjs",
+  "categories": [
+    "Productivity",
+    "Communication"
+  ],
+  "icon": "character.cursor.ibeam",
+  "author": "vlad-terin",
+  "topics": [
+    "post length",
+    "character limit",
+    "tweet length"
+  ],
+  "examples": [
+    "post length Launching our new AI launcher today",
+    "char limit Launching our new AI launcher today"
+  ]
+}

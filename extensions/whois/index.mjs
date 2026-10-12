@@ -29,9 +29,47 @@ export function cardOf(domain, w, P, now = Date.now()) {
   ] };
 }
 
+// "is jevie.ai available", "domain jevie" (the common endings at once).
+export const AVAILABLE = '^(?:is\\s+(?:the\\s+domain\\s+)?(?:[a-z0-9-]+\\.)+[a-z]{2,}\\s+(?:available|free|taken|registered)\\??|domain\\s+(?:[a-z0-9-]+\\.)*[a-z0-9-]+(?:\\s+(?:available|free))?\\??)$';
+export const ENDINGS = ['com', 'ai', 'app', 'io', 'dev', 'co'];
+
+/// One name's registration: { domain, state: 'available'|'taken'|'unknown', w? }.
+export async function lookupDomain(domain, { fetchImpl = fetch } = {}) {
+  const r = await fetchImpl(`https://rdap.org/domain/${encodeURIComponent(domain)}`, { signal: AbortSignal.timeout(7000), redirect: 'follow', headers: { accept: 'application/rdap+json', 'user-agent': 'Jevie/1.0 (whois extension)' } }).catch(() => null);
+  if (!r) return { domain, state: 'unknown', why: 'no answer' };
+  // rdap.org sends a lookup on to the registry; a 404 from the registry is a
+  // name nobody holds, one from rdap.org itself an ending with no RDAP.
+  const registry = !/^https?:\/\/rdap\.org\//.test(r.url ?? '');
+  if (r.status === 404) return registry ? { domain, state: 'available' } : { domain, state: 'unknown', why: `no RDAP for .${domain.split('.').pop()}` };
+  if (!r.ok) return { domain, state: 'unknown', why: `RDAP answered ${r.status}` };
+  return { domain, state: 'taken', w: read(await r.json()) };
+}
+
 export default function whois(jevie, context) {
   const P = jevie.CardParts;
   const note = (t, error = false) => ({ summary: 'Whois', complete: 0, ...(error ? { error: true } : {}), body: [P.line(P.text(t, true))] });
+  jevie.registerCard({
+    name: 'domain', label: 'Domain available?', symbol: 'checkmark.seal', match: { pattern: AVAILABLE }, examples: ['is jevie.ai available', 'domain jevie'],
+    async render(said) {
+      const t = said.trim().toLowerCase().replace(/\?$/, '').replace(/^is\s+(?:the\s+domain\s+)?/, '').replace(/^domain\s+/, '').replace(/\s+(?:available|free|taken|registered)$/, '').replace(/^www\./, '');
+      const names = t.includes('.') ? [t] : ENDINGS.map(e => `${t}.${e}`);
+      const found = await Promise.all(names.map(d => lookupDomain(d)));
+      const { line, spread, stack, hero, chip, meta, title } = P;
+      const free = found.filter(f => f.state === 'available');
+      if (names.length === 1) {
+        const f = found[0];
+        const summary = f.state === 'available' ? `${f.domain} is available` : f.state === 'taken' ? `${f.domain} is taken${f.w?.expires ? `, until ${f.w.expires}` : ''}` : `${f.domain}: can't tell (${f.why})`;
+        return { summary, copy: summary, complete: f.state === 'unknown' ? 0 : 1, ...(f.state === 'unknown' ? { error: true } : {}), body: [
+          spread(stack('leading', line(title(f.domain)), line(meta(f.state === 'taken' ? `${f.w?.registrar ?? 'registrar not given'}${f.w?.expires ? ` · until ${f.w.expires}` : ''}` : f.state === 'available' ? 'no one has registered it' : f.why))),
+            stack('trailing', line(hero(f.state === 'available' ? 'Free' : f.state === 'taken' ? 'Taken' : '?', f.state !== 'available')), line(chip(f.state, f.state === 'available' ? 'checkmark.seal' : f.state === 'taken' ? 'xmark.seal' : 'questionmark.circle'))))] };
+      }
+      const summary = free.length ? `${t}: ${free.map(f => `.${f.domain.split('.').pop()}`).join(' ')} available` : `${t}: taken on every common ending`;
+      return { summary, copy: free.map(f => f.domain).join('\n') || summary, complete: 1, body: [
+        spread(line(title(t)), chip(`${free.length} of ${found.length} free`, free.length ? 'checkmark.seal' : 'xmark.seal')),
+        line(...found.map(f => chip(`.${f.domain.split('.').pop()}`, f.state === 'available' ? 'checkmark.circle' : f.state === 'taken' ? 'xmark.circle' : 'questionmark.circle'))),
+        line(meta(`${free.length ? `free: ${free.map(f => f.domain).join(', ')}` : 'all taken'} · ↵ copies the free ones`))] };
+    }
+  });
   jevie.registerCard({
     name: 'whois', label: 'Whois', symbol: 'globe.badge.chevron.backward', match: { pattern: PATTERN }, examples: ['whois github.com', 'whois example.org'],
     async render(said) {

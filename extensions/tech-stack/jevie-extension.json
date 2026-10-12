@@ -1,0 +1,24 @@
+{
+  "id": "tech-stack",
+  "title": "Tech Stack",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "What a site is built with, as a card while you type - its framework, CMS, hosting, CDN, analytics and marketing tools - like BuiltWith, from the open webappanalyzer fingerprints.",
+  "entry": "index.mjs",
+  "categories": [
+    "Web",
+    "Developer Tools"
+  ],
+  "icon": "square.stack.3d.up",
+  "author": "vlad-terin",
+  "topics": [
+    "built with",
+    "tech stack",
+    "wappalyzer",
+    "builtwith"
+  ],
+  "examples": [
+    "built with vercel.com",
+    "tech stack github.com"
+  ]
+}

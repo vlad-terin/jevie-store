@@ -1,0 +1,26 @@
+{
+  "id": "ad-metrics",
+  "title": "Ad Metrics",
+  "apiVersion": 1,
+  "version": "1.0.0",
+  "description": "The marketing numbers, as cards while you type: ROAS, CAC, CTR, CPC, CPM, conversion rate, and customer lifetime value.",
+  "entry": "index.mjs",
+  "categories": [
+    "Finance",
+    "Productivity"
+  ],
+  "icon": "chart.bar.xaxis",
+  "author": "vlad-terin",
+  "topics": [
+    "roas",
+    "cac",
+    "ctr",
+    "cpm",
+    "ltv",
+    "conversion rate"
+  ],
+  "examples": [
+    "roas revenue 5000 spend 1200",
+    "ctr 120 clicks 8000 impressions"
+  ]
+}
