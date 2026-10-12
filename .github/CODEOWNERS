@@ -64,12 +64,14 @@
 /extensions/http-headers/ @vlad-terin
 /extensions/icd-10/ @vlad-terin
 /extensions/iconify/ @vlad-terin
+/extensions/ideal-body-weight/ @vlad-terin
 /extensions/inflation/ @vlad-terin
 /extensions/inventory-math/ @vlad-terin
 /extensions/invest-math/ @vlad-terin
 /extensions/ip-info/ @vlad-terin
 /extensions/isbn-lookup/ @vlad-terin
 /extensions/lab-math/ @vlad-terin
+/extensions/late-fee/ @vlad-terin
 /extensions/legal-terms/ @vlad-terin
 /extensions/license-text/ @vlad-terin
 /extensions/linear/ @vlad-terin
@@ -79,6 +81,7 @@
 /extensions/market-rates/ @vlad-terin
 /extensions/mdn/ @vlad-terin
 /extensions/media-math/ @vlad-terin
+/extensions/medical-bill/ @vlad-terin
 /extensions/mime-types/ @vlad-terin
 /extensions/moon-phase/ @vlad-terin
 /extensions/npm-downloads/ @vlad-terin
@@ -86,6 +89,7 @@
 /extensions/npv-irr/ @vlad-terin
 /extensions/obsidian/ @vlad-terin
 /extensions/ohms-law/ @vlad-terin
+/extensions/one-rep-max/ @vlad-terin
 /extensions/options-pricing/ @vlad-terin
 /extensions/payment-fees/ @vlad-terin
 /extensions/percent-change/ @vlad-terin
@@ -101,6 +105,7 @@
 /extensions/real-estate/ @vlad-terin
 /extensions/recipe-scale/ @vlad-terin
 /extensions/reddit/ @vlad-terin
+/extensions/request-rate/ @vlad-terin
 /extensions/restaurant-math/ @vlad-terin
 /extensions/retirement/ @vlad-terin
 /extensions/rhymes/ @vlad-terin
@@ -113,6 +118,7 @@
 /extensions/simple-interest/ @vlad-terin
 /extensions/sla-uptime/ @vlad-terin
 /extensions/sleep-cycles/ @vlad-terin
+/extensions/solar-size/ @vlad-terin
 /extensions/ssl-certificate/ @vlad-terin
 /extensions/startup-math/ @vlad-terin
 /extensions/stats/ @vlad-terin
@@ -136,6 +142,7 @@
 /extensions/urban-dictionary/ @vlad-terin
 /extensions/utm-builder/ @vlad-terin
 /extensions/voltage-drop/ @vlad-terin
+/extensions/weighted-average/ @vlad-terin
 /extensions/whois/ @vlad-terin
 /extensions/wikipedia/ @vlad-terin
 /extensions/world-clock/ @vlad-terin
